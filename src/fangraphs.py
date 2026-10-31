@@ -65,6 +65,9 @@ def normalize(df: pd.DataFrame) -> pd.DataFrame:
             df[c] = df[c] * 100  # API returns fractions
     if "K-BB%" in df.columns and df["K-BB%"].isna().all():
         df["K-BB%"] = df["K%"] - df["BB%"]
+    for c in PERCENT_COLS:
+        if c in df.columns:
+            df[c] = df[c].round(2)  # drop float noise from the x100 (26.200000000000003)
     return df
 
 

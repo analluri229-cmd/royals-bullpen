@@ -23,6 +23,8 @@ def test_normalize_percent_strings_and_fractions():
     api = normalize(pd.DataFrame({"TeamName": ["KCR"], "K%": [0.225], "BB%": [0.09],
                                   "K-BB%": [0.135]}))
     assert api.loc[0, "Team"] == "KCR" and api.loc[0, "K-BB%"] == pytest.approx(13.5)
+    noisy = normalize(pd.DataFrame({"Team": ["LAD"], "K%": [0.262], "BB%": [0.099]}))
+    assert noisy.loc[0, "K%"] == 26.2 and noisy.loc[0, "BB%"] == 9.9 and noisy.loc[0, "K-BB%"] == 16.3
 
 
 def test_merge_tabs_joins_on_name_and_team_keeps_first_copy():
