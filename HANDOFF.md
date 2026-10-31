@@ -8,7 +8,9 @@ Read this together with `CLAUDE.md` at the start of a new session.
 - Found that a full 2026 regular-season Statcast pull already exists:
   - Original: `C:\Users\themi\source\repos\statcast_data_2026.csv` (~408 MB, every Savant column, including `arm_angle`, bat tracking, `age_pit` and `umpire`). It was pulled by `repos\Pull-Statcast-2026.R` for 2026-03-25 to 2026-09-27, game_type R.
   - Compressed copy: `data/raw/statcast_2026.csv.gz` (~168 MB). **This means Step 3 needs no new pull.** Convert it to `data/raw/statcast_2026.parquet` with only the columns Step 3 keeps. Check whether the `umpire` column is actually filled in.
-- Nothing else has been built yet: no code, no outputs.
+- Checked the existing pull: 597,515 regular-season pitches in 2,038 games, but it **starts 2026-04-25**, so 2026-03-25 to 2026-04-24 (about 390 games) is missing. The `umpire` column is 0% filled.
+- 2026-10-31: Next steps 1 and 2 are done (except running the live pulls on Windows). Scaffolding, `git init` on `main` (no remote yet), and `src/build_statcast_parquet.py`, `src/pull_statcast.py`, `src/relievers.py`, `src/fangraphs.py`, with 16 passing unit tests. See `notes/decisions.md`.
+- Step 1 dry run on the existing file: 320 of 707 MLB relievers qualify, and 10 KC relievers qualify (Cruz, Lange, Schreiber, Erceg, Lynch, Black, Strahm, Pearson, Cuas, Way), with 21 small samples. Rerun after the missing month is filled.
 
 ## Known limits
 - The Claude cloud workspace can't reach Baseball Savant, FanGraphs or the MLB Stats API. Neither can the Linux shell on the laptop. Data pulls run in VS Code on Windows, or the data comes in as manual exports.
@@ -27,6 +29,7 @@ Read this together with `CLAUDE.md` at the start of a new session.
 | 9: Validation | data:validate-data, analytics-office:defend-my-number |
 
 ## Next steps
-1. Add `requirements.txt` (pandas, numpy, pybaseball, pyarrow, matplotlib, seaborn, scipy, statsmodels, jupyter, pytest), `.gitignore` (ignore `data/`, `.venv/`, `.env`), `README.md` from the `_project-template` layout, and `notes/decisions.md`. Run `git init` (repos go on the analluri229-cmd GitHub account).
-2. Steps 1-3: build the parquet, the reliever flag (not the team's first pitcher per game_pk) and the KC reliever list (20+ relief IP or 300+ pitches). Write the FanGraphs pull script with a manual-CSV fallback.
+0. On Windows: create the GitHub repo `royals-bullpen` on analluri229-cmd, then `git remote add origin ...` and push. Make the venv, then run `python -m src.pull_statcast --start 2026-03-25 --end 2026-04-24`, `python -m src.build_statcast_parquet --force`, `python -m src.relievers` and `python -m src.fangraphs`. Export the FanGraphs CSVs by hand if the live pull fails.
+1. (done) Add `requirements.txt` (pandas, numpy, pybaseball, pyarrow, matplotlib, seaborn, scipy, statsmodels, jupyter, pytest), `.gitignore` (ignore `data/`, `.venv/`, `.env`), `README.md` from the `_project-template` layout, and `notes/decisions.md`. Run `git init` (repos go on the analluri229-cmd GitHub account).
+2. (scripts done, needs a Windows run) Steps 1-3: build the parquet, the reliever flag (not the team's first pitcher per game_pk) and the KC reliever list (20+ relief IP or 300+ pitches). Write the FanGraphs pull script with a manual-CSV fallback.
 3. Steps 4 → 5 → 5A (Core) → 6 → 7 → 8 → deck (Slides, then .pptx) → 9.
