@@ -1,0 +1,12 @@
+# Royals bullpen project. Replace with `pip freeze` output when done.
+pandas
+numpy
+pyarrow
+pybaseball
+requests
+matplotlib
+seaborn
+scipy
+statsmodels
+jupyter
+pytest

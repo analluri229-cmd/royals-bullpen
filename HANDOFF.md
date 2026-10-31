@@ -1,0 +1,32 @@
+# Handoff: where this project stands (2026-10-31)
+
+Read this together with `CLAUDE.md` at the start of a new session.
+
+## Done so far
+- Read the spec (now in `CLAUDE.md`) and checked which skills cover each step.
+- Created the Step 0 folders: `data/raw`, `data/manual`, `data/processed`, `src`, `notebooks`, `outputs/figures`, `outputs/tables`, `tests`, `notes`, `.vscode`.
+- Found that a full 2026 regular-season Statcast pull already exists:
+  - Original: `C:\Users\themi\source\repos\statcast_data_2026.csv` (~408 MB, every Savant column, including `arm_angle`, bat tracking, `age_pit` and `umpire`). It was pulled by `repos\Pull-Statcast-2026.R` for 2026-03-25 to 2026-09-27, game_type R.
+  - Compressed copy: `data/raw/statcast_2026.csv.gz` (~168 MB). **This means Step 3 needs no new pull.** Convert it to `data/raw/statcast_2026.parquet` with only the columns Step 3 keeps. Check whether the `umpire` column is actually filled in.
+- Nothing else has been built yet: no code, no outputs.
+
+## Known limits
+- The Claude cloud workspace can't reach Baseball Savant, FanGraphs or the MLB Stats API. Neither can the Linux shell on the laptop. Data pulls run in VS Code on Windows, or the data comes in as manual exports.
+- FanGraphs inputs (team reliever ranks, player Stuff+ / Location+ / Pitching+, wRC+, Def) are exported by hand to `data/manual/fg_team_relievers_2026.csv` and `data/manual/fg_relievers_2026.csv`.
+- Other manual files: `data/manual/fa_relievers_2026.csv` (MLB Trade Rumors), `data/manual/royals_contracts.csv`, `data/manual/royals_prospects.csv` (FanGraphs The Board), and `data/manual/aaa_statcast_2026.csv` (Savant minors search).
+
+## Skills to use, by step
+| Step | Skill / tool |
+|---|---|
+| 0: Setup | claude-md-composer, project-memory |
+| 1-5A: Metrics | data:statistical-analysis, data:explore-data, analytics-office:kpi-contract (pin down 3PS%, LiVAA) |
+| 6-7: Leak map and targets | analytics-office:audit-my-assumptions, data:analyze |
+| 8: Figures | dataviz, data:create-viz |
+| Deck | Slides artifact first, then the pptx skill |
+| Scouting appendix | Docs artifact |
+| 9: Validation | data:validate-data, analytics-office:defend-my-number |
+
+## Next steps
+1. Add `requirements.txt` (pandas, numpy, pybaseball, pyarrow, matplotlib, seaborn, scipy, statsmodels, jupyter, pytest), `.gitignore` (ignore `data/`, `.venv/`, `.env`), `README.md` from the `_project-template` layout, and `notes/decisions.md`. Run `git init` (repos go on the analluri229-cmd GitHub account).
+2. Steps 1-3: build the parquet, the reliever flag (not the team's first pitcher per game_pk) and the KC reliever list (20+ relief IP or 300+ pitches). Write the FanGraphs pull script with a manual-CSV fallback.
+3. Steps 4 → 5 → 5A (Core) → 6 → 7 → 8 → deck (Slides, then .pptx) → 9.
