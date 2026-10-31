@@ -9,3 +9,7 @@
 - 2026-10-31: Relief IP = outs recorded / 3. Outs per PA = next PA's outs_when_up minus this PA's in the same half-inning, or 3 at the end of the half. This credits caught stealing and pickoff outs too. In a game's final half-inning with the home team batting (walk-offs), outs come from the event instead. A mid-PA pitching change credits the whole PA to the first pitcher. Step 9 checks totals against FanGraphs (within 2%).
 - 2026-10-31: KC reliever totals count only appearances for KC (a pitcher traded in or out counts only his KC innings). League totals count all relief for every team.
 - 2026-10-31: FanGraphs pulls try live first, then fall back to manual exports in `data/manual/`. Team abbreviation is `KC` in Statcast and `KCR` in FanGraphs.
+- 2026-10-31: Step 4 uses relief pitches only. A KC reliever's pitches count only from his KC appearances.
+- 2026-10-31: LiVAA is fit (VAA on plate_z, one line per pitch group FB/BRK/OFF) on qualified league relievers' pitches only, so small samples don't steer the slope. The method is still to confirm with the mentor.
+- 2026-10-31: Step 4 percentiles are raw (100 = highest value) against qualified relievers with 50+ pitches of the same pitch type, thrown with the same hand. Which direction counts as good (flatter VAA, more IVB on a fastball, and so on) is decided in Step 6.
+- 2026-10-31: FanGraphs Stuff+ is joined by MLBAM ID when the export has one, otherwise by normalized name. FanGraphs folds sweepers into SL, so ST pitches get the SL Stuff+. CU Stuff+ also covers KC unless a KC column exists.

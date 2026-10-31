@@ -43,6 +43,7 @@ python -m src.build_statcast_parquet --force                       # Step 3
 python -m src.relievers                                            # Step 1
 python -m src.split_fg_workbooks                                   # FanGraphs .xlsx exports -> one CSV per tab
 python -m src.fangraphs                                            # Step 2 (add --offline to use manual CSVs)
+python -m src.stuff                                                # Step 4 -> outputs/tables/stuff_by_pitch.csv
 python -m pytest
 ```
 
