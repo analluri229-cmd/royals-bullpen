@@ -117,3 +117,10 @@ def test_join_stuff_plus_prefers_mlbam_id():
 def test_join_stuff_plus_without_fangraphs():
     tab = pd.DataFrame({"pitcher": [1], "name": ["X"], "pitch_type": ["FF"]})
     assert np.isnan(join_stuff_plus(tab, None).loc[0, "stuff_plus"])
+
+
+def test_summarize_drops_eephus_and_pitchouts():
+    df = add_pitch_physics(pitches(pitch_type=["FF"] * 3 + ["EP", "PO", "FA"]))
+    df["livaa"] = df["vaa"]
+    tab = summarize(df)
+    assert tab["pitch_type"].tolist() == ["FF"] and tab["usage_pct"].tolist() == [100.0]

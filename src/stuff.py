@@ -39,6 +39,10 @@ PITCH_GROUPS = {
     "CH": "OFF", "FS": "OFF", "FO": "OFF", "SC": "OFF",
 }
 
+# Not real pitch types for this analysis: eephus, pitchout, generic "fastball"
+# (position players pitching), unknown, automatic ball, intentional ball.
+EXCLUDE_PITCH_TYPES = {"EP", "PO", "FA", "UN", "AB", "IN"}
+
 # Output metric -> source column after add_pitch_physics.
 METRICS = {
     "velo": "release_speed", "ivb": "ivb", "hb": "hb", "arm_angle": "arm_angle",
@@ -94,7 +98,7 @@ def add_livaa(df: pd.DataFrame, fit: pd.DataFrame) -> pd.DataFrame:
 
 def summarize(df: pd.DataFrame) -> pd.DataFrame:
     """Per pitcher x pitch type. df = relief pitches with physics + livaa."""
-    df = df[df["pitch_type"].notna()]
+    df = df[df["pitch_type"].notna() & ~df["pitch_type"].isin(EXCLUDE_PITCH_TYPES)]
     agg = {f"{m}": (c, "mean") for m, c in METRICS.items()}
     agg["velo_max"] = ("release_speed", "max")
     agg["n_pitches"] = ("release_speed", "size")
