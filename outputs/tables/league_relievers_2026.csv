@@ -1,0 +1,742 @@
+pitcher,name,throws,teams,relief_games,relief_pitches,relief_outs,relief_bf,relief_ip,relief_ip_display,qualified,sample_flag
+805123,"Blubaugh, AJ",R,HOU,64,1640,288,401,96.0,96.0,True,
+676879,"Ashby, Aaron",L,MIL,74,1538,260,371,86.667,86.2,True,
+670970,"Morejon, Adrian",L,SD,76,1318,258,348,86.0,86.0,True,
+670990,"Ramírez, Yohan",R,PIT,65,1388,249,351,83.0,83.0,True,
+670950,"Richards, Trevor",R,CWS/PHI,54,1302,248,341,82.667,82.2,True,
+608718,"Suter, Brent",L,ATL/LAA,50,1360,246,338,82.0,82.0,True,
+621112,"Blackburn, Paul",R,NYY,60,1179,246,323,82.0,82.0,True,
+688642,"Agnos, Zach",R,COL,38,1336,241,363,80.333,80.1,True,
+656794,"Newcomb, Sean",L,CWS,54,1295,239,334,79.667,79.2,True,
+691799,"Taylor, Grant",R,CWS,56,1272,237,320,79.0,79.0,True,
+687396,"Headrick, Brent",L,NYY,81,1285,235,326,78.333,78.1,True,
+686973,"Varland, Louis",R,TOR,71,1236,234,307,78.0,78.0,True,
+700669,"Graceffo, Gordon",R,STL,61,1184,234,315,78.0,78.0,True,
+677865,"Bruihl, Justin",L,STL,73,1314,233,344,77.667,77.2,True,
+694477,"Patrick, Chad",R,MIL,51,1266,233,319,77.667,77.2,True,
+656271,"Burke, Brock",L,CIN,77,1181,223,310,74.333,74.1,True,
+687330,"Kelly, Kevin",R,TB,71,990,221,277,73.667,73.2,True,
+693686,"Miles, Spencer",R,TOR,41,1141,221,293,73.667,73.2,True,
+622608,"Senzatela, Antonio",R,COL/MIL,57,1165,220,309,73.333,73.1,True,
+671922,"Smith, Cade",R,CLE,68,1229,219,291,73.0,73.0,True,
+593974,"Peralta, Wandy",L,SD,60,1162,217,303,72.333,72.1,True,
+669330,"Wells, Tyler",R,BAL/TB,57,1068,216,276,72.0,72.0,True,
+670245,"Watson, Ryan",R,BOS/LAA,53,1138,216,305,72.0,72.0,True,
+665622,"Medina, Luis",R,ATH,59,1256,215,311,71.667,71.2,True,
+695418,"Lord, Brad",R,WSH,35,1237,215,303,71.667,71.2,True,
+660853,"De Los Santos, Enyel",R,HOU,66,1153,214,301,71.333,71.1,True,
+643511,"Rogers, Tyler",R,TOR,74,1030,213,293,71.0,71.0,True,
+664199,"Clarke, Taylor",R,AZ,69,1025,212,275,70.667,70.2,True,
+669387,"Mlodzinski, Carmen",R,PIT,25,1119,212,293,70.667,70.2,True,
+800311,"Fuentes, Didier",R,ATL,57,1157,212,280,70.667,70.2,True,
+663687,"Harris, Hogan",L,ATH,74,1337,211,310,70.333,70.1,True,
+695243,"Miller, Mason",R,SD,66,1149,210,272,70.0,70.0,True,
+699134,"Rodriguez, Bradgley",R,SD,64,1136,210,288,70.0,70.0,True,
+702193,"Morris, Andrew",R,MIN,61,1212,209,297,69.667,69.2,True,
+670280,"Bednar, David",R,NYY,64,1158,208,280,69.333,69.1,True,
+675848,"Mejia, Juan",R,COL,64,1277,208,317,69.333,69.1,True,
+666171,"Zeferjahn, Ryan",R,CHC/LAA,64,1270,207,296,69.0,69.0,True,
+607200,"Fedde, Erick",R,CWS,18,1189,206,302,68.667,68.2,True,
+663947,"Holton, Tyler",L,DET,64,1067,205,285,68.333,68.1,True,
+676534,"Faucher, Calvin",R,MIA,69,1167,205,293,68.333,68.1,True,
+656641,"Latz, Jacob",L,TEX,57,1060,204,253,68.0,68.0,True,
+656464,"Ginkel, Kevin",R,AZ,74,1101,203,276,67.667,67.2,True,
+641302,"Alexander, Tyler",L,TEX,70,1102,202,291,67.333,67.1,True,
+660825,"Bazardo, Eduard",R,SEA,73,1133,202,295,67.333,67.1,True,
+595345,"Okert, Steven",L,HOU,67,1031,201,256,67.0,67.0,True,
+642397,"Soto, Gregory",L,PIT,69,1153,201,283,67.0,67.0,True,
+642528,"Loáisiga, Jonathan",R,AZ,67,962,201,258,67.0,67.0,True,
+657097,"Webb, Jacob",R,CHC,68,1139,201,284,67.0,67.0,True,
+669276,"Lee, Dylan",L,ATL,71,1054,201,261,67.0,67.0,True,
+670329,"Garcia, Rico",R,BAL,75,997,201,264,67.0,67.0,True,
+670036,"Festa, Matt",R,CLE,66,1102,200,291,66.667,66.2,True,
+656546,"Hoffman, Jeff",R,MIN/TOR,71,1217,198,292,66.0,66.0,True,
+656848,"Petersen, Michael",R,MIA,65,1129,197,270,65.667,65.2,True,
+666277,"Soriano, George",R,STL,70,1156,197,286,65.667,65.2,True,
+672782,"Gómez, Yoendrys",R,MIN/TB,64,1132,195,288,65.0,65.0,True,
+678606,"Ferrer, José A.",L,SEA,73,1091,194,295,64.667,64.2,True,
+666661,"Morillo, Juan",R,AZ,70,1041,193,263,64.333,64.1,True,
+680755,"Fisher, Braydon",R,TOR,65,1076,193,263,64.333,64.1,True,
+673513,"Matsui, Yuki",L,SD,54,1086,192,260,64.0,64.0,True,
+676617,"O'Brien, Riley",R,STL,66,1064,192,276,64.0,64.0,True,
+656945,"Scott, Tanner",L,LAD,69,963,191,247,63.667,63.2,True,
+678394,"Bello, Brayan",R,BOS,15,942,191,250,63.667,63.2,True,
+682254,"Montgomery, Mason",L,PIT,65,1098,191,255,63.667,63.2,True,
+544150,"Suárez, Albert",R,BAL,28,970,189,263,63.0,63.0,True,
+571945,"Mikolas, Miles",R,WSH,14,918,189,254,63.0,63.0,True,
+592773,"Stanek, Ryne",R,STL,70,1079,188,267,62.667,62.2,True,
+650556,"Abreu, Bryan",R,HOU,66,1093,188,269,62.667,62.2,True,
+657514,"Bernardino, Brennan",L,COL,72,961,188,257,62.667,62.2,True,
+663558,"Morán, Jovani",L,BOS,47,992,188,253,62.667,62.2,True,
+641329,"Baker, Bryan",R,TB,65,977,187,243,62.333,62.1,True,
+622554,"Domínguez, Seranthony",R,CWS/SEA,67,1115,186,259,62.0,62.0,True,
+656730,"Megill, Trevor",R,MIL,63,874,185,240,61.667,61.2,True,
+669199,"Bachar, Lake",R,MIA/PIT,41,1005,185,253,61.667,61.2,True,
+640448,"Finnegan, Kyle",R,DET,63,1063,182,272,60.667,60.2,True,
+666808,"Doval, Camilo",R,NYY/PIT/SF,66,1038,182,273,60.667,60.2,True,
+669711,"Weissert, Greg",R,BOS,63,996,182,256,60.667,60.2,True,
+676263,"Dreyer, Jack",L,LAD,64,970,182,245,60.667,60.2,True,
+573124,"Rogers, Taylor",L,MIN,65,1076,181,272,60.333,60.1,True,
+596133,"Weaver, Luke",R,NYM/PIT,60,903,181,237,60.333,60.1,True,
+668984,"Legumina, Casey",R,SEA/TB,48,972,181,258,60.333,60.1,True,
+670167,"Schreiber, John",R,KC/NYY,66,1003,181,246,60.333,60.1,True,
+623211,"Brazobán, Huascar",R,CWS/NYM,54,902,180,237,60.0,60.0,True,
+628452,"Iglesias, Raisel",R,ATL,59,911,180,239,60.0,60.0,True,
+656638,"Lange, Alex",R,KC,59,1135,180,276,60.0,60.0,True,
+681217,"Silseth, Chase",R,LAA/TEX,73,1091,180,267,60.0,60.0,True,
+683769,"Gaddis, Hunter",R,CLE,68,983,180,256,60.0,60.0,True,
+687911,"King, Bryan",L,HOU,59,1052,180,274,60.0,60.0,True,
+667297,"Nance, Tommy",R,MIN/TOR,57,981,179,258,59.667,59.2,True,
+669084,"Hall, DL",L,MIL,46,965,179,235,59.667,59.2,True,
+689296,"Nunez, Anthony",R,BAL,52,994,179,254,59.667,59.2,True,
+661395,"Duran, Jhoan",R,PHI,61,947,178,235,59.333,59.1,True,
+664141,"Brubaker, JT",R,SF,40,985,178,247,59.333,59.1,True,
+669020,"Rolison, Ryan",L,CHC,58,956,178,244,59.333,59.1,True,
+682842,"Uribe, Abner",R,MIL,61,918,178,233,59.333,59.1,True,
+657612,"Hill, Tim",L,NYY,67,816,177,241,59.0,59.0,True,
+683618,"Henriquez, Edgardo",R,LAD,60,948,177,238,59.0,59.0,True,
+701519,"Adams, Travis",R,MIN,40,950,177,247,59.0,59.0,True,
+680767,"Vodnik, Victor",R,COL/MIA,53,1027,176,266,58.667,58.2,True,
+621237,"Alvarado, José",L,PHI,68,1134,175,272,58.333,58.1,True,
+642232,"Yarbrough, Ryan",L,NYY,36,978,175,248,58.333,58.1,True,
+681982,"Anderson, Grant",R,MIL,52,919,175,233,58.333,58.1,True,
+689254,"Fluharty, Mason",L,TOR,79,958,175,242,58.333,58.1,True,
+815083,"Farris, Mitch",L,LAA,33,961,175,250,58.333,58.1,True,
+681911,"Vesia, Alex",L,LAD,72,1011,174,235,58.0,58.0,True,
+689147,"Kerkering, Orion",R,PHI,62,1093,174,267,58.0,58.0,True,
+641835,"Mayza, Tim",L,PHI,54,923,173,229,57.667,57.2,True,
+676760,"Marinaccio, Ron",R,CIN/PIT/SD,41,1042,173,261,57.667,57.2,True,
+641793,"Littell, Zack",R,AZ/WSH,12,870,172,240,57.333,57.1,True,
+663542,"Hudson, Bryan",L,CWS,61,924,172,244,57.333,57.1,True,
+641755,"Kinley, Tyler",R,ATL/DET,64,913,171,229,57.0,57.0,True,
+662253,"Muñoz, Andrés",R,SEA,61,953,171,240,57.0,57.0,True,
+642701,"Santana, Dennis",R,AZ/PIT,57,929,170,249,56.667,56.2,True,
+680742,"Bowlan, Jonathan",R,PHI,59,966,170,234,56.667,56.2,True,
+682120,"Herrin, Tim",L,CLE,67,987,170,239,56.667,56.2,True,
+594580,"Moll, Sam",L,CIN,65,1073,169,256,56.333,56.1,True,
+623454,"Anderson, Drew",R,DET,38,963,169,246,56.333,56.1,True,
+660761,"Suarez, José",L,ATH/ATL/SEA,43,987,169,254,56.333,56.1,True,
+668941,"Romero, JoJo",L,MIL/STL,55,922,169,236,56.333,56.1,True,
+674444,"Cruz, Steven",R,KC,54,892,168,236,56.0,56.0,True,
+682608,"Gray, Peyton",R,TEX,49,944,168,248,56.0,56.0,True,
+693855,"Seymour, Ian",L,TB,31,888,167,227,55.667,55.2,True,
+665660,"Alvarado, Elvis",R,ATH,56,951,166,228,55.333,55.1,True,
+606996,"Hart, Kyle",L,SD,42,947,165,234,55.0,55.0,True,
+622088,"Antone, Tejay",R,CIN,58,907,165,235,55.0,55.0,True,
+518585,"Cruz, Fernando",R,NYY,61,944,164,233,54.667,54.2,True,
+663767,"Shugart, Chase",R,PHI,46,867,161,223,53.667,53.2,True,
+623149,"Sewald, Paul",R,AZ/TOR,62,854,160,218,53.333,53.1,True,
+820862,"Fermin, José",R,LAA,53,981,160,237,53.333,53.1,True,
+670059,"Holderman, Colin",R,CLE,54,860,159,222,53.0,53.0,True,
+548384,"Raley, Brooks",L,NYM/PHI,61,846,158,224,52.667,52.2,True,
+642121,"Sulser, Cole",R,TB,49,877,157,218,52.333,52.1,True,
+676477,"Whitlock, Garrett",R,BOS,54,743,157,198,52.333,52.1,True,
+547973,"Chapman, Aroldis",L,BOS,53,841,155,213,51.667,51.2,True,
+596001,"Junis, Jakob",R,TEX,52,818,155,223,51.667,51.2,True,
+664991,"Wolfram, Grant",L,BAL,60,906,155,225,51.667,51.2,True,
+805299,"Garcia, Brandyn",L,AZ,57,705,154,192,51.333,51.1,True,
+681892,"Funderburk, Kody",L,MIN,58,876,153,221,51.0,51.0,True,
+623474,"Herget, Jimmy",R,COL,48,898,152,225,50.667,50.2,True,
+669062,"Miller, Erik",L,BOS/SF,56,953,151,221,50.333,50.1,True,
+573204,"Thielbar, Caleb",L,CHC,58,852,149,211,49.667,49.2,True,
+666974,"Cano, Yennier",R,BAL,68,794,149,206,49.667,49.2,True,
+689266,"Dodd, Dylan",L,ATL,48,783,149,194,49.667,49.2,True,
+668964,"Myers, Tobias",R,NYM,29,749,147,206,49.0,49.0,True,
+696147,"Bachman, Sam",R,LAA,44,830,147,219,49.0,49.0,True,
+806188,"Gibson, Cade",L,MIA,46,854,147,215,49.0,49.0,True,
+572955,"Johnson, Pierce",R,CIN,56,840,146,211,48.667,48.2,True,
+552640,"Kittredge, Andrew",R,BAL,55,711,145,212,48.333,48.1,True,
+668674,"Erceg, Lucas",R,KC,52,901,145,227,48.333,48.1,True,
+685299,"Gordon, Tanner",R,COL,12,711,145,204,48.333,48.1,True,
+667463,"King, John",L,MIA,49,688,144,189,48.0,48.0,True,
+668873,"Kilian, Caleb",R,PHI/SF,49,790,144,208,48.0,48.0,True,
+681810,"Warren, Austin",R,NYM,39,879,144,206,48.0,48.0,True,
+681870,"Sabrowski, Erik",L,CLE,59,820,144,200,48.0,48.0,True,
+690925,"Beeter, Clayton",R,WSH,50,800,144,209,48.0,48.0,True,
+663423,"Thornton, Trent",R,CHC,48,708,142,193,47.333,47.1,True,
+668390,"Winn, Cole",R,TEX,50,775,140,211,46.667,46.2,True,
+702021,"Dion, Will",L,CLE/WSH,26,755,140,193,46.667,46.2,True,
+663855,"Hicks, Jordan",R,CWS,51,860,139,208,46.333,46.1,True,
+518886,"Kimbrel, Craig",R,KC/NYM/TB,46,776,138,196,46.0,46.0,True,
+642100,"Speier, Gabe",L,SEA,54,702,138,188,46.0,46.0,True,
+663738,"Lynch IV, Daniel",L,KC,46,675,138,183,46.0,46.0,True,
+663878,"Pearson, Nate",R,HOU/KC,42,772,138,201,46.0,46.0,True,
+670062,"Garcia, Julian",R,CIN,33,712,138,180,46.0,46.0,True,
+445276,"Jansen, Kenley",R,DET,50,725,137,179,45.667,45.2,True,
+621097,"Waguespack, Jacob",R,DET,34,642,137,177,45.667,45.2,True,
+621345,"Minter, A.J.",L,MIN/NYM,48,677,137,187,45.667,45.2,True,
+623352,"Hader, Josh",L,HOU,45,676,134,167,44.667,44.2,True,
+669270,"Kuhnel, Joel",R,ATH/MIL/SF,45,748,134,201,44.667,44.2,True,
+681895,"Sisk, Evan",L,PIT,41,834,133,198,44.333,44.1,True,
+669165,"Hurt, Kyle",R,LAD,43,706,132,189,44.0,44.0,True,
+621074,"Rucker, Michael",R,SEA,37,757,131,186,43.667,43.2,True,
+680744,"Madden, Ty",R,DET,19,707,131,175,43.667,43.2,True,
+672335,"Pérez, Cionel",L,NYM/WSH,38,767,130,190,43.333,43.1,True,
+640455,"Manaea, Sean",L,NYM,14,776,129,193,43.0,43.0,True,
+676775,"Winn, Keaton",R,SF,44,644,129,176,43.0,43.0,True,
+687377,"Ribalta, Orlando",R,WSH,45,750,129,178,43.0,43.0,True,
+641941,"Pagán, Emilio",R,CIN,45,676,128,176,42.667,42.2,True,
+686993,"Sterner, Justin",R,ATH,46,730,128,184,42.667,42.2,True,
+695380,"Hoppe, Alex",R,BAL/SEA,42,733,128,190,42.667,42.2,True,
+646241,"De Jesus, Enmanuel",L,DET,30,669,127,178,42.333,42.1,True,
+694335,"Svanson, Matt",R,STL,40,774,127,203,42.333,42.1,True,
+571948,"Milner, Hoby",L,CHC/SEA,44,674,126,176,42.0,42.0,True,
+664076,"Cleavinger, Garrett",L,TB,51,736,124,181,41.333,41.1,True,
+679358,"Orze, Eric",R,MIN,36,677,124,187,41.333,41.1,True,
+592155,"Booser, Cam",L,TB,42,573,123,153,41.0,41.0,True,
+489446,"Yates, Kirby",R,LAA/PIT,45,698,122,172,40.667,40.2,True,
+594027,"Guerrero, Tyron",R,BOS,40,607,122,165,40.667,40.2,True,
+642207,"Williams, Devin",R,NYM,44,759,122,185,40.667,40.2,True,
+657044,"Thompson, Ryan",R,AZ,46,658,122,184,40.667,40.2,True,
+663574,"Santillan, Tony",R,CIN,44,698,122,190,40.667,40.2,True,
+664126,"Fairbanks, Pete",R,MIA,45,739,122,177,40.667,40.2,True,
+681867,"Criswell, Cooper",R,SEA,37,646,122,171,40.667,40.2,True,
+676604,"Zuber, Tyler",R,MIA,44,694,119,175,39.667,39.2,True,
+677955,"Hill, Jaden",R,COL,46,696,119,180,39.667,39.2,True,
+678022,"Perkins, Jack",R,ATH,20,680,119,171,39.667,39.2,True,
+680730,"Parker, Mitchell",L,WSH,22,664,119,178,39.667,39.2,True,
+681916,"Smith, Dylan",R,SF,42,703,119,174,39.667,39.2,True,
+805427,"Sommers, Drew",L,DET,43,642,119,168,39.667,39.2,True,
+685126,"Eisert, Brandon",L,CWS/PIT,36,689,118,168,39.333,39.1,True,
+650644,"Civale, Aaron",R,ATH/CHC,19,642,117,165,39.0,39.0,True,
+676755,"Mattson, Isaac",R,PIT,38,728,116,176,38.667,38.2,True,
+656234,"Bird, Jake",R,NYY/WSH,44,678,115,171,38.333,38.1,True,
+656288,"Canning, Griffin",R,SD,19,685,115,170,38.333,38.1,True,
+684974,"Yoho, Craig",R,CLE/MIL,34,635,115,165,38.333,38.1,True,
+688297,"Roycroft, Chris",R,ATH/STL/TB,27,695,115,189,38.333,38.1,True,
+696062,"Dotel, Wilber",R,PIT,20,638,115,161,38.333,38.1,True,
+665871,"Assad, Javier",R,CHC,17,581,113,151,37.667,37.2,True,
+694361,"Klein, Will",R,LAD,33,676,113,169,37.667,37.2,True,
+669947,"Scholtens, Jesse",R,TB,10,587,112,163,37.333,37.1,True,
+805326,"Schweitzer, Tyler",L,CWS,18,566,112,155,37.333,37.1,True,
+656240,"Blewett, Scott",R,ATH/STL,26,584,111,159,37.0,37.0,True,
+695239,"Ahlstrom, Robby",L,TEX,42,648,111,162,37.0,37.0,True,
+656529,"Hentges, Sam",L,SF,45,687,110,173,36.667,36.2,True,
+663969,"Phillips, Tyler",R,MIA,17,621,110,163,36.667,36.2,True,
+703725,"Gastelum, Luis",R,STL,34,599,110,152,36.667,36.2,True,
+605288,"Houser, Adrian",R,SF,10,519,108,142,36.0,36.0,True,
+607067,"Rea, Colin",R,CHC,15,565,107,150,35.667,35.2,True,
+621381,"Strahm, Matt",L,KC,41,633,107,161,35.667,35.2,True,
+542888,"Armstrong, Shawn",R,CLE,41,628,106,154,35.333,35.1,True,
+621383,"Banks, Tanner",L,PHI,31,645,106,170,35.333,35.1,True,
+668933,"Ashcraft, Graham",R,CIN,35,612,106,152,35.333,35.1,True,
+669060,"Wilson, Bryse",R,CHC/MIL/PHI,16,558,106,151,35.333,35.1,True,
+676428,"Hurter, Brant",L,DET,29,507,106,142,35.333,35.1,True,
+682825,"Mey, Luis",R,CIN,29,665,104,165,34.667,34.2,True,
+592094,"Adam, Jason",R,SD,38,583,103,142,34.333,34.1,True,
+607455,"Banda, Anthony",L,MIN,39,608,103,157,34.333,34.1,True,
+664875,"Lawrence, Justin",R,MIN/PIT/WSH,37,684,103,176,34.333,34.1,True,
+669622,"Bender, Anthony",R,MIA,35,543,103,140,34.333,34.1,True,
+682989,"Mederos, Victor",R,ATL,30,586,103,148,34.333,34.1,True,
+663158,"Suarez, Robert",R,ATL,33,488,102,130,34.0,34.0,True,
+605447,"Romano, Jordan",R,COL/LAA,38,643,101,152,33.667,33.2,True,
+643410,"Leiter Jr., Mark",R,ATH,36,552,101,146,33.667,33.2,True,
+571927,"Matz, Steven",L,TB,25,541,100,144,33.333,33.1,True,
+605130,"Barlow, Scott",R,ATH,36,585,100,152,33.333,33.1,True,
+615698,"Quantrill, Cal",R,TEX,17,563,100,141,33.333,33.1,True,
+664353,"Urquidy, José",R,CWS/PHI/PIT,12,514,100,143,33.333,33.1,True,
+688158,"Morgan, David",R,SD,32,602,100,162,33.333,33.1,True,
+681402,"Varland, Gus",R,WSH,34,580,99,154,33.0,33.0,True,
+676254,"Walker, Ryan",R,SF,33,615,98,155,32.667,32.2,True,
+656849,"Peterson, David",L,CHC/NYM,9,510,96,140,32.0,32.0,True,
+686751,"Johnson, Seth",R,ATH/PHI,27,569,96,150,32.0,32.0,True,
+699823,"Davis, Tyler",R,CWS,31,488,96,127,32.0,32.0,True,
+696519,"Natera Jr., Samy",L,LAA,28,580,95,132,31.667,31.2,True,
+641745,"Keller, Brad",R,PHI,32,533,94,135,31.333,31.1,True,
+657571,"Ferguson, Caleb",L,CIN/STL,34,559,94,140,31.333,31.1,True,
+686580,"Slaten, Justin",R,BOS,36,508,94,137,31.333,31.1,True,
+687606,"Schultz, Paxton",R,WSH,26,584,94,148,31.333,31.1,True,
+696131,"Black, Mason",R,KC,17,556,94,142,31.333,31.1,True,
+669093,"Estrada, Jeremiah",R,SD,33,513,93,126,31.0,31.0,True,
+669684,"Murphy, Chris",L,CWS,30,533,93,136,31.0,31.0,True,
+675660,"Drohan, Shane",L,MIL,14,460,92,121,30.667,30.2,True,
+693313,"Seymour, Carson",R,SF,24,520,92,137,30.667,30.2,True,
+694795,"Ekness, Josh",R,MIA,30,549,92,132,30.667,30.2,True,
+702752,"Pintaro, Jonathan",R,NYM,22,523,92,131,30.667,30.2,True,
+677020,"Walker, Josh",L,BAL,31,505,91,124,30.333,30.1,True,
+801403,"Dollander, Chase",R,COL,7,521,91,131,30.333,30.1,True,
+673540,"Senga, Kodai",R,NYM,23,533,90,134,30.0,30.0,True,
+680732,"Burke, Sean",R,CWS,5,433,90,115,30.0,30.0,True,
+683175,"Phillips, Connor",R,CIN,27,590,90,144,30.0,30.0,True,
+595014,"Treinen, Blake",R,LAD,36,494,89,129,29.667,29.2,True,
+650960,"Duarte, Daniel",R,NYM,24,463,89,113,29.667,29.2,True,
+678906,"Teng, Kai-Wei",R,HOU,20,503,89,125,29.667,29.2,True,
+694037,"Palencia, Daniel",R,CHC,32,477,89,122,29.667,29.2,True,
+656986,"Sousa, Bennett",L,HOU,34,511,88,136,29.333,29.1,True,
+671936,"Macko, Adam",L,TEX/TOR,29,547,88,137,29.333,29.1,True,
+676742,"Sanders, Cam",R,BAL/PIT,28,547,88,130,29.333,29.1,True,
+519141,"Pomeranz, Drew",L,CHC/LAA,31,490,87,134,29.0,29.0,True,
+678020,"Halvorsen, Seth",R,COL/LAD,32,522,87,139,29.0,29.0,True,
+683000,"Cornelio, Riley",R,WSH,15,555,87,133,29.0,29.0,True,
+690978,"Fulton, Dax",L,MIA,16,479,86,122,28.667,28.2,True,
+663893,"Little, Brendon",L,TOR,30,556,85,130,28.333,28.1,True,
+687941,"Gamboa, Alec",L,BOS,18,394,85,112,28.333,28.1,True,
+664129,"Hartlieb, Geoff",R,ATH,18,435,84,124,28.0,28.0,True,
+592866,"Williams, Trevor",R,TEX/WSH,14,495,83,117,27.667,27.2,True,
+663765,"Woodford, Jake",R,CHC/MIL/TB,19,485,83,134,27.667,27.2,True,
+664208,"Maton, Phil",R,CHC,31,546,83,136,27.667,27.2,True,
+657424,"Gage, Matt",L,SF,34,526,82,127,27.333,27.1,True,
+680604,"Castaño, Blas",R,COL,15,460,82,112,27.333,27.1,True,
+689546,"Davila, Nick",R,SEA,24,446,82,119,27.333,27.1,True,
+573009,"Mantiply, Joe",L,TOR,25,399,81,112,27.0,27.0,True,
+663362,"Waldron, Matt",R,SD/TOR/WSH,13,416,81,117,27.0,27.0,True,
+677961,"Wilcox, Cole",R,SEA,23,492,81,124,27.0,27.0,True,
+669620,"Basso, Brady",L,ATH,19,394,80,115,26.667,26.2,True,
+674841,"Alvarez, Andrew",L,WSH,8,452,80,112,26.667,26.2,True,
+676684,"Vest, Will",R,DET,27,484,80,116,26.667,26.2,True,
+663992,"Lovelady, Richard",L,NYM/WSH,32,506,79,135,26.333,26.1,True,
+623465,"Phillips, Evan",R,LAD,31,423,78,103,26.0,26.0,True,
+656222,"Beeks, Jalen",L,TEX,29,407,78,112,26.0,26.0,True,
+656756,"Montgomery, Jordan",L,TEX,13,414,78,103,26.0,26.0,True,
+696146,"Smith, Hagen",L,CWS,17,436,78,102,26.0,26.0,True,
+592779,"Stewart, Brock",R,LAD,27,373,77,99,25.667,25.2,True,
+671162,"Thomas, Connor",L,ATL/KC,19,418,77,118,25.667,25.2,True,
+671345,"Foley, Jason",R,SF,24,448,77,114,25.667,25.2,True,
+676962,"Brown, Ben",R,CHC,12,401,77,101,25.667,25.2,True,
+681799,"Roberts, Ethan",R,CHC,23,436,77,110,25.667,25.2,True,
+642546,"Hernández, Jonathan",R,LAD,16,413,76,108,25.333,25.1,True,
+689225,"Brieske, Beau",R,DET,18,387,76,102,25.333,25.1,True,
+686560,"Collyer, Gavin",R,TEX,24,480,75,112,25.0,25.0,True,
+686930,"Barnett, Mason",R,ATH,14,438,74,104,24.667,24.2,True,
+657756,"Seabold, Connor",R,DET/KC/TOR,21,476,72,116,24.0,24.0,True,
+621366,"Borucki, Ryan",L,SF,21,380,71,103,23.667,23.2,True,
+681190,"Vásquez, Randy",R,SD,9,403,71,108,23.667,23.2,True,
+621016,"Cuas, Jose",R,KC,24,473,70,107,23.333,23.1,True,
+669211,"Akin, Keegan",L,BAL,22,412,70,107,23.333,23.1,True,
+805345,"Harris, Trent",R,SF,22,368,70,94,23.333,23.1,True,
+681676,"Fernandez, Ryan",R,STL,17,387,69,100,23.0,23.0,True,
+677053,"Nardi, Andrew",L,MIA,25,378,68,99,22.667,22.2,True,
+671111,"Peralta, Sammy",L,COL/LAA,15,377,67,106,22.333,22.1,True,
+680916,"Aleman, Franco",R,CLE,21,427,67,105,22.333,22.1,True,
+694360,"Way, Beck",R,KC,18,364,67,98,22.333,22.1,True,
+543056,"Coulombe, Danny",L,BOS,29,386,66,96,22.0,22.0,True,
+623437,"Topa, Justin",R,MIN/NYY,25,414,66,108,22.0,22.0,True,
+625643,"López, Reynaldo",R,ATL,13,371,65,93,21.667,21.2,True,
+660787,"De los Santos, Yerry",R,NYY,16,358,65,92,21.667,21.2,True,
+676571,"Poulin, PJ",L,WSH,24,402,65,94,21.667,21.2,True,
+681320,"Lavender, Nate",L,NYM,21,294,65,79,21.667,21.2,True,
+693308,"Frasso, Nick",R,COL,20,390,65,99,21.667,21.2,True,
+642048,"Saucedo, Tayler",L,LAA,28,343,64,87,21.333,21.1,True,
+665665,"Sanmartin, Reiver",L,SF,24,345,64,92,21.333,21.1,True,
+670103,"Burgos, Raymond",L,BOS,9,292,64,82,21.333,21.1,True,
+680573,"Woods Richardson, Simeon",R,MIN/TOR,10,353,64,89,21.333,21.1,True,
+694297,"Pfaadt, Brandon",R,AZ,10,362,64,98,21.333,21.1,True,
+694753,"Curtis, Khristian",R,PIT,6,349,63,87,21.0,21.0,True,
+688883,"Pallette, Peyton",R,CLE,16,442,62,97,20.667,20.2,True,
+669438,"Englert, Mason",R,TB,11,331,61,86,20.333,20.1,True,
+683742,"Franco, Jose",R,CIN,10,348,61,92,20.333,20.1,True,
+641312,"Anderson, Shaun",R,LAA,12,351,60,93,20.0,20.0,True,
+684665,"Murphy, Luke",R,LAA,22,381,60,90,20.0,20.0,True,
+669212,"Morgan, Eli",R,KC,16,339,58,91,19.333,19.1,True,
+683232,"Mears, Nick",R,KC,21,341,58,83,19.333,19.1,True,
+685801,"Bigge, Hunter",R,TB,18,323,58,85,19.333,19.1,True,
+686753,"Jameson, Drey",R,AZ,12,306,58,86,19.333,19.1,True,
+695534,"Petty, Chase",R,CIN,13,302,58,85,19.333,19.1,True,
+679775,"Backhus, Kyle",L,PHI,20,339,57,89,19.0,19.0,True,
+680802,"Weiss, Ryan",R,HOU,7,368,57,96,19.0,19.0,True,
+686934,"McFarlane, Alex",R,PHI,19,312,57,79,19.0,19.0,True,
+691769,"Abner, Philip",L,AZ/SF,13,313,57,86,19.0,19.0,True,
+621242,"Díaz, Edwin",R,LAD,21,398,56,95,18.667,18.2,True,
+642376,"Yan, Jefry",L,NYM,17,330,56,87,18.667,18.2,True,
+663941,"Beck, Tristan",R,SF,14,313,56,82,18.667,18.2,True,
+674370,"Bido, Osvaldo",R,ATL/CWS,11,317,56,81,18.667,18.2,True,
+668820,"Kranick, Max",R,WSH,17,340,55,94,18.333,18.1,True,
+679883,"Avila, Luinder",R,KC,9,350,55,78,18.333,18.1,True,
+702275,"Ritchie, JR",R,ATL,6,305,55,75,18.333,18.1,True,
+837227,"Imai, Tatsuya",R,HOU,8,300,54,73,18.0,18.0,True,
+680723,"Rom, Drew",L,ATH/MIL,18,300,53,82,17.667,17.2,True,
+682995,"Barco, Hunter",L,PIT,7,351,53,87,17.667,17.2,True,
+672629,"Carrillo, Gerardo",R,AZ,13,316,52,80,17.333,17.1,True,
+696070,"Rojas, Kendry",L,MIN,8,322,52,81,17.333,17.1,True,
+607481,"Bummer, Aaron",L,ATL/KC,21,328,50,88,16.667,16.2,True,
+684049,"Bidois, Brandan",R,PIT,15,325,47,80,15.667,15.2,True,
+681151,"Murray, Jayden",R,CHC/HOU,10,305,46,78,15.333,15.1,True,
+669724,"Hanifee, Brenan",R,DET,21,297,59,85,19.667,19.2,False,small sample
+701719,"Samaniego, Tyler",L,BOS,19,293,58,81,19.333,19.1,False,small sample
+672841,"Vargas, Carlos",R,SEA,16,282,57,81,19.0,19.0,False,small sample
+673380,"Núñez, Dedniel",R,NYM,18,213,57,72,19.0,19.0,False,small sample
+621053,"Ferguson, Tyler",R,ATH/CHC,18,293,56,78,18.667,18.2,False,small sample
+676395,"Garcia, Robert",L,TEX,20,287,56,71,18.667,18.2,False,small sample
+699008,"Kelly, Antwone",R,PIT,8,293,56,81,18.667,18.2,False,small sample
+672456,"Montero, Keider",R,DET,7,280,55,71,18.333,18.1,False,small sample
+641778,"Lauer, Eric",L,LAD/TOR,4,298,54,74,18.0,18.0,False,small sample
+675540,"Curry, Xzavion",R,NYM,8,287,54,78,18.0,18.0,False,small sample
+676620,"Weiman, Blake",L,LAA,18,284,53,76,17.667,17.2,False,small sample
+677958,"Rocker, Kumar",R,TEX,3,252,53,70,17.667,17.2,False,small sample
+815081,"Manfredi, Mark",L,COL,14,298,53,75,17.667,17.2,False,small sample
+673929,"Leasure, Jordan",R,CWS,17,292,52,72,17.333,17.1,False,small sample
+471911,"Carrasco, Carlos",R,ATL,8,246,50,73,16.667,16.2,False,small sample
+572143,"Smith, Burch",R,DET,12,276,50,69,16.667,16.2,False,small sample
+666374,"Brash, Matt",R,SEA,20,263,50,66,16.667,16.2,False,small sample
+683409,"Chivilli, Angel",R,NYY,15,285,50,73,16.667,16.2,False,small sample
+689520,"Laweryson, Cody",R,MIN,15,296,50,78,16.667,16.2,False,small sample
+676680,"Cosgrove, Tom",L,WSH,18,268,49,74,16.333,16.1,False,small sample
+677161,"Kelly, Zack",R,BOS,17,283,49,71,16.333,16.1,False,small sample
+687239,"Peoples, Ben",R,TEX,16,282,49,68,16.333,16.1,False,small sample
+687849,"Kent, Zak",R,MIN/WSH,11,294,49,78,16.333,16.1,False,small sample
+608650,"Enns, Dietrich",L,BAL,13,291,48,70,16.0,16.0,False,small sample
+622491,"Castillo, Luis",R,CWS/SEA,6,281,48,75,16.0,16.0,False,small sample
+641401,"Brogdon, Connor",R,CLE,16,282,48,70,16.0,16.0,False,small sample
+663978,"Paddack, Chris",R,CIN/MIA/TEX,5,270,48,74,16.0,16.0,False,small sample
+672442,"Cruz, Yovanny",R,NYY/WSH,17,256,48,70,16.0,16.0,False,small sample
+696522,"Juenger, Hayden",R,ATH/TOR,15,292,48,81,16.0,16.0,False,small sample
+663372,"Feltner, Ryan",R,COL,4,257,47,67,15.667,15.2,False,small sample
+667652,"Ralston, Jack",R,MIA,15,278,47,68,15.667,15.2,False,small sample
+681544,"Olds, Wyatt",R,BOS,14,288,47,68,15.667,15.2,False,small sample
+664854,"Helsley, Ryan",R,BAL,17,277,46,69,15.333,15.1,False,small sample
+678061,"Kerr, Ray",L,ATL,8,180,46,56,15.333,15.1,False,small sample
+680899,"Tolman, Erik",L,WSH,15,289,46,67,15.333,15.1,False,small sample
+690829,"Joyce, Ben",R,LAA,16,259,46,61,15.333,15.1,False,small sample
+694680,"Martin, Trevor",R,LAA/TB,8,265,46,74,15.333,15.1,False,small sample
+695001,"Santa, Alimber",R,HOU,10,238,46,59,15.333,15.1,False,small sample
+472610,"García, Luis",R,MIN/NYM,15,265,45,74,15.0,15.0,False,small sample
+676282,"Cantillo, Joey",L,CLE,3,217,45,53,15.0,15.0,False,small sample
+676510,"Hoffman, Nolan",R,KC/PHI,15,229,45,67,15.0,15.0,False,small sample
+699044,"Ullola, Miguel",R,HOU,9,212,45,55,15.0,15.0,False,small sample
+660604,"Rangel, Alan",R,PHI,4,241,44,66,14.667,14.2,False,small sample
+668970,"Hollowell, Gavin",R,CHC,15,259,44,65,14.667,14.2,False,small sample
+689149,"Dallas, Chad",R,TOR,6,260,43,64,14.333,14.1,False,small sample
+802408,"Mautz, Brycen",L,STL,7,266,43,65,14.333,14.1,False,small sample
+814490,"Pecko, Ethan",R,HOU,3,180,43,49,14.333,14.1,False,small sample
+455119,"Martin, Chris",R,TEX,16,248,42,66,14.0,14.0,False,small sample
+657265,"Strzelecki, Peter",R,STL,8,251,42,61,14.0,14.0,False,small sample
+681293,"Arrighetti, Spencer",R,TOR,5,268,42,62,14.0,14.0,False,small sample
+690928,"Dobbins, Hunter",R,STL,3,224,42,58,14.0,14.0,False,small sample
+702273,"Schultz, Noah",L,CWS,5,182,42,52,14.0,14.0,False,small sample
+543238,"Gose, Anthony",L,KC,14,200,41,51,13.667,13.2,False,small sample
+605242,"Fulmer, Michael",R,LAA/NYY,15,264,41,60,13.667,13.2,False,small sample
+668831,"Stallings, Garrett",R,MIL,6,194,41,50,13.667,13.2,False,small sample
+669371,"Henry, Cole",R,WSH,11,282,41,70,13.667,13.2,False,small sample
+677944,"Cecconi, Slade",R,CLE,7,222,41,55,13.667,13.2,False,small sample
+685464,"Winquest, Cade",R,STL,11,245,41,58,13.667,13.2,False,small sample
+695049,"Kerry, Brett",R,LAA,3,212,41,54,13.667,13.2,False,small sample
+664299,"Javier, Cristian",R,HOU,5,237,40,56,13.333,13.1,False,small sample
+679885,"Martinez, Justin",R,AZ,15,232,40,55,13.333,13.1,False,small sample
+685112,"McCambley, Zach",R,CIN,11,239,40,60,13.333,13.1,False,small sample
+656212,"Barnes, Charlie",L,CHC/LAD,5,201,39,63,13.0,13.0,False,small sample
+681751,"Estrada, Lazaro",R,TOR,8,229,39,56,13.0,13.0,False,small sample
+687209,"Maxwell, Zach",R,CIN,12,291,39,67,13.0,13.0,False,small sample
+547179,"Lorenzen, Michael",R,COL/TOR,7,223,38,61,12.667,12.2,False,small sample
+672582,"Zerpa, Angel",L,MIL,12,216,38,56,12.667,12.2,False,small sample
+674073,"Weisenburger, Jack",R,NYM,7,205,38,50,12.667,12.2,False,small sample
+701121,"VanWey, Logan",R,HOU,10,194,38,46,12.667,12.2,False,small sample
+814305,"Tur, Yunior",R,ATH,8,294,38,78,12.667,12.2,False,small sample
+675989,"Bolton, Cody",R,HOU,5,225,37,57,12.333,12.1,False,small sample
+681252,"Anderson, Jack",R,BOS/MIN,7,182,37,48,12.333,12.1,False,small sample
+687309,"Hjerpe, Cooper",L,STL,4,254,37,55,12.333,12.1,False,small sample
+687531,"Kempner, William",R,MIA,9,199,37,50,12.333,12.1,False,small sample
+702474,"Paredes, Mike",R,MIN,4,204,37,58,12.333,12.1,False,small sample
+622694,"Hernández, Elieser",R,ATL,5,217,36,52,12.0,12.0,False,small sample
+624522,"Thompson, Keegan",R,COL,5,195,36,57,12.0,12.0,False,small sample
+663485,"Sands, Cole",R,MIN,13,209,36,56,12.0,12.0,False,small sample
+694918,"Tidwell, Blade",R,SF,8,182,36,47,12.0,12.0,False,small sample
+605452,"Ross, Joe",R,AZ/TEX,8,206,35,57,11.667,11.2,False,small sample
+664849,"Young, Danny",L,ATL,15,240,35,58,11.667,11.2,False,small sample
+680736,"Wrobleski, Justin",L,LAD,6,192,35,52,11.667,11.2,False,small sample
+689017,"Knack, Landon",R,LAD,4,187,35,50,11.667,11.2,False,small sample
+694851,"Hoffmann, Andrew",R,AZ,8,230,35,59,11.667,11.2,False,small sample
+666711,"Peguero, Joel",R,SF,11,169,34,49,11.333,11.1,False,small sample
+668834,"McGee, Easton",R,KC/MIL,9,184,34,52,11.333,11.1,False,small sample
+682982,"Espino, Daniel",R,CLE,11,203,34,48,11.333,11.1,False,small sample
+687134,"Blalock, Bradley",R,MIA,4,200,34,48,11.333,11.1,False,small sample
+571578,"Corbin, Patrick",L,TOR,4,195,33,49,11.0,11.0,False,small sample
+670183,"Acton, Garrett",R,MIN,7,207,33,51,11.0,11.0,False,small sample
+671106,"Allen, Logan",L,CLE,5,182,33,48,11.0,11.0,False,small sample
+691384,"Perales, Luis",R,WSH,6,250,33,60,11.0,11.0,False,small sample
+695378,"Sinclair, Jack",R,WSH,11,167,33,46,11.0,11.0,False,small sample
+676467,"Gordon, Colton",L,HOU/MIL,4,209,32,51,10.667,10.2,False,small sample
+678368,"Bellozo, Valente",R,COL,3,178,32,48,10.667,10.2,False,small sample
+695034,"Morris, Kade",R,ATH,4,195,32,53,10.667,10.2,False,small sample
+605135,"Bassitt, Chris",R,BAL,2,152,31,43,10.333,10.1,False,small sample
+669854,"Blanco, Ronel",R,HOU,3,151,31,45,10.333,10.1,False,small sample
+681168,"Curvelo, Luis",R,TEX,9,191,31,54,10.333,10.1,False,small sample
+682227,"Williamson, Brandon",L,CIN,3,158,31,43,10.333,10.1,False,small sample
+697812,"Rock, Joe",L,ATH/CWS,5,211,31,56,10.333,10.1,False,small sample
+700363,"Smith-Shawver, AJ",R,ATL,4,172,31,41,10.333,10.1,False,small sample
+608371,"Sims, Lucas",R,CWS,9,171,30,47,10.0,10.0,False,small sample
+608723,"Voth, Austin",R,MIN/TOR,3,215,30,56,10.0,10.0,False,small sample
+663623,"Irvin, Jake",R,WSH,2,177,30,44,10.0,10.0,False,small sample
+676661,"Lazar, Max",R,PHI,8,156,30,45,10.0,10.0,False,small sample
+691725,"Painter, Andrew",R,PHI,2,158,30,43,10.0,10.0,False,small sample
+804636,"Tong, Jonah",R,NYM,3,187,30,47,10.0,10.0,False,small sample
+805074,"Marte, Yunior",R,SF,2,139,30,41,10.0,10.0,False,small sample
+675916,"Karinchak, James",R,ATL,9,162,29,37,9.667,9.2,False,small sample
+676051,"Heuer, Codi",R,CLE,8,189,29,46,9.667,9.2,False,small sample
+677976,"Dobnak, Randy",R,KC,2,159,29,41,9.667,9.2,False,small sample
+695445,"Lee, Chase",R,TOR,8,146,29,40,9.667,9.2,False,small sample
+527048,"Pérez, Martín",L,ATL,4,125,28,32,9.333,9.1,False,small sample
+666126,"Cortes, Carlos",L,ATH,9,159,28,49,9.333,9.1,False,small sample
+682274,"Hiraldo, Yaramil",R,BAL,8,193,28,48,9.333,9.1,False,small sample
+684320,"Rodríguez, Yariel",R,TOR,10,172,28,45,9.333,9.1,False,small sample
+686610,"Waldichuk, Ken",L,WSH,5,149,28,41,9.333,9.1,False,small sample
+687473,"Gusto, Ryan",R,MIA,5,137,28,37,9.333,9.1,False,small sample
+692230,"Rodriguez, Carlos",R,MIL,4,182,28,42,9.333,9.1,False,small sample
+701552,"Granillo, Andre",R,WSH,8,198,28,50,9.333,9.1,False,small sample
+702566,"Murphy, Owen",R,ATL,4,163,28,41,9.333,9.1,False,small sample
+801725,"De León, Luis",L,BAL,8,126,28,36,9.333,9.1,False,small sample
+592454,"Kahnle, Tommy",R,BOS,8,168,27,43,9.0,9.0,False,small sample
+608337,"Giolito, Lucas",R,SD,2,151,27,43,9.0,9.0,False,small sample
+608566,"Márquez, Germán",R,SD,3,154,27,38,9.0,9.0,False,small sample
+624431,"Trevino, Jose",R,CIN,7,125,27,49,9.0,9.0,False,small sample
+643377,"Jax, Griffin",R,TB,11,191,27,45,9.0,9.0,False,small sample
+666745,"Brito, Jhony",R,SD,5,123,27,35,9.0,9.0,False,small sample
+671382,"Foster, Cameron",R,BAL,6,189,27,49,9.0,9.0,False,small sample
+683627,"Molina, Anthony",R,ATL/SF,4,140,27,34,9.0,9.0,False,small sample
+687570,"Prielipp, Connor",L,MIN,2,141,27,37,9.0,9.0,False,small sample
+691008,"Rajcic, Max",R,STL,6,163,27,39,9.0,9.0,False,small sample
+694363,"Shuster, Jared",L,STL,5,166,27,43,9.0,9.0,False,small sample
+543135,"Eovaldi, Nathan",R,TEX,4,142,26,40,8.667,8.2,False,small sample
+663465,"Allard, Kolby",L,CLE,4,181,26,45,8.667,8.2,False,small sample
+663559,"Falter, Bailey",L,ATL/KC,5,133,26,41,8.667,8.2,False,small sample
+676454,"Cellucci, Brendan",L,TOR,6,112,26,29,8.667,8.2,False,small sample
+678868,"Yean, Eddy",R,WSH,7,148,26,35,8.667,8.2,False,small sample
+680704,"Sandlin, Nick",R,LAA,8,157,26,41,8.667,8.2,False,small sample
+682052,"Lopez, Jacob",L,ATH,3,179,26,40,8.667,8.2,False,small sample
+685005,"Roa, Christian",R,HOU,7,178,26,44,8.667,8.2,False,small sample
+687075,"Sproat, Brandon",R,MIL,3,172,26,40,8.667,8.2,False,small sample
+689818,"Sandlin, David",R,CWS,2,177,26,42,8.667,8.2,False,small sample
+806960,"Morales, Luis",R,ATH,3,198,26,47,8.667,8.2,False,small sample
+640454,"Krook, Matt",L,ATH/WSH,11,179,25,46,8.333,8.1,False,small sample
+680702,"Gerber, Joey",R,NYM,7,129,25,34,8.333,8.1,False,small sample
+804619,"Klein, John",R,MIN/TOR,4,148,25,35,8.333,8.1,False,small sample
+808825,"Sears, Andrew",L,DET,3,157,25,38,8.333,8.1,False,small sample
+606965,"Devenski, Chris",R,NYM/PIT,9,134,24,40,8.0,8.0,False,small sample
+656550,"Holmes, Grant",R,ATL,2,101,24,30,8.0,8.0,False,small sample
+661563,"Gil, Luis",R,NYY,5,159,24,39,8.0,8.0,False,small sample
+691951,"Aldegheri, Sam",L,LAA,3,130,24,34,8.0,8.0,False,small sample
+699151,"Paez, Jedixson",R,BOS/CWS,4,142,24,34,8.0,8.0,False,small sample
+701474,"Davitt, Duncan",R,CWS/SF,6,121,24,36,8.0,8.0,False,small sample
+606303,"Payamps, Joel",R,ATL,12,151,23,36,7.667,7.2,False,small sample
+664954,"Sullivan, Brett",R,COL,7,94,23,34,7.667,7.2,False,small sample
+669298,"Shook, TJ",R,COL,5,134,23,36,7.667,7.2,False,small sample
+682445,"Gonzalez, Domingo",R,SEA,5,129,23,36,7.667,7.2,False,small sample
+694494,"Johnson, Ty",R,TB,8,161,23,34,7.667,7.2,False,small sample
+694646,"McDermott, Chayce",R,LAD/NYM,5,155,23,36,7.667,7.2,False,small sample
+702352,"Bivens, Spencer",R,KC/SF,6,182,23,42,7.667,7.2,False,small sample
+801434,"Gervase, Paul",R,LAD,4,124,23,35,7.667,7.2,False,small sample
+666201,"Manoah, Alek",R,LAA,3,161,22,39,7.333,7.1,False,small sample
+676272,"Miller, Bobby",R,LAD,3,142,22,32,7.333,7.1,False,small sample
+681006,"Simpson, Josh",L,SEA,8,153,22,37,7.333,7.1,False,small sample
+690440,"Hanner, Bradley",R,NYY,5,128,22,34,7.333,7.1,False,small sample
+693312,"Nicolas, Kyle",R,CIN,7,198,22,42,7.333,7.1,False,small sample
+702303,"Martin, Riley",L,CHC,7,112,22,28,7.333,7.1,False,small sample
+571882,"Law, Derek",R,AZ,6,136,21,29,7.0,7.0,False,small sample
+641743,"Kay, Anthony",L,CWS,2,147,21,33,7.0,7.0,False,small sample
+657649,"Koenig, Jared",L,MIL,9,167,21,41,7.0,7.0,False,small sample
+663432,"Rainey, Tanner",R,DET,6,127,21,32,7.0,7.0,False,small sample
+669372,"Ginn, J.T.",R,ATH,3,105,21,28,7.0,7.0,False,small sample
+675627,"Grove, Michael",R,TB,3,89,21,28,7.0,7.0,False,small sample
+690155,"Pushard, Matt",R,STL,6,120,21,32,7.0,7.0,False,small sample
+695076,"Lowder, Rhett",R,CIN,3,106,21,31,7.0,7.0,False,small sample
+702070,"Cameron, Noah",L,KC,1,97,21,24,7.0,7.0,False,small sample
+804926,"Peterson, Austin",R,CLE,2,105,21,27,7.0,7.0,False,small sample
+594835,"Gonzales, Marco",L,TEX,3,118,20,29,6.667,6.2,False,small sample
+641585,"France, J.P.",R,HOU,3,117,20,31,6.667,6.2,False,small sample
+655889,"Rodríguez, Manuel",R,TB,6,138,20,34,6.667,6.2,False,small sample
+656786,"Mushinski, Parker",L,COL,8,139,20,34,6.667,6.2,False,small sample
+669310,"Van Eyk, CJ",R,TOR,4,141,20,35,6.667,6.2,False,small sample
+701542,"Warren, Will",R,NYY,3,98,20,27,6.667,6.2,False,small sample
+702153,"Fitzpatrick, Brian",L,MIL,5,109,20,30,6.667,6.2,False,small sample
+592662,"Ray, Robbie",L,SF,1,94,19,23,6.333,6.1,False,small sample
+665645,"Castro, Kervin",R,NYY,5,94,19,24,6.333,6.1,False,small sample
+669920,"Alexander, Jason",R,HOU,2,119,19,34,6.333,6.1,False,small sample
+670090,"Mills, Wyatt",R,LAD,6,149,19,36,6.333,6.1,False,small sample
+676568,"Vanasco, Ricky",R,DET,5,170,19,40,6.333,6.1,False,small sample
+703615,"Cabrera, Jose",R,AZ,3,114,19,30,6.333,6.1,False,small sample
+605218,"Edwards Jr., Carl",R,NYM,2,99,18,25,6.0,6.0,False,small sample
+605335,"Leibrandt, Brandon",L,CIN,1,99,18,30,6.0,6.0,False,small sample
+608344,"Irvin, Cole",L,LAD,1,102,18,30,6.0,6.0,False,small sample
+642152,"Trivino III, Lou",R,BAL/PHI,5,144,18,36,6.0,6.0,False,small sample
+686730,"Spiers, Carson",R,CIN,2,85,18,24,6.0,6.0,False,small sample
+694357,"Tiedemann, Ricky",L,TOR,5,123,18,29,6.0,6.0,False,small sample
+694397,"Raya, Marco",R,MIN,3,100,18,25,6.0,6.0,False,small sample
+700270,"Díaz, Yilber",R,AZ/DET,5,146,18,34,6.0,6.0,False,small sample
+663776,"Sandoval, Patrick",L,BOS,2,110,17,26,5.667,5.2,False,small sample
+687223,"Palmquist, Carson",L,WSH,5,80,17,23,5.667,5.2,False,small sample
+688497,"Rashi, Taylor",R,ATH/AZ,4,88,17,26,5.667,5.2,False,small sample
+691945,"Baumler, Carter",R,TEX,4,117,17,27,5.667,5.2,False,small sample
+700249,"Povich, Cade",L,BAL,1,87,17,24,5.667,5.2,False,small sample
+702047,"Cook, Alex",R,TB,4,98,17,24,5.667,5.2,False,small sample
+623168,"Heineman, Tyler",R,LAA/TOR,5,64,16,26,5.333,5.1,False,small sample
+647315,"Pop, Zach",R,PHI,6,93,16,22,5.333,5.1,False,small sample
+656457,"Gilbert, Tyler",L,CWS,4,117,16,28,5.333,5.1,False,small sample
+663436,"Martin, Davis",R,CWS,1,71,16,20,5.333,5.1,False,small sample
+672021,"Cerantola, Eric",R,KC,4,122,16,27,5.333,5.1,False,small sample
+674003,"Bradford, Cody",L,TEX,2,96,16,23,5.333,5.1,False,small sample
+686218,"Sheehan, Emmet",R,LAD,1,93,16,18,5.333,5.1,False,small sample
+687765,"Spence, Mitch",R,KC,2,137,16,36,5.333,5.1,False,small sample
+688107,"Gasser, Robert",L,MIL,1,82,16,24,5.333,5.1,False,small sample
+694820,"Roxby, Braxton",R,SF,4,104,16,25,5.333,5.1,False,small sample
+696149,"Chandler, Bubba",R,PIT,1,88,16,20,5.333,5.1,False,small sample
+811315,"Hopkins, Brody",R,TB,6,103,16,24,5.333,5.1,False,small sample
+547184,"Kelly, Michael",R,ATH,5,121,15,32,5.0,5.0,False,small sample
+656686,"Martin, Corbin",R,CHC,7,111,15,25,5.0,5.0,False,small sample
+663795,"Hagenman, Justin",R,NYM,2,86,15,21,5.0,5.0,False,small sample
+666129,"Garrett, Braxton",L,CHC,1,70,15,21,5.0,5.0,False,small sample
+666619,"Santos, Gregory",R,SF,3,86,15,22,5.0,5.0,False,small sample
+669145,"Zimmermann, Bruce",L,STL,1,72,15,21,5.0,5.0,False,small sample
+682243,"Miller, Bryce",R,SEA,1,83,15,18,5.0,5.0,False,small sample
+683363,"Wilkinson, Matt",L,SF,2,63,15,17,5.0,5.0,False,small sample
+689690,"Jacob, Alek",R,SD,3,87,15,23,5.0,5.0,False,small sample
+696270,"Johnson, Ryan",R,LAA,3,90,15,26,5.0,5.0,False,small sample
+810938,"Williamson, Ben",R,TB,5,50,15,21,5.0,5.0,False,small sample
+596117,"Stubbs, Garrett",R,PHI,5,46,14,24,4.667,4.2,False,small sample
+621121,"McCullers Jr., Lance",R,MIL,2,97,14,23,4.667,4.2,False,small sample
+641656,"Hamilton, Ian",R,ATL,4,92,14,23,4.667,4.2,False,small sample
+663460,"Bubic, Kris",L,LAD,5,71,14,19,4.667,4.2,False,small sample
+676508,"Casparius, Ben",R,LAD,5,99,14,23,4.667,4.2,False,small sample
+686475,"Tolbert, Tyler",R,KC,5,106,14,33,4.667,4.2,False,small sample
+691594,"Sanoja, Javier",R,MIA,5,73,14,27,4.667,4.2,False,small sample
+692064,"Rodríguez, José",R,TOR,4,68,14,16,4.667,4.2,False,small sample
+595978,"Hedges, Austin",R,CLE,4,55,13,20,4.333,4.1,False,small sample
+605154,"Brebbia, John",R,COL,3,94,13,21,4.333,4.1,False,small sample
+676664,"Sears, JP",L,SD,2,83,13,19,4.333,4.1,False,small sample
+686228,"Burgos, Juan",R,AZ,4,53,13,17,4.333,4.1,False,small sample
+692030,"Corniell, Jose",R,TEX,2,104,13,27,4.333,4.1,False,small sample
+500743,"Rojas, Miguel",R,LAD,4,53,12,23,4.0,4.0,False,small sample
+543510,"McCann, James",R,AZ,4,57,12,22,4.0,4.0,False,small sample
+592836,"Walker, Taijuan",R,PHI,1,64,12,21,4.0,4.0,False,small sample
+640451,"Harvey, Hunter",R,CHC,4,76,12,18,4.0,4.0,False,small sample
+642759,"Fernández, Julian",R,WSH,3,71,12,18,4.0,4.0,False,small sample
+647336,"Soroka, Michael",R,AZ,1,58,12,16,4.0,4.0,False,small sample
+664702,"Straw, Myles",R,TOR,4,54,12,20,4.0,4.0,False,small sample
+665795,"Cabrera, Edward",R,CHC,3,73,12,21,4.0,4.0,False,small sample
+668678,"Gallen, Zac",R,AZ,2,75,12,17,4.0,4.0,False,small sample
+669169,"Heasley, Jonathan",R,TB,1,64,12,19,4.0,4.0,False,small sample
+669194,"Nelson, Ryne",R,AZ,4,82,12,19,4.0,4.0,False,small sample
+671109,"Eder, Jake",L,LAD,4,56,12,15,4.0,4.0,False,small sample
+676105,"Criswell, Jeff",R,COL,3,79,12,18,4.0,4.0,False,small sample
+678391,"Vivas, Jorbit",R,WSH,4,53,12,27,4.0,4.0,False,small sample
+680686,"Gray, Josiah",R,WSH,3,58,12,15,4.0,4.0,False,small sample
+682610,"Muñoz, Roddery",R,HOU,3,113,12,25,4.0,4.0,False,small sample
+687287,"Monteverde, Patrick",L,MIA,1,65,12,18,4.0,4.0,False,small sample
+688692,"Simpson, Jared",L,WSH,3,67,12,14,4.0,4.0,False,small sample
+694341,"Beck, Brendan",R,NYY,2,62,12,16,4.0,4.0,False,small sample
+696136,"Wicks, Jordan",L,CHC,2,51,12,16,4.0,4.0,False,small sample
+702885,"Perdomo, Cesar",L,SF,1,58,12,15,4.0,4.0,False,small sample
+800600,"Kent, Jackson",L,WSH,1,72,12,19,4.0,4.0,False,small sample
+808970,"Go, Woo-Suk",R,MIN,4,86,12,22,4.0,4.0,False,small sample
+545121,"Vargas, Ildemaro",R,AZ,3,48,11,17,3.667,3.2,False,small sample
+670912,"Oviedo, Johan",R,BOS,1,72,11,19,3.667,3.2,False,small sample
+675919,"Raquet, Nick",L,BAL,4,75,11,17,3.667,3.2,False,small sample
+681806,"Wantz, Andrew",R,CHC/TB,2,81,11,20,3.667,3.2,False,small sample
+687562,"Bennett, Jake",L,BOS,1,65,11,14,3.667,3.2,False,small sample
+592826,"Velasquez, Vince",R,CHC,2,43,10,11,3.333,3.1,False,small sample
+642215,"Wilson, Weston",R,BAL/SEA,4,59,10,21,3.333,3.1,False,small sample
+668716,"Murdock, Noah",R,PIT,3,64,10,15,3.333,3.1,False,small sample
+671212,"Boyle, Joe",R,TB,1,84,10,15,3.333,3.1,False,small sample
+676702,"Stratton, Hunter",R,ATL/PIT,3,56,10,15,3.333,3.1,False,small sample
+690953,"Abel, Mick",R,MIN,1,85,10,20,3.333,3.1,False,small sample
+690986,"Harrison, Kyle",L,MIL,4,80,10,20,3.333,3.1,False,small sample
+700842,"Rivera, Eduardo",L,BOS,1,41,10,10,3.333,3.1,False,small sample
+543309,"Higashioka, Kyle",R,TEX,3,51,9,18,3.0,3.0,False,small sample
+608348,"Kelly, Carson",R,CHC,3,29,9,13,3.0,3.0,False,small sample
+621389,"Blach, Ty",L,CHC,1,30,9,9,3.0,3.0,False,small sample
+641927,"Ober, Bailey",R,MIN,1,31,9,10,3.0,3.0,False,small sample
+660710,"Durán, Rodolfo",R,SD,2,45,9,19,3.0,3.0,False,small sample
+662144,"Keller, Brian",R,PHI,1,39,9,11,3.0,3.0,False,small sample
+664192,"Lucchesi, Joey",L,LAA,5,112,9,23,3.0,3.0,False,small sample
+672578,"Hernández, Carlos",R,CLE,2,51,9,14,3.0,3.0,False,small sample
+676596,"Fleming, Josh",L,TOR,1,77,9,18,3.0,3.0,False,small sample
+681084,"Andrews, Tanner",R,TOR,2,43,9,11,3.0,3.0,False,small sample
+682769,"Castellano, Eiberson",R,COL,1,35,9,12,3.0,3.0,False,small sample
+682997,"Callihan, Tyler",R,PIT,4,53,9,15,3.0,3.0,False,small sample
+683155,"Estes, Joey",R,ATH,1,54,9,16,3.0,3.0,False,small sample
+683734,"Vaughn, Andrew",R,MIL,2,83,9,26,3.0,3.0,False,small sample
+686563,"Cannon, Jonathan",R,CWS,2,80,9,18,3.0,3.0,False,small sample
+686678,"Solesky, Chase",R,TB,1,58,9,17,3.0,3.0,False,small sample
+686796,"Walston, Blake",L,AZ,2,42,9,12,3.0,3.0,False,small sample
+687312,"Hughes, Gabriel",R,COL,1,53,9,11,3.0,3.0,False,small sample
+687924,"Aguiar, Julian",R,CIN,1,54,9,14,3.0,3.0,False,small sample
+694350,"Brzykcy, Zach",R,MIA,2,48,9,12,3.0,3.0,False,small sample
+700187,"Taylor, Troy",R,SEA,2,51,9,15,3.0,3.0,False,small sample
+808963,"Sasaki, Roki",R,LAD,3,48,9,11,3.0,3.0,False,small sample
+621139,"Kriske, Brooks",R,ATH,2,38,8,11,2.667,2.2,False,small sample
+645261,"Alcantara, Sandy",R,MIA,3,35,8,11,2.667,2.2,False,small sample
+664062,"Gonsolin, Tony",R,KC,1,63,8,15,2.667,2.2,False,small sample
+669704,"Strowd, Kade",R,AZ,2,59,8,14,2.667,2.2,False,small sample
+681973,"Hendrickson, Josh",L,HOU,2,35,8,9,2.667,2.2,False,small sample
+700413,"Uberstine, Tyler",R,BOS,1,45,8,11,2.667,2.2,False,small sample
+620443,"Torrens, Luis",R,NYM,2,22,7,11,2.333,2.1,False,small sample
+622761,"Mateo, Jorge",R,ATL,3,41,7,12,2.333,2.1,False,small sample
+668670,"Rogers, Jake",R,DET,3,43,7,12,2.333,2.1,False,small sample
+675920,"Lonsway, Seth",L,SF,2,40,7,14,2.333,2.1,False,small sample
+680689,"Richardson, Lyon",R,CIN/MIL,2,38,7,9,2.333,2.1,False,small sample
+682668,"Acuña, Luisangel",R,CWS,3,28,7,10,2.333,2.1,False,small sample
+684516,"Rincon, Hancel",R,STL,3,59,7,14,2.333,2.1,False,small sample
+700327,"Herrera, Welinton",L,COL,3,45,7,10,2.333,2.1,False,small sample
+596142,"Sánchez, Gary",R,MIL,2,30,6,10,2.0,2.0,False,small sample
+624428,"Frazier, Adam",R,LAA,3,45,6,14,2.0,2.0,False,small sample
+656427,"Flaherty, Jack",R,DET,1,19,6,7,2.0,2.0,False,small sample
+656577,"Jackson, Alex",R,MIN,2,26,6,10,2.0,2.0,False,small sample
+656716,"McKinstry, Zach",R,DET,2,57,6,15,2.0,2.0,False,small sample
+663494,"Torres, Bryan",R,STL,1,18,6,8,2.0,2.0,False,small sample
+676130,"Buttó, José",R,SF,3,63,6,16,2.0,2.0,False,small sample
+676910,"Seelinger, Matt",R,NYM,1,52,6,15,2.0,2.0,False,small sample
+678576,"Ramos, Wilkin",R,SF,2,61,6,15,2.0,2.0,False,small sample
+680951,"Nikhazy, Doug",L,CWS,1,39,6,9,2.0,2.0,False,small sample
+683766,"Koss, Christian",R,SF,2,28,6,10,2.0,2.0,False,small sample
+686780,"Pagés, Pedro",R,STL,2,16,6,7,2.0,2.0,False,small sample
+686894,"Wiemer, Joey",R,WSH,2,45,6,16,2.0,2.0,False,small sample
+687859,"Johnston, Troy",L,COL,2,35,6,9,2.0,2.0,False,small sample
+689441,"Crow, Coleman",R,MIL,1,19,6,8,2.0,2.0,False,small sample
+691548,"Muñoz, Rolddy",R,ATL,1,49,6,12,2.0,2.0,False,small sample
+692437,"Santos, Winston",R,TEX,1,33,6,9,2.0,2.0,False,small sample
+694346,"Gibson, Trey",R,BAL,1,30,6,10,2.0,2.0,False,small sample
+694462,"Waldrep, Hurston",R,ATL,1,55,6,12,2.0,2.0,False,small sample
+605441,"Ríos, Yacksel",R,CHC,1,13,5,5,1.667,1.2,False,small sample
+642585,"Bautista, Félix",R,BAL,2,37,5,10,1.667,1.2,False,small sample
+664238,"Moore, Dylan",R,PHI,2,21,5,8,1.667,1.2,False,small sample
+680728,"Del Castillo, Adrian",R,AZ,1,16,5,9,1.667,1.2,False,small sample
+693713,"Teodo, Emiliano",R,TEX,1,43,5,10,1.667,1.2,False,small sample
+700712,"Ureña, Walbert",R,LAA,2,65,5,15,1.667,1.2,False,small sample
+646242,"Díaz, Jhonathan",L,SEA,1,25,4,6,1.333,1.1,False,small sample
+671131,"Rutledge, Jackson",R,WSH,1,44,4,12,1.333,1.1,False,small sample
+679922,"Duran, Carlos",R,KC,2,35,4,9,1.333,1.1,False,small sample
+681520,"Kelly, Antoine",L,CHC,1,18,4,4,1.333,1.1,False,small sample
+529017,"Cornielle, Alexander",R,NYY,1,34,3,7,1.0,1.0,False,small sample
+571771,"Hernández, Enrique",R,LAD,1,8,3,4,1.0,1.0,False,small sample
+571912,"Maile, Luke",R,KC,1,8,3,3,1.0,1.0,False,small sample
+606115,"Arcia, Orlando",R,MIN,1,14,3,5,1.0,1.0,False,small sample
+624512,"McGuire, Reese",R,CWS,1,9,3,3,1.0,1.0,False,small sample
+641386,"Bowden, Ben",L,ATH,1,40,3,8,1.0,1.0,False,small sample
+643361,"Herget, Kevin",R,NYM,1,11,3,3,1.0,1.0,False,small sample
+644433,"Tromp, Chadwick",R,BAL,1,16,3,6,1.0,1.0,False,small sample
+645302,"Robles, Victor",R,SEA,1,26,3,9,1.0,1.0,False,small sample
+660844,"Rivas, Leo",R,SEA,1,31,3,13,1.0,1.0,False,small sample
+661527,"Martinez, Seth",R,BOS,1,22,3,6,1.0,1.0,False,small sample
+663884,"Kingham, Nolan",R,TEX,1,22,3,6,1.0,1.0,False,small sample
+663967,"Salazar, César",R,HOU,1,10,3,4,1.0,1.0,False,small sample
+664059,"Haggerty, Sam",R,TEX,1,6,3,3,1.0,1.0,False,small sample
+664731,"Higgins, P.J.",R,CIN,1,10,3,3,1.0,1.0,False,small sample
+664744,"Espada, Jose",R,BAL,1,15,3,4,1.0,1.0,False,small sample
+664774,"Wade Jr., LaMonte",L,HOU,1,11,3,6,1.0,1.0,False,small sample
+666200,"Luzardo, Jesús",L,PHI,1,4,3,3,1.0,1.0,False,small sample
+668942,"Rojas, Josh",R,KC,1,13,3,4,1.0,1.0,False,small sample
+670032,"Lopez, Nicky",R,TEX,1,24,3,7,1.0,1.0,False,small sample
+670097,"Short, Zack",R,NYM,1,10,3,3,1.0,1.0,False,small sample
+670871,"Zuñiga, Guillo",R,NYM,1,18,3,4,1.0,1.0,False,small sample
+671083,"Kennedy, Buddy",R,SF,1,39,3,9,1.0,1.0,False,small sample
+676083,"Junk, Janson",R,MIA,1,8,3,3,1.0,1.0,False,small sample
+676694,"Meyers, Jake",L,HOU,1,9,3,3,1.0,1.0,False,small sample
+677588,"Tena, José",R,WSH,1,11,3,5,1.0,1.0,False,small sample
+680474,"Schuemann, Max",R,NYY,1,14,3,5,1.0,1.0,False,small sample
+681347,"Burrows, Mike",R,HOU,1,7,3,4,1.0,1.0,False,small sample
+681432,"Little, Luke",L,CHC,1,19,3,5,1.0,1.0,False,small sample
+686628,"Burkhalter, Blake",R,ATL,1,23,3,5,1.0,1.0,False,small sample
+687060,"Adams, Blake",R,COL,1,37,3,9,1.0,1.0,False,small sample
+687721,"Weston, Cameron",R,BAL,1,17,3,3,1.0,1.0,False,small sample
+691587,"Pérez, Eury",R,MIA,1,14,3,3,1.0,1.0,False,small sample
+697811,"Ross, Dylan",R,NYM,1,11,3,3,1.0,1.0,False,small sample
+804668,"Flores Jr., Rafael",R,PIT,1,8,3,5,1.0,1.0,False,small sample
+655316,"Monasterio, Andruw",R,BOS,1,28,2,8,0.667,0.2,False,small sample
+657376,"Schmidt, Clarke",R,NYY,1,24,2,4,0.667,0.2,False,small sample
+687985,"White, Josh",R,MIA,1,43,2,8,0.667,0.2,False,small sample
+476594,"Stock, Robert",R,NYM,1,4,1,2,0.333,0.1,False,small sample
+605156,"Brooks, Aaron",R,TB,1,17,1,4,0.333,0.1,False,small sample
+608032,"Estévez, Carlos",R,KC,1,27,1,7,0.333,0.1,False,small sample
+628708,"Marte, Yunior",R,CIN,1,21,1,5,0.333,0.1,False,small sample
+640902,"Pereda, Jhonny",R,SEA,1,16,1,4,0.333,0.1,False,small sample
+680880,"Holman, Grant",R,PHI,1,34,1,7,0.333,0.1,False,small sample
+686747,"La Sorsa, Joe",L,BOS,1,8,1,2,0.333,0.1,False,small sample
+701780,"McDougal, Tanner",R,CWS,1,25,1,5,0.333,0.1,False,small sample

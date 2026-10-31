@@ -4,7 +4,8 @@ import pytest
 
 from src.build_statcast_parquet import combine, select_columns
 from src.config import KEEP_COLUMNS
-from src.fangraphs import RANK_STATS, normalize, rank_teams
+from src.fangraphs import RANK_STATS, merge_tabs, normalize, rank_teams
+from src.split_fg_workbooks import tab_slug
 
 
 def test_rank_direction_and_ties():
@@ -22,6 +23,21 @@ def test_normalize_percent_strings_and_fractions():
     api = normalize(pd.DataFrame({"TeamName": ["KCR"], "K%": [0.225], "BB%": [0.09],
                                   "K-BB%": [0.135]}))
     assert api.loc[0, "Team"] == "KCR" and api.loc[0, "K-BB%"] == pytest.approx(13.5)
+
+
+def test_merge_tabs_joins_on_name_and_team_keeps_first_copy():
+    dash = pd.DataFrame({"#": [1, 2], "Name": ["A", "A"], "Team": ["KCR", "2 Tms"],
+                         "ERA": [3.0, 4.0], "WAR": [1.0, 0.5]})
+    adv = pd.DataFrame({"#": [1, 2], "Name": ["A", "A"], "Team": ["2 Tms", "KCR"],
+                        "ERA": [9.9, 9.9], "K%": [0.20, 0.25]})
+    out = merge_tabs([dash, adv]).set_index("Team")
+    assert out.loc["KCR", "K%"] == 0.25 and out.loc["2 Tms", "K%"] == 0.20
+    assert out.loc["KCR", "ERA"] == 3.0 and list(out.columns).count("ERA") == 1
+
+
+def test_tab_slug():
+    assert [tab_slug(s) for s in ("Stuff+", "Stuff", "Location+", "Dashboard")] == \
+        ["stuff_plus", "stuff", "location_plus", "dashboard"]
 
 
 def test_select_columns_requires_keep_list():

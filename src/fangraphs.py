@@ -12,7 +12,9 @@ Each input is tried live first and falls back to a manual CSV export:
 FanGraphs often blocks scraping and the Claude cloud workspace can't reach it,
 so run this on Windows, and export the CSVs by hand if the live pull fails.
 Manual team exports: FanGraphs > Leaders > Team Stats > Pitching > Split:
-Relievers > 2026 > Export Data.
+Relievers > 2026 > Export Data. A workbook with one sheet per tab is split into
+<name>_<tab>.csv by split_fg_workbooks.py; those tab CSVs are merged here and
+take precedence over a single <name>.csv export.
 
 Output: outputs/tables/team_bullpen_ranks_2026.csv (prints the Royals row).
 Usage:  python -m src.fangraphs [--offline]
@@ -76,6 +78,24 @@ def rank_teams(df: pd.DataFrame, stats: dict[str, bool]) -> pd.DataFrame:
     return df
 
 
+def merge_tabs(frames: list[pd.DataFrame]) -> pd.DataFrame:
+    """Join FanGraphs tabs of one leaderboard side by side (Name+Team for players, else Team).
+
+    Columns repeated across tabs (ERA, IP, '#', ...) are kept from the first tab only.
+    """
+    keys = ["Name", "Team"] if "Name" in frames[0].columns else ["Team"]
+    out = frames[0]
+    for df in frames[1:]:
+        new = keys + [c for c in df.columns if c not in out.columns]
+        out = out.merge(df[new], on=keys, how="outer", validate="one_to_one")
+    return out
+
+
+def _manual_tabs(manual):
+    tabs = sorted(manual.parent.glob(f"{manual.stem}_*.csv"))
+    return tabs or ([manual] if manual.exists() else [])
+
+
 def _cached(raw, live_fn, manual, offline: bool) -> pd.DataFrame:
     if raw.exists():
         return pd.read_csv(raw)
@@ -88,8 +108,10 @@ def _cached(raw, live_fn, manual, offline: bool) -> pd.DataFrame:
                 return df
         except Exception as e:  # noqa: BLE001 - any scrape failure falls back
             print(f"live pull failed ({type(e).__name__}: {e}); using {manual.name}")
-    if manual.exists():
-        return pd.read_csv(manual)
+    tabs = _manual_tabs(manual)
+    if tabs:
+        print(f"manual: {', '.join(p.name for p in tabs)}")
+        return merge_tabs([pd.read_csv(p) for p in tabs])
     raise FileNotFoundError(f"No live data and no manual export at {manual}")
 
 

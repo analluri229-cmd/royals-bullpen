@@ -1,0 +1,33 @@
+pitcher,name,throws,teams,relief_games,relief_pitches,relief_outs,relief_bf,relief_ip,relief_ip_display,qualified,sample_flag
+656638,"Lange, Alex",R,KC,59,1135,180,276,60.0,60.0,True,
+674444,"Cruz, Steven",R,KC,54,892,168,236,56.0,56.0,True,
+670167,"Schreiber, John",R,KC,55,835,148,203,49.333,49.1,True,
+668674,"Erceg, Lucas",R,KC,52,901,145,227,48.333,48.1,True,
+663738,"Lynch IV, Daniel",L,KC,46,675,138,183,46.0,46.0,True,
+621381,"Strahm, Matt",L,KC,41,633,107,161,35.667,35.2,True,
+696131,"Black, Mason",R,KC,17,556,94,142,31.333,31.1,True,
+663878,"Pearson, Nate",R,KC,26,426,78,116,26.0,26.0,True,
+621016,"Cuas, Jose",R,KC,24,473,70,107,23.333,23.1,True,
+694360,"Way, Beck",R,KC,18,364,67,98,22.333,22.1,True,
+669212,"Morgan, Eli",R,KC,16,339,58,91,19.333,19.1,True,
+683232,"Mears, Nick",R,KC,21,341,58,83,19.333,19.1,True,
+679883,"Avila, Luinder",R,KC,9,350,55,78,18.333,18.1,True,
+671162,"Thomas, Connor",L,KC,17,280,58,78,19.333,19.1,False,small sample
+543238,"Gose, Anthony",L,KC,14,200,41,51,13.667,13.2,False,small sample
+518886,"Kimbrel, Craig",R,KC,13,188,37,52,12.333,12.1,False,small sample
+676510,"Hoffman, Nolan",R,KC,12,147,31,46,10.333,10.1,False,small sample
+677976,"Dobnak, Randy",R,KC,2,159,29,41,9.667,9.2,False,small sample
+668834,"McGee, Easton",R,KC,7,162,28,46,9.333,9.1,False,small sample
+702070,"Cameron, Noah",L,KC,1,97,21,24,7.0,7.0,False,small sample
+663559,"Falter, Bailey",L,KC,3,96,16,29,5.333,5.1,False,small sample
+672021,"Cerantola, Eric",R,KC,4,122,16,27,5.333,5.1,False,small sample
+687765,"Spence, Mitch",R,KC,2,137,16,36,5.333,5.1,False,small sample
+657756,"Seabold, Connor",R,KC,5,131,15,28,5.0,5.0,False,small sample
+686475,"Tolbert, Tyler",R,KC,5,106,14,33,4.667,4.2,False,small sample
+664062,"Gonsolin, Tony",R,KC,1,63,8,15,2.667,2.2,False,small sample
+702352,"Bivens, Spencer",R,KC,2,55,8,12,2.667,2.2,False,small sample
+607481,"Bummer, Aaron",L,KC,2,45,4,11,1.333,1.1,False,small sample
+679922,"Duran, Carlos",R,KC,2,35,4,9,1.333,1.1,False,small sample
+571912,"Maile, Luke",R,KC,1,8,3,3,1.0,1.0,False,small sample
+668942,"Rojas, Josh",R,KC,1,13,3,4,1.0,1.0,False,small sample
+608032,"Estévez, Carlos",R,KC,1,27,1,7,0.333,0.1,False,small sample

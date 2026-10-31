@@ -41,6 +41,7 @@ pip install -r requirements.txt
 python -m src.pull_statcast --start 2026-03-25 --end 2026-04-24   # fill the missing month
 python -m src.build_statcast_parquet --force                       # Step 3
 python -m src.relievers                                            # Step 1
+python -m src.split_fg_workbooks                                   # FanGraphs .xlsx exports -> one CSV per tab
 python -m src.fangraphs                                            # Step 2 (add --offline to use manual CSVs)
 python -m pytest
 ```
