@@ -51,6 +51,9 @@ python -m src.targets                                              # Step 7 -> o
 python -m src.prospects                                            # Step 7 -> outputs/tables/prospects_pitchers.csv (needs data/manual/royals_prospects.csv)
 python -m src.figures                                              # Step 8 -> outputs/figures/*.png (300 dpi)
 #   (src.figures also writes outputs/figures/arsenal/: Savant-style arsenal cards, KC relievers + FA targets)
+#   (and pitch_mix/, plinko/ and expected_stats.png when their tables / data/manual/expected_stats.csv exist)
+python -m src.pitch_mix                                            # pitch usage by count x batter hand -> outputs/tables/pitch_mix_by_count.csv
+python -m src.plinko                                               # count-tree "plinko" -> outputs/tables/plinko_steps.csv, plinko_reach.csv
 python -m src.fetch_headshots                                      # optional, Windows only: MLB headshots -> outputs/headshots (not committed)
 python -m pytest
 ```
