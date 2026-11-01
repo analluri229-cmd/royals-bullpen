@@ -1,0 +1,22 @@
+rank,name,age,highest_level,position,eta,fv,timing,fv_num,pitcher,qualified,stuff_score,execution_score,quadrant,mlb_2026_pitches,data,sequencing
+6,Luinder Avila,24.7,MLB,SIRP,2026,45,now,45.0,679883.0,True,80.6,3.6,Execution fix,350,MLB 2026 Statcast (scored),see sequencing_by_pitcher.csv
+26,Tyson Guerrero,27.2,AAA,SIRP,2026,40,now,40.0,,,,,,0,no tracking data loaded,not available
+28,Eric Cerantola,26.0,AAA,SIRP,2026,35+,now,37.5,,,,,,122,"MLB 2026 Statcast (small sample, not scored)",not available
+12,Ben Kudrna,23.2,AAA,SP,2026,40+,convert,42.5,,,,,,0,no tracking data loaded,not available
+13,Felix Arronde,23.0,AA,SP,2026,40+,convert,42.5,,,,,,0,no tracking data loaded,not available
+18,Drew Beam,23.2,AA,SP,2026,40,convert,40.0,,,,,,0,no tracking data loaded,not available
+19,Steven Zobac,25.5,AA,SP,2026,40,convert,40.0,,,,,,0,no tracking data loaded,not available
+29,Henry Williams,24.6,AAA,SP,2026,35+,convert,37.5,,,,,,0,no tracking data loaded,not available
+3,Kendry Chourio,18.6,A,SP,2029,50,later,50.0,,,,,,0,no tracking data loaded,not available
+8,David Shields,19.6,A+,SP,2028,40+,later,42.5,,,,,,0,no tracking data loaded,not available
+9,Justin Lamkin,21.9,A+,SP,2028,40+,later,42.5,,,,,,0,no tracking data loaded,not available
+11,Freddy Contreras,17.7,R,SP,2029,40+,later,42.5,,,,,,0,no tracking data loaded,not available
+20,Blake Wolters,21.5,A,SP,2028,40,later,40.0,,,,,,0,no tracking data loaded,not available
+21,Shane Van Dam,22.0,A,SP,2029,40,later,40.0,,,,,,0,no tracking data loaded,not available
+22,Hiro Wyatt,21.7,A,SP,2029,40,later,40.0,,,,,,0,no tracking data loaded,not available
+23,Michael Lombardi,22.6,A,SIRP,2027,40,later,40.0,,,,,,0,no tracking data loaded,not available
+27,Josh Hansell,24.2,A+,SIRP,2028,35+,later,37.5,,,,,,0,no tracking data loaded,not available
+30,Cameron Millar,19.0,R,SP,2030,35+,later,37.5,,,,,,0,no tracking data loaded,not available
+31,Dennis Colleran Jr.,22.7,AA,SIRP,2028,35+,later,37.5,,,,,,0,no tracking data loaded,not available
+34,Frank Mozzicato,22.8,AA,SIRP,2027,35+,later,37.5,,,,,,0,no tracking data loaded,not available
+35,Kamden Edge,21.3,A+,SIRP,2029,35+,later,37.5,,,,,,0,no tracking data loaded,not available
