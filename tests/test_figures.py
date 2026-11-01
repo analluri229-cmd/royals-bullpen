@@ -42,3 +42,21 @@ def test_arsenal_grid_writes_png(tmp_path, monkeypatch):
     scores = pd.DataFrame({"pitcher": [1], "stuff_score": [70.0], "execution_score": [40.0]})
     p = figures.arsenal_grid(stuff, scores, pd.DataFrame({"pitcher": [1], "label": ["Test"]}), "t", "a.png")
     assert p.exists() and p.parent.name == "arsenal"
+
+
+def test_plinko_card_writes_png(tmp_path, monkeypatch):
+    from src.plinko import plinko_tables
+    monkeypatch.setattr(figures, "OUT_FIGS", tmp_path)
+    rows = [dict(pitcher=1, game_pk=1, at_bat_number=ab, balls=b, strikes=s, description=d)
+            for ab in range(12) for b, s, d in [(0, 0, "called_strike"), (0, 1, "ball"), (1, 1, "hit_into_play")]]
+    steps, reach = plinko_tables(pd.DataFrame(rows))
+    lg_s, lg_r = figures.plinko_league(steps, reach, [1])
+    assert figures.plinko_card(steps, reach, lg_s, lg_r, 1, "Test").exists()
+
+
+def test_pitch_mix_card_writes_png(tmp_path, monkeypatch):
+    from src.pitch_mix import mix_by_count
+    monkeypatch.setattr(figures, "OUT_FIGS", tmp_path)
+    p = pd.DataFrame([dict(pitcher=1, stand=h, balls=0, strikes=0, pitch_type=t) for h in "LR" for t in
+                      ["FF"] * 8 + ["SL"] * 4])
+    assert figures.pitch_mix_card(mix_by_count(p), 1, "Test").exists()
