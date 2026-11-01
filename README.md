@@ -50,6 +50,7 @@ python -m src.leak_map                                             # Step 6 -> o
 python -m src.targets                                              # Step 7 -> outputs/tables/targets.csv (needs data/manual/fa_relievers_2026.csv)
 python -m src.prospects                                            # Step 7 -> outputs/tables/prospects_pitchers.csv (needs data/manual/royals_prospects.csv)
 python -m src.figures                                              # Step 8 -> outputs/figures/*.png (300 dpi)
+#   (src.figures also writes outputs/figures/arsenal/: Savant-style arsenal cards, KC relievers + FA targets)
 python -m src.fetch_headshots                                      # optional, Windows only: MLB headshots -> outputs/headshots (not committed)
 python -m pytest
 ```

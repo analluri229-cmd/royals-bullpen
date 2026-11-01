@@ -330,6 +330,75 @@ def delivery_overlay(dpitch: pd.DataFrame, dpitcher: pd.DataFrame, names: list[s
     return save(fig, "slide3_delivery_overlay.png")
 
 
+SAVANT_COLORS = {"FF": "#D22D49", "SI": "#FE9D00", "FC": "#933F2C", "SL": "#EEE716", "ST": "#DDB33A",
+                 "SV": "#93AFD4", "CU": "#00D1ED", "KC": "#6236CD", "CH": "#1DBE3A", "FS": "#3BACAC",
+                 "FO": "#55CCAB"}
+
+
+def arsenal_grid(stuff: pd.DataFrame, scores: pd.DataFrame, pitchers: pd.DataFrame, title: str,
+                 fname: str, ncols: int = 4):
+    """Savant-style arsenal cards: movement (HB vs IVB) with dot size = usage, one panel per pitcher.
+
+    pitchers: columns pitcher, label (display name). Only pitch types with 50+ pitches are drawn.
+    """
+    s = stuff[stuff["sample_flag"].fillna("").eq("")]
+    sc = scores.drop_duplicates("pitcher").set_index("pitcher")
+    n = len(pitchers)
+    nrows = int(np.ceil(n / ncols))
+    fig, axes = plt.subplots(nrows, ncols, figsize=(4.3 * ncols, 4.7 * nrows))
+    axes = np.atleast_1d(axes).ravel()
+    for ax in axes[n:]:
+        ax.axis("off")
+    for ax, r in zip(axes, pitchers.itertuples()):
+        mine = s[s["pitcher"] == r.pitcher].sort_values("usage_pct", ascending=False)
+        ax.axhline(0, color=GRAY, lw=0.6)
+        ax.axvline(0, color=GRAY, lw=0.6)
+        for p in mine.itertuples():
+            c = SAVANT_COLORS.get(p.pitch_type, DARK)
+            ax.scatter(p.hb, p.ivb, s=30 + 9 * p.usage_pct, color=c, edgecolor=DARK, lw=0.7, alpha=0.9, zorder=3)
+        lines = [f"{p.pitch_type:<3}{p.usage_pct:>3.0f}%  {p.velo:4.1f}  "
+                 f"{'S+' + format(p.stuff_plus, '.0f') if pd.notna(p.stuff_plus) else ''}" for p in mine.itertuples()]
+        ax.text(0.02, 0.02, "\n".join(lines), transform=ax.transAxes, fontsize=7, family="monospace",
+                va="bottom", color=DARK, bbox=dict(facecolor="white", alpha=0.85, edgecolor="none", pad=2))
+        for p in mine.itertuples():
+            ax.annotate(p.pitch_type, (p.hb, p.ivb), xytext=(0, 0), textcoords="offset points", ha="center",
+                        va="center", fontsize=6.5, fontweight="bold", color="white" if p.pitch_type in
+                        {"FF", "FC", "KC", "CH", "FS"} else DARK, zorder=4)
+        ax.set_xlim(-25, 25)
+        ax.set_ylim(-25, 25)
+        ax.set_aspect("equal")
+        ax.tick_params(labelsize=7)
+        hand = mine["throws"].iloc[0] if len(mine) else "?"
+        sub = ""
+        if r.pitcher in sc.index and pd.notna(sc.loc[r.pitcher, "stuff_score"]):
+            sub = f"\nStuff {sc.loc[r.pitcher, 'stuff_score']:.0f} · Execution {sc.loc[r.pitcher, 'execution_score']:.0f}"
+        ax.set_title(f"{r.label} ({hand}HP){sub}", loc="left", fontsize=9, color=KC_BLUE, fontweight="bold")
+    fig.suptitle(title, x=0.01, ha="left", fontsize=13, fontweight="bold", color=DARK)
+    fig.text(0.01, -0.01, "Pitch movement, catcher's view: x = horizontal break (in), y = induced vertical break (in). "
+             "Dot size = usage. Table: pitch, usage, avg velo (mph), FanGraphs Stuff+. Colors follow Baseball Savant. "
+             "2026 relief pitches, 50+ per type. Source: stuff_by_pitch.csv", fontsize=7, color=DARK)
+    fig.tight_layout()
+    OUT = OUT_FIGS / "arsenal"
+    OUT.mkdir(parents=True, exist_ok=True)
+    path = OUT / fname
+    fig.savefig(path, dpi=DPI, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return path
+
+
+def arsenal_sets(stuff, scores, leak, targets, fa_scored):
+    kc = leak[leak["qualified"]].sort_values(["quadrant", "stuff_score"], ascending=[True, False])
+    kc = pd.DataFrame({"pitcher": kc["pitcher"], "label": [f"{short(n)} · {q}" for n, q in zip(kc["reliever"],
+                                                                                          kc["quadrant"])]})
+    tg = fa_scored[fa_scored["name"].isin(set(targets["target"]))].dropna(subset=["pitcher"])
+    tg = tg.assign(pitcher=tg["pitcher"].astype(int)).sort_values("stuff_score", ascending=False)
+    tg = pd.DataFrame({"pitcher": tg["pitcher"], "label": tg["name"]})
+    return [arsenal_grid(stuff, scores, kc, "Royals relievers: pitch arsenals (2026, relief)",
+                         "arsenal_kc_relievers.png", ncols=5),
+            arsenal_grid(stuff, scores, tg, "Free-agent targets: pitch arsenals (2026, relief)",
+                         "arsenal_fa_targets.png", ncols=4)]
+
+
 # ---------------------------------------------------------------- slide 5
 
 def slide5_targets(targets: pd.DataFrame):
@@ -390,6 +459,8 @@ def main() -> int:
     ]
     if (T / "targets.csv").exists():
         paths.append(slide5_targets(pd.read_csv(T / "targets.csv")))
+        paths += arsenal_sets(stuff, scores, leak, pd.read_csv(T / "targets.csv"),
+                              pd.read_csv(T / "fa_relievers_scored.csv"))
     for p in paths:
         print(p.relative_to(ROOT))
     return 0

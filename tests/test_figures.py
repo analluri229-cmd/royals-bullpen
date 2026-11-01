@@ -32,3 +32,13 @@ def test_delivery_overlay_writes_png(tmp_path, monkeypatch):
 def test_headshot_file_name():
     from src.fetch_headshots import file_name
     assert file_name("Lynch IV, Daniel", 663738) == "lynch_iv__daniel_663738.png"
+
+
+def test_arsenal_grid_writes_png(tmp_path, monkeypatch):
+    monkeypatch.setattr(figures, "OUT_FIGS", tmp_path)
+    stuff = pd.DataFrame([dict(pitcher=1, throws="R", pitch_type=pt, usage_pct=u, hb=hb, ivb=ivb, velo=v,
+                               stuff_plus=sp, sample_flag=None)
+                          for pt, u, hb, ivb, v, sp in [("FF", 60, -8, 16, 96.0, 110), ("SL", 40, 6, 0, 86.0, None)]])
+    scores = pd.DataFrame({"pitcher": [1], "stuff_score": [70.0], "execution_score": [40.0]})
+    p = figures.arsenal_grid(stuff, scores, pd.DataFrame({"pitcher": [1], "label": ["Test"]}), "t", "a.png")
+    assert p.exists() and p.parent.name == "arsenal"
