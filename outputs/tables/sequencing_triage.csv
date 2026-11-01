@@ -1,0 +1,1402 @@
+pitcher_id,pattern,often,well,n,flag,triage
+445276,delivery,12.4,34.2,725,,coaching target
+445276,tunneling,52.0,77.35,77,,strength
+455119,delivery,45.5,34.400000000000006,248,,coaching target
+455119,tunneling,61.3,37.0,72,,"used often, not working: cut back or fix the pitch it depends on"
+471911,delivery,98.6,95.7,246,,strength
+471911,tunneling,95.7,60.8,68,,strength
+472610,delivery,89.8,65.9,265,,strength
+472610,tunneling,61.3,97.0,54,,strength
+476594,delivery,99.1,38.1,4,small sample,"used often, not working: cut back or fix the pitch it depends on"
+476594,tunneling,100.0,,2,small sample,insufficient sample
+489446,delivery,91.2,99.9,698,,strength
+489446,tunneling,90.7,49.6,161,,"used often, not working: cut back or fix the pitch it depends on"
+518585,delivery,18.6,17.200000000000003,944,,coaching target
+518585,tunneling,67.7,18.4,193,,"used often, not working: cut back or fix the pitch it depends on"
+518886,delivery,91.2,78.0,188,,strength
+518886,tunneling,63.8,52.85,42,,strength
+519141,delivery,93.8,99.3,478,,strength
+519141,tunneling,96.2,56.7,82,,strength
+527048,delivery,51.0,33.2,125,,"used often, not working: cut back or fix the pitch it depends on"
+527048,tunneling,13.7,96.0,32,,effective but underused: use it more
+529017,delivery,75.6,27.599999999999994,34,,"used often, not working: cut back or fix the pitch it depends on"
+529017,tunneling,92.0,100.0,8,small sample,strength
+542888,delivery,70.2,84.2,628,,strength
+542888,tunneling,78.8,52.15,209,,strength
+543056,delivery,49.3,24.90000000000001,385,,coaching target
+543056,tunneling,30.9,45.400000000000006,97,,coaching target
+543135,delivery,58.8,46.3,142,,"used often, not working: cut back or fix the pitch it depends on"
+543135,tunneling,76.2,43.300000000000004,40,,"used often, not working: cut back or fix the pitch it depends on"
+543238,delivery,55.5,90.3,200,,strength
+543238,tunneling,75.6,51.7,42,,strength
+543510,delivery,0.0,,1,small sample,insufficient sample
+544150,delivery,40.8,3.0,970,,coaching target
+544150,tunneling,35.2,67.1,159,,effective but underused: use it more
+545121,delivery,0.0,,7,small sample,insufficient sample
+547179,delivery,62.5,40.6,223,,"used often, not working: cut back or fix the pitch it depends on"
+547179,tunneling,29.6,25.799999999999997,57,,coaching target
+547184,delivery,4.5,41.5,121,,coaching target
+547184,tunneling,90.6,50.5,29,,strength
+547973,delivery,69.6,98.2,841,,strength
+547973,tunneling,48.3,43.0,190,,coaching target
+548384,delivery,25.7,17.5,842,,coaching target
+548384,tunneling,16.1,50.0,187,,effective but underused: use it more
+552640,delivery,87.9,98.7,711,,strength
+552640,tunneling,83.3,41.15,167,,"used often, not working: cut back or fix the pitch it depends on"
+571578,delivery,56.0,53.4,195,,strength
+571578,tunneling,60.1,16.4,58,,"used often, not working: cut back or fix the pitch it depends on"
+571882,delivery,59.9,54.8,136,,strength
+571882,tunneling,10.0,97.4,28,,effective but underused: use it more
+571927,delivery,5.0,63.5,541,,effective but underused: use it more
+571927,tunneling,45.2,52.300000000000004,134,,effective but underused: use it more
+571945,delivery,32.4,64.3,917,,effective but underused: use it more
+571945,tunneling,84.5,63.7,314,,strength
+571948,delivery,86.8,71.4,674,,strength
+571948,tunneling,90.5,51.400000000000006,191,,strength
+572143,delivery,27.1,37.5,276,,coaching target
+572143,tunneling,67.0,8.15,82,,"used often, not working: cut back or fix the pitch it depends on"
+572955,delivery,61.2,85.9,840,,strength
+572955,tunneling,77.9,18.35,163,,"used often, not working: cut back or fix the pitch it depends on"
+573009,delivery,72.4,95.9,399,,strength
+573009,tunneling,98.7,25.349999999999998,89,,"used often, not working: cut back or fix the pitch it depends on"
+573124,delivery,75.4,49.6,1076,,"used often, not working: cut back or fix the pitch it depends on"
+573124,tunneling,17.2,62.55,215,,effective but underused: use it more
+573204,delivery,80.0,67.2,848,,strength
+573204,tunneling,64.2,75.05,231,,strength
+592094,delivery,31.0,42.8,583,,coaching target
+592094,tunneling,17.0,37.6,139,,coaching target
+592155,delivery,29.5,9.799999999999995,573,,coaching target
+592155,tunneling,81.9,43.300000000000004,137,,"used often, not working: cut back or fix the pitch it depends on"
+592454,delivery,22.6,4.799999999999997,168,,coaching target
+592454,tunneling,86.9,54.45,35,,strength
+592662,delivery,97.2,78.4,94,,strength
+592662,tunneling,57.5,2.55,27,,"used often, not working: cut back or fix the pitch it depends on"
+592773,delivery,25.0,19.200000000000003,1079,,coaching target
+592773,tunneling,2.4,55.0,206,,effective but underused: use it more
+592779,delivery,83.1,93.6,373,,strength
+592779,tunneling,99.6,7.95,128,,"used often, not working: cut back or fix the pitch it depends on"
+592826,delivery,94.6,63.1,43,,strength
+592826,tunneling,1.1,0.7000000000000001,7,small sample,coaching target
+592836,delivery,96.9,60.5,64,,strength
+592836,tunneling,96.6,75.2,19,small sample,strength
+592866,delivery,71.4,44.5,495,,"used often, not working: cut back or fix the pitch it depends on"
+592866,tunneling,92.5,37.35,147,,"used often, not working: cut back or fix the pitch it depends on"
+593974,delivery,14.1,3.799999999999997,1162,,coaching target
+593974,tunneling,3.6,82.94999999999999,218,,effective but underused: use it more
+594027,delivery,77.7,76.0,607,,strength
+594027,tunneling,64.5,49.3,54,,"used often, not working: cut back or fix the pitch it depends on"
+594580,delivery,22.9,30.8,1073,,coaching target
+594580,tunneling,24.9,64.4,229,,effective but underused: use it more
+594835,delivery,51.0,13.599999999999994,118,,"used often, not working: cut back or fix the pitch it depends on"
+594835,tunneling,100.0,43.7,45,,"used often, not working: cut back or fix the pitch it depends on"
+595014,delivery,65.8,40.8,494,,"used often, not working: cut back or fix the pitch it depends on"
+595014,tunneling,91.0,77.65,130,,strength
+595345,delivery,95.9,95.6,1030,,strength
+595345,tunneling,79.1,66.25,176,,strength
+595978,delivery,0.0,,15,small sample,insufficient sample
+596001,delivery,50.6,57.0,814,,strength
+596001,tunneling,81.3,47.3,223,,"used often, not working: cut back or fix the pitch it depends on"
+596133,delivery,76.0,86.5,903,,strength
+596133,tunneling,99.0,30.900000000000002,245,,"used often, not working: cut back or fix the pitch it depends on"
+596142,delivery,0.0,,4,small sample,insufficient sample
+605130,delivery,17.8,29.099999999999994,581,,coaching target
+605130,tunneling,31.5,63.8,139,,effective but underused: use it more
+605135,delivery,77.3,46.6,152,,"used often, not working: cut back or fix the pitch it depends on"
+605135,tunneling,84.3,89.85,49,,strength
+605154,delivery,27.8,58.2,94,,effective but underused: use it more
+605154,tunneling,96.6,92.2,31,,strength
+605156,delivery,98.3,52.3,17,small sample,strength
+605156,tunneling,0.0,0.0,1,small sample,coaching target
+605218,delivery,97.6,71.0,99,,strength
+605218,tunneling,1.1,49.15,17,small sample,coaching target
+605242,delivery,9.4,6.0,264,,coaching target
+605242,tunneling,0.6,58.4,50,,effective but underused: use it more
+605288,delivery,64.5,33.7,519,,"used often, not working: cut back or fix the pitch it depends on"
+605288,tunneling,40.3,17.55,122,,coaching target
+605335,delivery,78.3,65.9,99,,strength
+605335,tunneling,39.0,50.6,27,,effective but underused: use it more
+605441,delivery,97.7,85.5,13,small sample,strength
+605441,tunneling,92.0,100.0,4,small sample,strength
+605447,delivery,8.4,22.0,643,,coaching target
+605447,tunneling,5.6,67.55000000000001,97,,effective but underused: use it more
+605452,delivery,0.6,2.0,205,,coaching target
+605452,tunneling,34.5,10.85,49,,coaching target
+606303,delivery,69.6,31.8,151,,"used often, not working: cut back or fix the pitch it depends on"
+606303,tunneling,19.9,4.4,34,,coaching target
+606965,delivery,84.8,60.5,134,,strength
+606965,tunneling,89.2,25.25,31,,"used often, not working: cut back or fix the pitch it depends on"
+606996,delivery,2.1,10.900000000000006,947,,coaching target
+606996,tunneling,53.7,85.05,255,,strength
+607067,delivery,97.6,92.5,565,,strength
+607067,tunneling,30.3,33.45,142,,coaching target
+607200,delivery,16.1,9.5,1189,,coaching target
+607200,tunneling,1.0,51.0,257,,effective but underused: use it more
+607455,delivery,62.4,65.8,608,,strength
+607455,tunneling,49.9,45.45,129,,coaching target
+607481,delivery,92.8,46.4,45,,"used often, not working: cut back or fix the pitch it depends on"
+607481,tunneling,99.7,81.9,17,small sample,strength
+608032,delivery,83.0,45.5,27,,"used often, not working: cut back or fix the pitch it depends on"
+608032,tunneling,1.1,34.1,5,small sample,coaching target
+608337,delivery,7.7,34.400000000000006,151,,coaching target
+608337,tunneling,3.1,1.5499999999999998,30,,coaching target
+608344,delivery,89.2,54.0,102,,strength
+608344,tunneling,1.7,63.85,24,small sample,effective but underused: use it more
+608371,delivery,14.5,28.40000000000001,171,,coaching target
+608371,tunneling,7.7,47.800000000000004,36,,coaching target
+608566,delivery,52.1,48.6,154,,"used often, not working: cut back or fix the pitch it depends on"
+608566,tunneling,3.1,84.6,31,,effective but underused: use it more
+608650,delivery,93.5,67.0,291,,strength
+608650,tunneling,52.7,92.75,63,,strength
+608718,delivery,73.2,60.9,1356,,strength
+608718,tunneling,14.1,53.099999999999994,331,,effective but underused: use it more
+608723,delivery,59.5,40.3,214,,"used often, not working: cut back or fix the pitch it depends on"
+608723,tunneling,13.4,38.9,56,,coaching target
+615698,delivery,57.5,51.3,563,,strength
+615698,tunneling,67.1,74.05,172,,strength
+621016,delivery,2.8,39.9,473,,coaching target
+621016,tunneling,68.8,48.150000000000006,130,,"used often, not working: cut back or fix the pitch it depends on"
+621053,delivery,97.7,82.7,293,,strength
+621053,tunneling,64.1,28.05,83,,"used often, not working: cut back or fix the pitch it depends on"
+621074,delivery,41.2,32.5,757,,coaching target
+621074,tunneling,88.5,65.7,230,,strength
+621097,delivery,52.7,15.200000000000005,642,,"used often, not working: cut back or fix the pitch it depends on"
+621097,tunneling,58.8,52.7,163,,strength
+621112,delivery,45.9,78.3,1178,,effective but underused: use it more
+621112,tunneling,95.0,62.4,314,,strength
+621121,delivery,98.9,88.6,97,,strength
+621121,tunneling,89.7,60.1,30,,strength
+621139,delivery,93.5,80.1,38,,strength
+621139,tunneling,0.3,8.55,4,small sample,coaching target
+621237,delivery,64.5,38.8,1129,,"used often, not working: cut back or fix the pitch it depends on"
+621237,tunneling,7.0,65.35,166,,effective but underused: use it more
+621242,delivery,48.3,13.799999999999995,395,,coaching target
+621242,tunneling,76.8,4.0,65,,"used often, not working: cut back or fix the pitch it depends on"
+621345,delivery,92.3,73.2,677,,strength
+621345,tunneling,70.4,59.55,161,,strength
+621366,delivery,55.1,79.4,380,,strength
+621366,tunneling,27.8,50.150000000000006,81,,effective but underused: use it more
+621381,delivery,1.8,1.5999999999999943,633,,coaching target
+621381,tunneling,29.5,71.5,165,,effective but underused: use it more
+621383,delivery,52.1,33.400000000000006,641,,"used often, not working: cut back or fix the pitch it depends on"
+621383,tunneling,63.4,65.94999999999999,186,,strength
+621389,delivery,100.0,93.8,30,,strength
+621389,tunneling,0.9,100.0,3,small sample,effective but underused: use it more
+622088,delivery,15.3,16.099999999999994,906,,coaching target
+622088,tunneling,18.9,52.550000000000004,199,,effective but underused: use it more
+622491,delivery,1.7,12.799999999999995,281,,coaching target
+622491,tunneling,1.1,38.6,45,,coaching target
+622554,delivery,71.0,82.0,1111,,strength
+622554,tunneling,11.8,56.7,232,,effective but underused: use it more
+622608,delivery,3.4,26.3,1165,,coaching target
+622608,tunneling,49.4,24.1,296,,coaching target
+622694,delivery,68.0,64.5,217,,strength
+622694,tunneling,33.3,2.0,44,,coaching target
+623149,delivery,87.6,43.9,854,,"used often, not working: cut back or fix the pitch it depends on"
+623149,tunneling,89.0,91.45,182,,strength
+623211,delivery,43.0,65.2,902,,effective but underused: use it more
+623211,tunneling,57.7,68.35,180,,strength
+623352,delivery,35.4,6.099999999999994,676,,coaching target
+623352,tunneling,3.3,92.3,87,,effective but underused: use it more
+623437,delivery,84.2,82.2,413,,strength
+623437,tunneling,23.4,22.35,85,,coaching target
+623454,delivery,58.0,83.9,963,,strength
+623454,tunneling,79.3,43.849999999999994,290,,"used often, not working: cut back or fix the pitch it depends on"
+623465,delivery,28.6,41.9,423,,coaching target
+623465,tunneling,65.0,86.5,107,,strength
+623474,delivery,27.1,24.0,898,,coaching target
+623474,tunneling,39.7,46.75,264,,coaching target
+624428,delivery,0.0,,4,small sample,insufficient sample
+624431,delivery,0.0,,49,,insufficient sample
+624522,delivery,77.3,94.0,195,,strength
+624522,tunneling,77.5,48.15,57,,"used often, not working: cut back or fix the pitch it depends on"
+625643,delivery,82.0,37.6,371,,"used often, not working: cut back or fix the pitch it depends on"
+625643,tunneling,17.5,76.65,64,,effective but underused: use it more
+628452,delivery,1.3,73.4,911,,effective but underused: use it more
+628452,tunneling,77.4,61.25,216,,strength
+628708,delivery,99.1,82.1,21,small sample,strength
+628708,tunneling,86.9,61.65,5,small sample,strength
+640448,delivery,32.4,5.0,1062,,coaching target
+640448,tunneling,15.2,39.6,218,,coaching target
+640451,delivery,45.9,12.5,76,,coaching target
+640451,tunneling,25.4,46.75,17,small sample,coaching target
+640454,delivery,7.7,2.0,179,,coaching target
+640454,tunneling,0.3,3.15,27,,coaching target
+640455,delivery,30.0,89.3,776,,effective but underused: use it more
+640455,tunneling,69.9,47.75,179,,"used often, not working: cut back or fix the pitch it depends on"
+640902,delivery,100.0,,2,small sample,insufficient sample
+641302,delivery,85.1,76.8,1101,,strength
+641302,tunneling,87.9,36.9,347,,"used often, not working: cut back or fix the pitch it depends on"
+641312,delivery,14.1,14.299999999999995,351,,coaching target
+641312,tunneling,22.4,59.15,89,,effective but underused: use it more
+641329,delivery,31.7,10.099999999999994,977,,coaching target
+641329,tunneling,80.5,65.1,214,,strength
+641386,delivery,100.0,65.3,40,,strength
+641386,tunneling,0.3,72.65,5,small sample,effective but underused: use it more
+641401,delivery,49.7,38.1,281,,coaching target
+641401,tunneling,15.7,66.2,56,,effective but underused: use it more
+641585,delivery,63.5,50.6,117,,strength
+641585,tunneling,0.3,53.1,22,small sample,effective but underused: use it more
+641656,delivery,84.4,77.6,92,,strength
+641656,tunneling,99.7,50.25,18,small sample,strength
+641743,delivery,31.4,11.900000000000006,147,,coaching target
+641743,tunneling,28.8,41.599999999999994,43,,coaching target
+641745,delivery,97.9,96.4,533,,strength
+641745,tunneling,8.4,10.95,121,,coaching target
+641755,delivery,89.8,92.2,909,,strength
+641755,tunneling,87.6,56.0,179,,strength
+641778,delivery,93.5,62.5,298,,strength
+641778,tunneling,69.8,16.65,92,,"used often, not working: cut back or fix the pitch it depends on"
+641793,delivery,20.0,31.700000000000003,869,,coaching target
+641793,tunneling,78.5,44.55,266,,"used often, not working: cut back or fix the pitch it depends on"
+641835,delivery,85.9,51.0,919,,strength
+641835,tunneling,26.1,30.799999999999997,182,,coaching target
+641927,delivery,100.0,94.6,31,,strength
+641927,tunneling,100.0,52.85,14,small sample,strength
+641941,delivery,85.5,91.1,674,,strength
+641941,tunneling,7.3,18.200000000000003,98,,coaching target
+642048,delivery,62.8,74.3,343,,strength
+642048,tunneling,48.3,1.0,88,,coaching target
+642100,delivery,48.3,93.3,698,,effective but underused: use it more
+642100,tunneling,55.1,45.7,157,,"used often, not working: cut back or fix the pitch it depends on"
+642121,delivery,55.5,18.3,875,,"used often, not working: cut back or fix the pitch it depends on"
+642121,tunneling,44.6,35.3,219,,coaching target
+642152,delivery,88.4,78.1,144,,strength
+642152,tunneling,79.6,45.099999999999994,42,,"used often, not working: cut back or fix the pitch it depends on"
+642207,delivery,87.1,47.9,759,,"used often, not working: cut back or fix the pitch it depends on"
+642207,tunneling,93.6,12.1,163,,"used often, not working: cut back or fix the pitch it depends on"
+642232,delivery,20.5,6.700000000000003,976,,coaching target
+642232,tunneling,28.6,49.75,211,,coaching target
+642376,delivery,26.4,41.6,330,,coaching target
+642376,tunneling,1.3,72.65,42,,effective but underused: use it more
+642397,delivery,19.7,69.2,1153,,effective but underused: use it more
+642397,tunneling,19.2,39.05,247,,coaching target
+642528,delivery,41.8,84.5,962,,effective but underused: use it more
+642528,tunneling,89.9,38.05,244,,"used often, not working: cut back or fix the pitch it depends on"
+642546,delivery,22.6,27.099999999999994,413,,coaching target
+642546,tunneling,14.4,31.900000000000002,84,,coaching target
+642585,delivery,52.6,13.599999999999994,37,,"used often, not working: cut back or fix the pitch it depends on"
+642585,tunneling,73.2,50.0,8,small sample,strength
+642701,delivery,56.0,59.5,929,,strength
+642701,tunneling,43.7,69.94999999999999,221,,effective but underused: use it more
+642759,delivery,68.0,25.90000000000001,71,,"used often, not working: cut back or fix the pitch it depends on"
+642759,tunneling,1.7,50.0,11,small sample,effective but underused: use it more
+643361,delivery,59.7,13.099999999999994,11,small sample,"used often, not working: cut back or fix the pitch it depends on"
+643361,tunneling,92.0,63.8,4,small sample,strength
+643377,delivery,88.8,66.2,187,,strength
+643377,tunneling,83.5,52.400000000000006,61,,strength
+643410,delivery,36.5,35.900000000000006,551,,coaching target
+643410,tunneling,6.4,49.85,117,,coaching target
+643511,delivery,99.9,97.0,1018,,strength
+643511,tunneling,41.7,44.0,135,,coaching target
+645261,delivery,98.6,83.0,35,,strength
+645261,tunneling,24.2,30.0,8,small sample,coaching target
+645302,delivery,68.8,89.2,22,small sample,strength
+645302,tunneling,0.0,,1,small sample,insufficient sample
+646241,delivery,61.6,15.799999999999995,669,,"used often, not working: cut back or fix the pitch it depends on"
+646241,tunneling,38.5,50.85,155,,effective but underused: use it more
+646242,delivery,55.5,57.1,25,,strength
+646242,tunneling,100.0,4.4,8,small sample,"used often, not working: cut back or fix the pitch it depends on"
+647315,delivery,49.4,4.0,93,,coaching target
+647315,tunneling,0.0,51.85,8,small sample,effective but underused: use it more
+647336,delivery,92.6,65.9,58,,strength
+647336,tunneling,100.0,4.7,20,small sample,"used often, not working: cut back or fix the pitch it depends on"
+650556,delivery,6.1,16.900000000000006,1093,,coaching target
+650556,tunneling,39.5,56.4,223,,effective but underused: use it more
+650644,delivery,72.4,34.5,642,,"used often, not working: cut back or fix the pitch it depends on"
+650644,tunneling,37.2,47.75,180,,coaching target
+650960,delivery,38.2,33.099999999999994,463,,coaching target
+650960,tunneling,67.9,40.05,139,,"used often, not working: cut back or fix the pitch it depends on"
+655316,delivery,0.0,,28,,insufficient sample
+655316,tunneling,0.0,,0,small sample,insufficient sample
+655889,delivery,62.4,60.5,138,,strength
+655889,tunneling,0.9,56.15,26,,effective but underused: use it more
+656212,delivery,81.0,52.6,201,,strength
+656212,tunneling,2.8,7.0,39,,coaching target
+656222,delivery,95.3,55.0,407,,strength
+656222,tunneling,34.3,62.8,80,,effective but underused: use it more
+656234,delivery,14.9,12.400000000000006,678,,coaching target
+656234,tunneling,13.5,41.9,139,,coaching target
+656240,delivery,39.3,19.5,584,,coaching target
+656240,tunneling,4.1,59.0,140,,effective but underused: use it more
+656271,delivery,89.2,66.9,1180,,strength
+656271,tunneling,75.1,66.65,250,,strength
+656288,delivery,53.0,42.2,685,,"used often, not working: cut back or fix the pitch it depends on"
+656288,tunneling,32.6,59.55,184,,effective but underused: use it more
+656427,delivery,98.9,48.3,19,small sample,"used often, not working: cut back or fix the pitch it depends on"
+656427,tunneling,0.3,81.9,2,small sample,effective but underused: use it more
+656457,delivery,0.0,4.0,117,,coaching target
+656457,tunneling,8.5,70.5,25,,effective but underused: use it more
+656464,delivery,80.4,95.3,1099,,strength
+656464,tunneling,40.9,48.15,190,,coaching target
+656529,delivery,96.4,93.0,687,,strength
+656529,tunneling,74.1,52.15,174,,strength
+656546,delivery,86.2,86.2,1211,,strength
+656546,tunneling,56.6,78.44999999999999,265,,strength
+656550,delivery,65.5,40.3,101,,"used often, not working: cut back or fix the pitch it depends on"
+656550,tunneling,23.1,18.95,23,small sample,coaching target
+656638,delivery,46.7,81.1,1135,,effective but underused: use it more
+656638,tunneling,24.1,30.3,301,,coaching target
+656641,delivery,63.5,31.099999999999994,1060,,"used often, not working: cut back or fix the pitch it depends on"
+656641,tunneling,47.2,36.35,230,,coaching target
+656686,delivery,73.7,54.8,111,,strength
+656686,tunneling,4.8,2.55,20,small sample,coaching target
+656730,delivery,94.9,79.1,874,,strength
+656730,tunneling,58.3,51.150000000000006,124,,strength
+656756,delivery,98.4,83.7,414,,strength
+656756,tunneling,61.7,59.550000000000004,114,,strength
+656786,delivery,67.3,84.7,139,,strength
+656786,tunneling,67.0,24.35,36,,"used often, not working: cut back or fix the pitch it depends on"
+656794,delivery,16.9,10.400000000000006,1291,,coaching target
+656794,tunneling,5.0,85.3,257,,effective but underused: use it more
+656848,delivery,22.3,0.4000000000000057,1129,,coaching target
+656848,tunneling,1.9,24.75,168,,coaching target
+656849,delivery,28.0,37.4,510,,coaching target
+656849,tunneling,80.8,15.1,147,,"used often, not working: cut back or fix the pitch it depends on"
+656945,delivery,74.3,81.4,963,,strength
+656945,tunneling,75.4,19.1,188,,"used often, not working: cut back or fix the pitch it depends on"
+656986,delivery,78.8,54.7,511,,strength
+656986,tunneling,48.3,8.55,75,,coaching target
+657044,delivery,74.3,47.3,654,,"used often, not working: cut back or fix the pitch it depends on"
+657044,tunneling,20.7,47.6,98,,coaching target
+657097,delivery,66.6,55.8,1139,,strength
+657097,tunneling,86.5,71.95,291,,strength
+657265,delivery,66.5,40.3,251,,"used often, not working: cut back or fix the pitch it depends on"
+657265,tunneling,61.3,63.849999999999994,74,,strength
+657376,delivery,79.4,41.5,24,small sample,"used often, not working: cut back or fix the pitch it depends on"
+657376,tunneling,0.0,100.0,3,small sample,effective but underused: use it more
+657424,delivery,7.2,1.7999999999999972,526,,coaching target
+657424,tunneling,13.8,41.45,115,,coaching target
+657514,delivery,26.4,4.700000000000003,957,,coaching target
+657514,tunneling,26.4,64.65,218,,effective but underused: use it more
+657571,delivery,97.3,97.6,559,,strength
+657571,tunneling,91.6,52.85,189,,strength
+657612,delivery,83.7,14.099999999999994,816,,"used often, not working: cut back or fix the pitch it depends on"
+657612,tunneling,16.4,57.400000000000006,79,,effective but underused: use it more
+657649,delivery,6.0,2.299999999999997,161,,coaching target
+657649,tunneling,64.1,11.600000000000001,41,,"used often, not working: cut back or fix the pitch it depends on"
+657756,delivery,12.9,12.599999999999994,131,,coaching target
+657756,tunneling,29.8,16.95,35,,coaching target
+660604,delivery,67.3,71.9,241,,strength
+660604,tunneling,8.5,51.0,52,,effective but underused: use it more
+660710,delivery,0.0,,1,small sample,insufficient sample
+660761,delivery,5.4,68.9,986,,effective but underused: use it more
+660761,tunneling,87.3,88.75,295,,strength
+660787,delivery,70.2,91.3,358,,strength
+660787,tunneling,85.0,22.9,69,,"used often, not working: cut back or fix the pitch it depends on"
+660825,delivery,44.3,24.599999999999994,1133,,coaching target
+660825,tunneling,4.7,71.9,192,,effective but underused: use it more
+660853,delivery,41.8,54.4,1153,,effective but underused: use it more
+660853,tunneling,93.0,36.05,242,,"used often, not working: cut back or fix the pitch it depends on"
+661395,delivery,35.4,63.2,947,,effective but underused: use it more
+661395,tunneling,41.2,28.349999999999998,229,,coaching target
+661527,delivery,93.5,56.8,22,small sample,strength
+661527,tunneling,8.1,49.0,3,small sample,coaching target
+661563,delivery,46.3,4.0,159,,coaching target
+661563,tunneling,20.7,36.3,28,,coaching target
+662144,delivery,100.0,86.1,39,,strength
+662144,tunneling,13.7,96.85,9,small sample,effective but underused: use it more
+662253,delivery,29.1,76.6,953,,effective but underused: use it more
+662253,tunneling,57.4,24.1,191,,"used often, not working: cut back or fix the pitch it depends on"
+663158,delivery,20.9,37.1,487,,coaching target
+663158,tunneling,89.6,39.9,108,,"used often, not working: cut back or fix the pitch it depends on"
+663362,delivery,40.5,41.3,416,,coaching target
+663362,tunneling,61.1,61.7,113,,strength
+663372,delivery,88.9,99.1,257,,strength
+663372,tunneling,18.4,2.55,69,,coaching target
+663423,delivery,25.7,23.40000000000001,708,,coaching target
+663423,tunneling,90.2,9.4,204,,"used often, not working: cut back or fix the pitch it depends on"
+663432,delivery,100.0,70.2,127,,strength
+663432,tunneling,56.7,97.15,31,,strength
+663436,delivery,98.9,73.3,71,,strength
+663436,tunneling,99.4,48.0,27,,"used often, not working: cut back or fix the pitch it depends on"
+663460,delivery,100.0,91.5,71,,strength
+663460,tunneling,97.4,51.4,21,small sample,strength
+663465,delivery,89.5,54.8,177,,strength
+663465,tunneling,19.9,96.55000000000001,46,,effective but underused: use it more
+663485,delivery,88.2,96.6,209,,strength
+663485,tunneling,80.6,96.0,53,,strength
+663542,delivery,35.4,8.099999999999994,922,,coaching target
+663542,tunneling,96.7,37.05,179,,"used often, not working: cut back or fix the pitch it depends on"
+663558,delivery,70.6,35.7,987,,"used often, not working: cut back or fix the pitch it depends on"
+663558,tunneling,45.7,85.45,233,,effective but underused: use it more
+663559,delivery,97.2,52.6,96,,strength
+663559,tunneling,18.5,49.15,19,small sample,coaching target
+663574,delivery,59.9,68.6,698,,strength
+663574,tunneling,68.5,71.4,111,,strength
+663623,delivery,87.9,71.9,177,,strength
+663623,tunneling,82.2,78.75,51,,strength
+663687,delivery,23.9,62.4,1333,,effective but underused: use it more
+663687,tunneling,9.1,65.8,240,,effective but underused: use it more
+663738,delivery,35.9,29.40000000000001,675,,coaching target
+663738,tunneling,70.4,21.1,161,,"used often, not working: cut back or fix the pitch it depends on"
+663765,delivery,77.1,89.1,485,,strength
+663765,tunneling,82.2,27.200000000000003,136,,"used often, not working: cut back or fix the pitch it depends on"
+663767,delivery,33.9,48.7,867,,coaching target
+663767,tunneling,46.0,67.8,244,,effective but underused: use it more
+663776,delivery,68.8,36.9,110,,"used often, not working: cut back or fix the pitch it depends on"
+663776,tunneling,99.4,66.1,32,,strength
+663795,delivery,62.5,45.5,86,,"used often, not working: cut back or fix the pitch it depends on"
+663795,tunneling,84.2,57.55,22,small sample,strength
+663855,delivery,37.8,43.3,855,,coaching target
+663855,tunneling,7.5,45.3,157,,coaching target
+663878,delivery,62.8,73.7,426,,strength
+663878,tunneling,13.0,92.15,81,,effective but underused: use it more
+663884,delivery,98.6,60.2,22,small sample,strength
+663884,tunneling,0.0,0.0,2,small sample,coaching target
+663893,delivery,4.7,10.700000000000005,552,,coaching target
+663893,tunneling,38.9,52.849999999999994,132,,effective but underused: use it more
+663941,delivery,20.5,25.40000000000001,313,,coaching target
+663941,tunneling,60.5,24.5,77,,"used often, not working: cut back or fix the pitch it depends on"
+663947,delivery,76.0,43.0,1067,,"used often, not working: cut back or fix the pitch it depends on"
+663947,tunneling,88.7,12.5,287,,"used often, not working: cut back or fix the pitch it depends on"
+663969,delivery,32.8,29.700000000000003,621,,coaching target
+663969,tunneling,72.2,59.400000000000006,188,,strength
+663978,delivery,18.8,7.400000000000006,270,,coaching target
+663978,tunneling,51.9,58.25,78,,strength
+663992,delivery,81.7,85.4,497,,strength
+663992,tunneling,62.3,45.45,112,,"used often, not working: cut back or fix the pitch it depends on"
+664062,delivery,97.7,48.3,63,,"used often, not working: cut back or fix the pitch it depends on"
+664062,tunneling,99.7,48.0,18,small sample,"used often, not working: cut back or fix the pitch it depends on"
+664076,delivery,75.0,53.3,734,,strength
+664076,tunneling,32.1,59.1,155,,effective but underused: use it more
+664126,delivery,31.4,20.90000000000001,739,,coaching target
+664126,tunneling,37.5,83.9,164,,effective but underused: use it more
+664129,delivery,57.1,89.9,435,,strength
+664129,tunneling,26.8,2.3,113,,coaching target
+664141,delivery,93.2,78.8,984,,strength
+664141,tunneling,12.4,34.75,218,,coaching target
+664192,delivery,19.9,1.7000000000000028,111,,coaching target
+664192,tunneling,17.1,67.65,23,small sample,effective but underused: use it more
+664199,delivery,63.5,43.6,1024,,"used often, not working: cut back or fix the pitch it depends on"
+664199,tunneling,37.7,94.85,245,,effective but underused: use it more
+664208,delivery,86.5,45.0,546,,"used often, not working: cut back or fix the pitch it depends on"
+664208,tunneling,81.1,88.0,141,,strength
+664238,delivery,0.0,,3,small sample,insufficient sample
+664299,delivery,88.9,47.4,236,,"used often, not working: cut back or fix the pitch it depends on"
+664299,tunneling,76.4,8.4,59,,"used often, not working: cut back or fix the pitch it depends on"
+664353,delivery,2.8,2.0999999999999943,514,,coaching target
+664353,tunneling,95.3,7.85,155,,"used often, not working: cut back or fix the pitch it depends on"
+664702,delivery,0.0,,11,small sample,insufficient sample
+664702,tunneling,48.3,34.1,1,small sample,coaching target
+664731,delivery,0.0,,10,small sample,insufficient sample
+664731,tunneling,100.0,,1,small sample,insufficient sample
+664744,delivery,29.8,3.700000000000003,15,small sample,coaching target
+664744,tunneling,0.0,,0,small sample,insufficient sample
+664849,delivery,16.5,5.400000000000006,240,,coaching target
+664849,tunneling,3.7,77.35,34,,effective but underused: use it more
+664854,delivery,62.5,47.2,273,,"used often, not working: cut back or fix the pitch it depends on"
+664854,tunneling,76.8,51.3,52,,strength
+664875,delivery,26.8,27.700000000000003,684,,coaching target
+664875,tunneling,25.8,73.25,129,,effective but underused: use it more
+664991,delivery,85.5,97.3,901,,strength
+664991,tunneling,69.1,18.4,218,,"used often, not working: cut back or fix the pitch it depends on"
+665622,delivery,77.7,72.9,1252,,strength
+665622,tunneling,15.0,44.75,300,,coaching target
+665645,delivery,87.5,95.7,94,,strength
+665645,tunneling,95.7,16.1,25,,"used often, not working: cut back or fix the pitch it depends on"
+665660,delivery,51.6,45.9,951,,"used often, not working: cut back or fix the pitch it depends on"
+665660,tunneling,16.7,21.1,189,,coaching target
+665665,delivery,27.4,99.0,345,,effective but underused: use it more
+665665,tunneling,93.3,20.95,86,,"used often, not working: cut back or fix the pitch it depends on"
+665795,delivery,68.0,66.2,73,,strength
+665795,tunneling,100.0,49.7,28,,"used often, not working: cut back or fix the pitch it depends on"
+665871,delivery,88.8,58.4,581,,strength
+665871,tunneling,85.3,48.15,153,,"used often, not working: cut back or fix the pitch it depends on"
+666129,delivery,32.0,15.299999999999995,70,,coaching target
+666129,tunneling,75.6,54.4,21,small sample,strength
+666171,delivery,6.7,19.700000000000003,1269,,coaching target
+666171,tunneling,49.1,51.1,279,,effective but underused: use it more
+666200,delivery,99.1,,4,small sample,insufficient sample
+666201,delivery,53.4,67.0,161,,strength
+666201,tunneling,5.1,63.1,33,,effective but underused: use it more
+666277,delivery,68.0,81.7,1149,,strength
+666277,tunneling,67.4,46.0,339,,"used often, not working: cut back or fix the pitch it depends on"
+666374,delivery,20.7,23.599999999999994,262,,coaching target
+666374,tunneling,27.4,71.9,49,,effective but underused: use it more
+666619,delivery,40.2,29.3,86,,coaching target
+666619,tunneling,12.8,61.599999999999994,17,small sample,effective but underused: use it more
+666661,delivery,96.4,92.8,1041,,strength
+666661,tunneling,25.2,33.05,201,,coaching target
+666711,delivery,57.1,49.1,169,,"used often, not working: cut back or fix the pitch it depends on"
+666711,tunneling,39.6,30.299999999999997,29,,coaching target
+666745,delivery,91.8,77.6,123,,strength
+666745,tunneling,87.5,26.95,39,,"used often, not working: cut back or fix the pitch it depends on"
+666808,delivery,55.1,58.1,1038,,strength
+666808,tunneling,24.6,34.75,188,,coaching target
+666974,delivery,56.7,38.2,794,,"used often, not working: cut back or fix the pitch it depends on"
+666974,tunneling,95.9,18.8,169,,"used often, not working: cut back or fix the pitch it depends on"
+667297,delivery,19.5,14.900000000000006,981,,coaching target
+667297,tunneling,82.5,46.0,245,,"used often, not working: cut back or fix the pitch it depends on"
+667463,delivery,84.8,59.8,684,,strength
+667463,tunneling,87.0,85.9,229,,strength
+667652,delivery,8.2,8.0,278,,coaching target
+667652,tunneling,39.0,7.8,54,,coaching target
+668390,delivery,9.2,23.700000000000003,775,,coaching target
+668390,tunneling,89.3,63.7,223,,strength
+668670,delivery,0.0,,1,small sample,insufficient sample
+668674,delivery,61.6,94.7,901,,strength
+668674,tunneling,41.5,80.05,233,,effective but underused: use it more
+668678,delivery,68.0,40.9,75,,"used often, not working: cut back or fix the pitch it depends on"
+668678,tunneling,3.7,25.25,18,small sample,coaching target
+668716,delivery,98.3,69.6,64,,strength
+668716,tunneling,17.1,79.75,17,small sample,effective but underused: use it more
+668820,delivery,44.3,15.5,340,,coaching target
+668820,tunneling,23.8,3.7,78,,coaching target
+668831,delivery,5.1,2.0,194,,coaching target
+668831,tunneling,69.2,34.05,49,,"used often, not working: cut back or fix the pitch it depends on"
+668834,delivery,0.0,9.099999999999994,162,,coaching target
+668834,tunneling,76.4,52.25,53,,strength
+668873,delivery,15.3,68.3,786,,effective but underused: use it more
+668873,tunneling,54.6,89.9,181,,strength
+668933,delivery,69.2,47.6,612,,"used often, not working: cut back or fix the pitch it depends on"
+668933,tunneling,40.6,63.95,92,,effective but underused: use it more
+668941,delivery,72.4,87.4,922,,strength
+668941,tunneling,52.6,7.85,200,,"used often, not working: cut back or fix the pitch it depends on"
+668942,delivery,0.0,,6,small sample,insufficient sample
+668964,delivery,95.6,90.5,745,,strength
+668964,tunneling,76.2,46.0,180,,"used often, not working: cut back or fix the pitch it depends on"
+668970,delivery,62.1,56.8,259,,strength
+668970,tunneling,5.1,54.15,48,,effective but underused: use it more
+668984,delivery,54.3,40.2,972,,"used often, not working: cut back or fix the pitch it depends on"
+668984,tunneling,85.6,48.6,253,,"used often, not working: cut back or fix the pitch it depends on"
+669020,delivery,72.4,59.2,956,,strength
+669020,tunneling,94.2,59.65,263,,strength
+669060,delivery,75.0,67.5,558,,strength
+669060,tunneling,73.2,56.099999999999994,168,,strength
+669062,delivery,45.9,62.1,953,,effective but underused: use it more
+669062,tunneling,6.7,25.95,182,,coaching target
+669084,delivery,47.0,62.6,965,,effective but underused: use it more
+669084,tunneling,46.3,70.19999999999999,258,,effective but underused: use it more
+669093,delivery,56.0,18.599999999999994,512,,"used often, not working: cut back or fix the pitch it depends on"
+669093,tunneling,3.8,32.75,76,,coaching target
+669145,delivery,38.4,33.2,72,,coaching target
+669145,tunneling,48.3,75.25,20,small sample,effective but underused: use it more
+669165,delivery,68.8,93.9,706,,strength
+669165,tunneling,91.3,58.099999999999994,150,,strength
+669169,delivery,93.5,64.2,64,,strength
+669169,tunneling,69.8,9.9,18,small sample,"used often, not working: cut back or fix the pitch it depends on"
+669194,delivery,31.7,13.900000000000006,82,,coaching target
+669194,tunneling,100.0,21.5,26,,"used often, not working: cut back or fix the pitch it depends on"
+669199,delivery,31.0,14.599999999999994,1005,,coaching target
+669199,tunneling,58.5,31.45,293,,"used often, not working: cut back or fix the pitch it depends on"
+669211,delivery,19.0,28.8,412,,coaching target
+669211,tunneling,84.2,63.4,88,,strength
+669212,delivery,56.4,30.0,339,,"used often, not working: cut back or fix the pitch it depends on"
+669212,tunneling,12.1,37.2,76,,coaching target
+669270,delivery,21.9,5.5,748,,coaching target
+669270,tunneling,20.9,37.45,155,,coaching target
+669276,delivery,60.7,48.4,1054,,"used often, not working: cut back or fix the pitch it depends on"
+669276,tunneling,68.2,72.19999999999999,243,,strength
+669298,delivery,84.8,87.5,134,,strength
+669298,tunneling,99.7,50.25,43,,strength
+669310,delivery,40.1,33.0,141,,coaching target
+669310,tunneling,12.5,2.25,38,,coaching target
+669330,delivery,94.3,87.6,1068,,strength
+669330,tunneling,78.2,44.15,294,,"used often, not working: cut back or fix the pitch it depends on"
+669371,delivery,66.5,34.7,282,,"used often, not working: cut back or fix the pitch it depends on"
+669371,tunneling,78.9,84.9,73,,strength
+669372,delivery,61.6,14.200000000000005,104,,"used often, not working: cut back or fix the pitch it depends on"
+669372,tunneling,9.7,14.95,23,small sample,coaching target
+669387,delivery,39.6,21.40000000000001,1119,,coaching target
+669387,tunneling,30.1,42.9,271,,coaching target
+669438,delivery,99.0,94.5,323,,strength
+669438,tunneling,17.8,83.35,97,,effective but underused: use it more
+669620,delivery,84.5,88.8,394,,strength
+669620,tunneling,92.0,12.0,108,,"used often, not working: cut back or fix the pitch it depends on"
+669622,delivery,17.5,0.7000000000000028,539,,coaching target
+669622,tunneling,0.1,94.45,80,,effective but underused: use it more
+669684,delivery,9.5,6.400000000000006,533,,coaching target
+669684,tunneling,70.8,37.15,142,,"used often, not working: cut back or fix the pitch it depends on"
+669704,delivery,100.0,68.2,59,,strength
+669704,tunneling,0.3,60.25,8,small sample,effective but underused: use it more
+669711,delivery,0.4,7.5,991,,coaching target
+669711,tunneling,33.2,84.44999999999999,267,,effective but underused: use it more
+669724,delivery,98.9,95.2,297,,strength
+669724,tunneling,23.1,3.15,54,,coaching target
+669854,delivery,73.7,73.3,151,,strength
+669854,tunneling,94.3,44.150000000000006,38,,"used often, not working: cut back or fix the pitch it depends on"
+669920,delivery,20.7,30.099999999999994,119,,coaching target
+669920,tunneling,3.7,48.55,26,,coaching target
+669947,delivery,65.2,71.7,587,,strength
+669947,tunneling,98.4,48.900000000000006,208,,"used often, not working: cut back or fix the pitch it depends on"
+670036,delivery,37.4,98.4,1101,,effective but underused: use it more
+670036,tunneling,86.2,33.05,245,,"used often, not working: cut back or fix the pitch it depends on"
+670059,delivery,58.0,90.8,860,,strength
+670059,tunneling,55.7,56.3,181,,strength
+670062,delivery,16.3,9.200000000000005,712,,coaching target
+670062,tunneling,93.9,76.5,164,,strength
+670090,delivery,25.0,41.8,149,,coaching target
+670090,tunneling,75.8,93.15,41,,strength
+670103,delivery,98.2,75.4,292,,strength
+670103,tunneling,27.2,86.15,66,,effective but underused: use it more
+670167,delivery,9.8,17.799999999999997,829,,coaching target
+670167,tunneling,11.0,62.0,217,,effective but underused: use it more
+670183,delivery,28.3,90.1,203,,effective but underused: use it more
+670183,tunneling,17.1,69.4,28,,effective but underused: use it more
+670245,delivery,93.8,97.9,1138,,strength
+670245,tunneling,86.8,38.849999999999994,328,,"used often, not working: cut back or fix the pitch it depends on"
+670280,delivery,92.3,82.8,1154,,strength
+670280,tunneling,65.7,50.15,275,,strength
+670329,delivery,54.3,39.1,997,,"used often, not working: cut back or fix the pitch it depends on"
+670329,tunneling,92.7,33.35,254,,"used often, not working: cut back or fix the pitch it depends on"
+670871,delivery,68.8,38.1,18,small sample,"used often, not working: cut back or fix the pitch it depends on"
+670871,tunneling,15.4,63.2,5,small sample,effective but underused: use it more
+670912,delivery,57.1,17.299999999999997,72,,"used often, not working: cut back or fix the pitch it depends on"
+670912,tunneling,88.0,49.7,24,small sample,"used often, not working: cut back or fix the pitch it depends on"
+670950,delivery,64.5,11.200000000000005,1302,,"used often, not working: cut back or fix the pitch it depends on"
+670950,tunneling,34.9,70.35,260,,effective but underused: use it more
+670970,delivery,68.3,34.8,1318,,"used often, not working: cut back or fix the pitch it depends on"
+670970,tunneling,34.6,36.3,277,,coaching target
+670990,delivery,1.6,13.5,1371,,coaching target
+670990,tunneling,10.7,75.95,254,,effective but underused: use it more
+671106,delivery,67.3,72.4,182,,strength
+671106,tunneling,12.1,91.30000000000001,52,,effective but underused: use it more
+671109,delivery,2.8,7.700000000000003,56,,coaching target
+671109,tunneling,0.9,98.85,9,small sample,effective but underused: use it more
+671111,delivery,8.9,2.4000000000000057,377,,coaching target
+671111,tunneling,94.7,34.75,131,,"used often, not working: cut back or fix the pitch it depends on"
+671131,delivery,98.6,54.8,44,,strength
+671131,tunneling,0.0,81.35,4,small sample,effective but underused: use it more
+671162,delivery,39.1,41.1,280,,coaching target
+671162,tunneling,99.9,85.75,88,,strength
+671212,delivery,97.7,80.1,84,,strength
+671212,tunneling,24.2,59.7,24,small sample,effective but underused: use it more
+671345,delivery,44.9,32.2,448,,coaching target
+671345,tunneling,10.1,14.65,97,,coaching target
+671382,delivery,99.1,55.1,189,,strength
+671382,tunneling,12.5,55.85,33,,effective but underused: use it more
+671922,delivery,28.3,77.7,1226,,effective but underused: use it more
+671922,tunneling,99.3,40.7,281,,"used often, not working: cut back or fix the pitch it depends on"
+671936,delivery,44.9,21.700000000000003,547,,coaching target
+671936,tunneling,52.8,39.9,118,,"used often, not working: cut back or fix the pitch it depends on"
+672021,delivery,6.2,93.8,122,,effective but underused: use it more
+672021,tunneling,0.9,40.349999999999994,21,small sample,coaching target
+672335,delivery,79.7,89.6,767,,strength
+672335,tunneling,71.1,17.5,149,,"used often, not working: cut back or fix the pitch it depends on"
+672442,delivery,26.4,66.2,256,,effective but underused: use it more
+672442,tunneling,59.3,60.85,45,,strength
+672456,delivery,50.0,60.5,280,,strength
+672456,tunneling,30.6,61.0,84,,effective but underused: use it more
+672578,delivery,34.1,28.40000000000001,51,,coaching target
+672578,tunneling,10.0,99.0,7,small sample,effective but underused: use it more
+672582,delivery,84.1,77.6,216,,strength
+672582,tunneling,75.5,17.8,36,,"used often, not working: cut back or fix the pitch it depends on"
+672629,delivery,81.0,83.1,316,,strength
+672629,tunneling,22.6,55.7,83,,effective but underused: use it more
+672782,delivery,19.0,47.0,1123,,coaching target
+672782,tunneling,52.3,77.75,268,,strength
+672841,delivery,8.8,69.0,282,,effective but underused: use it more
+672841,tunneling,21.9,35.900000000000006,59,,coaching target
+673380,delivery,27.1,25.3,213,,coaching target
+673380,tunneling,99.7,95.45,33,,strength
+673513,delivery,79.4,80.3,1086,,strength
+673513,tunneling,36.6,53.300000000000004,237,,effective but underused: use it more
+673540,delivery,58.7,91.6,533,,strength
+673540,tunneling,54.3,41.15,91,,"used often, not working: cut back or fix the pitch it depends on"
+673929,delivery,87.5,98.9,292,,strength
+673929,tunneling,67.5,36.0,65,,"used often, not working: cut back or fix the pitch it depends on"
+674003,delivery,76.7,40.3,96,,"used often, not working: cut back or fix the pitch it depends on"
+674003,tunneling,100.0,51.4,37,,strength
+674073,delivery,4.0,1.7000000000000028,205,,coaching target
+674073,tunneling,27.4,46.0,50,,coaching target
+674370,delivery,88.5,70.6,317,,strength
+674370,tunneling,9.1,27.950000000000003,64,,coaching target
+674444,delivery,5.4,67.8,888,,effective but underused: use it more
+674444,tunneling,81.6,70.94999999999999,173,,strength
+674841,delivery,23.9,22.3,452,,coaching target
+674841,tunneling,59.1,54.3,113,,strength
+675540,delivery,43.5,15.099999999999994,287,,coaching target
+675540,tunneling,42.6,37.15,79,,coaching target
+675627,delivery,38.2,87.5,89,,effective but underused: use it more
+675627,tunneling,90.0,26.65,25,,"used often, not working: cut back or fix the pitch it depends on"
+675660,delivery,62.1,94.2,460,,strength
+675660,tunneling,83.6,60.25,133,,strength
+675848,delivery,15.8,18.90000000000001,1273,,coaching target
+675848,tunneling,33.5,38.6,241,,coaching target
+675916,delivery,31.4,97.7,162,,effective but underused: use it more
+675916,tunneling,8.1,8.2,18,small sample,coaching target
+675919,delivery,38.4,22.200000000000003,75,,coaching target
+675919,tunneling,2.6,24.95,17,small sample,coaching target
+675920,delivery,100.0,52.6,40,,strength
+675920,tunneling,86.9,100.0,10,small sample,strength
+675989,delivery,7.4,64.5,225,,effective but underused: use it more
+675989,tunneling,75.8,30.200000000000003,68,,"used often, not working: cut back or fix the pitch it depends on"
+676051,delivery,97.2,69.0,189,,strength
+676051,tunneling,1.1,33.35,41,,coaching target
+676083,delivery,16.5,20.200000000000003,8,small sample,coaching target
+676083,tunneling,0.0,0.0,1,small sample,coaching target
+676105,delivery,100.0,98.0,79,,strength
+676105,tunneling,48.3,0.15,20,small sample,coaching target
+676130,delivery,78.8,83.5,63,,strength
+676130,tunneling,10.5,49.7,11,small sample,coaching target
+676254,delivery,36.5,91.9,609,,effective but underused: use it more
+676254,tunneling,33.9,40.75,93,,coaching target
+676263,delivery,0.7,5.799999999999997,970,,coaching target
+676263,tunneling,8.7,45.85,197,,coaching target
+676272,delivery,64.5,48.9,142,,"used often, not working: cut back or fix the pitch it depends on"
+676272,tunneling,87.5,97.85,44,,strength
+676282,delivery,68.8,40.3,216,,"used often, not working: cut back or fix the pitch it depends on"
+676282,tunneling,48.3,70.5,51,,effective but underused: use it more
+676395,delivery,86.6,95.7,287,,strength
+676395,tunneling,99.4,70.55000000000001,91,,strength
+676428,delivery,90.5,66.3,507,,strength
+676428,tunneling,18.1,55.45,105,,effective but underused: use it more
+676454,delivery,97.2,86.4,112,,strength
+676454,tunneling,48.3,1.85,27,,coaching target
+676467,delivery,0.0,5.099999999999994,204,,coaching target
+676467,tunneling,95.2,46.7,55,,"used often, not working: cut back or fix the pitch it depends on"
+676477,delivery,76.0,60.7,743,,strength
+676477,tunneling,62.8,47.3,156,,"used often, not working: cut back or fix the pitch it depends on"
+676508,delivery,47.7,42.9,99,,coaching target
+676508,tunneling,48.3,33.75,24,small sample,coaching target
+676510,delivery,95.2,80.1,147,,strength
+676510,tunneling,3.1,50.7,26,,effective but underused: use it more
+676534,delivery,10.4,30.5,1166,,coaching target
+676534,tunneling,24.4,30.75,299,,coaching target
+676568,delivery,86.2,42.9,170,,"used often, not working: cut back or fix the pitch it depends on"
+676568,tunneling,36.8,16.95,43,,coaching target
+676571,delivery,34.5,36.2,402,,coaching target
+676571,tunneling,33.9,69.65,93,,effective but underused: use it more
+676596,delivery,28.3,16.200000000000003,77,,coaching target
+676596,tunneling,8.1,77.1,18,small sample,effective but underused: use it more
+676604,delivery,36.5,16.299999999999997,694,,coaching target
+676604,tunneling,82.9,28.2,206,,"used often, not working: cut back or fix the pitch it depends on"
+676617,delivery,43.3,8.400000000000006,1063,,coaching target
+676617,tunneling,0.7,51.7,166,,effective but underused: use it more
+676620,delivery,52.3,67.0,284,,strength
+676620,tunneling,33.3,50.7,73,,effective but underused: use it more
+676661,delivery,92.8,93.8,156,,strength
+676661,tunneling,99.7,3.85,49,,"used often, not working: cut back or fix the pitch it depends on"
+676664,delivery,43.6,14.200000000000005,83,,coaching target
+676664,tunneling,13.8,46.6,23,small sample,coaching target
+676680,delivery,5.0,4.5,268,,coaching target
+676680,tunneling,0.9,56.650000000000006,39,,effective but underused: use it more
+676684,delivery,66.2,46.7,484,,"used often, not working: cut back or fix the pitch it depends on"
+676684,tunneling,65.4,68.35,132,,strength
+676702,delivery,46.7,36.6,56,,coaching target
+676702,tunneling,10.5,28.15,11,small sample,coaching target
+676742,delivery,48.3,64.6,547,,effective but underused: use it more
+676742,tunneling,32.9,56.85,106,,effective but underused: use it more
+676755,delivery,89.2,83.4,728,,strength
+676755,tunneling,19.5,54.55,111,,effective but underused: use it more
+676760,delivery,4.4,53.8,1042,,effective but underused: use it more
+676760,tunneling,22.9,24.2,236,,coaching target
+676775,delivery,83.7,80.0,644,,strength
+676775,tunneling,66.5,53.849999999999994,153,,strength
+676879,delivery,64.5,31.40000000000001,1538,,"used often, not working: cut back or fix the pitch it depends on"
+676879,tunneling,6.1,67.25,310,,effective but underused: use it more
+676910,delivery,93.5,30.099999999999994,52,,"used often, not working: cut back or fix the pitch it depends on"
+676910,tunneling,0.3,44.75,9,small sample,coaching target
+676962,delivery,97.0,84.8,401,,strength
+676962,tunneling,23.4,52.0,85,,effective but underused: use it more
+677020,delivery,66.2,61.5,505,,strength
+677020,tunneling,63.8,35.9,140,,"used often, not working: cut back or fix the pitch it depends on"
+677053,delivery,91.6,45.6,378,,"used often, not working: cut back or fix the pitch it depends on"
+677053,tunneling,73.2,58.0,96,,strength
+677161,delivery,65.1,54.8,283,,strength
+677161,tunneling,55.6,15.55,75,,"used often, not working: cut back or fix the pitch it depends on"
+677865,delivery,98.7,79.7,1314,,strength
+677865,tunneling,50.6,39.2,317,,"used often, not working: cut back or fix the pitch it depends on"
+677944,delivery,71.7,45.2,222,,"used often, not working: cut back or fix the pitch it depends on"
+677944,tunneling,88.9,98.5,59,,strength
+677955,delivery,71.0,69.5,692,,strength
+677955,tunneling,56.0,57.95,176,,strength
+677958,delivery,59.9,49.1,252,,"used often, not working: cut back or fix the pitch it depends on"
+677958,tunneling,75.8,95.75,61,,strength
+677961,delivery,91.9,78.6,488,,strength
+677961,tunneling,84.8,29.35,140,,"used often, not working: cut back or fix the pitch it depends on"
+677976,delivery,95.9,73.0,159,,strength
+677976,tunneling,95.7,93.9,51,,strength
+678020,delivery,25.0,50.4,521,,effective but underused: use it more
+678020,tunneling,11.3,60.4,80,,effective but underused: use it more
+678022,delivery,80.4,88.5,680,,strength
+678022,tunneling,74.5,82.45,203,,strength
+678061,delivery,58.7,95.5,180,,strength
+678061,tunneling,10.8,62.55,30,,effective but underused: use it more
+678368,delivery,59.5,46.3,170,,"used often, not working: cut back or fix the pitch it depends on"
+678368,tunneling,34.5,34.35,49,,coaching target
+678394,delivery,12.1,49.3,942,,coaching target
+678394,tunneling,55.4,31.599999999999998,263,,"used often, not working: cut back or fix the pitch it depends on"
+678576,delivery,42.8,50.3,61,,effective but underused: use it more
+678576,tunneling,67.5,0.0,11,small sample,"used often, not working: cut back or fix the pitch it depends on"
+678606,delivery,68.8,35.400000000000006,1090,,"used often, not working: cut back or fix the pitch it depends on"
+678606,tunneling,58.0,92.75,203,,strength
+678868,delivery,29.3,94.0,148,,effective but underused: use it more
+678868,tunneling,0.6,40.75,18,small sample,coaching target
+678906,delivery,43.6,75.7,503,,effective but underused: use it more
+678906,tunneling,48.3,72.4,120,,effective but underused: use it more
+679358,delivery,94.3,87.1,677,,strength
+679358,tunneling,95.6,25.8,165,,"used often, not working: cut back or fix the pitch it depends on"
+679775,delivery,21.9,26.0,339,,coaching target
+679775,tunneling,75.6,73.2,77,,strength
+679883,delivery,21.3,16.599999999999994,350,,coaching target
+679883,tunneling,71.5,62.849999999999994,96,,strength
+679885,delivery,7.0,63.4,232,,effective but underused: use it more
+679885,tunneling,3.7,70.4,48,,effective but underused: use it more
+679922,delivery,92.9,69.6,35,,strength
+679922,tunneling,0.3,31.9,8,small sample,coaching target
+680573,delivery,74.3,66.6,353,,strength
+680573,tunneling,18.7,50.15,83,,effective but underused: use it more
+680604,delivery,14.1,7.0,460,,coaching target
+680604,tunneling,27.5,59.8,111,,effective but underused: use it more
+680686,delivery,4.0,2.0,58,,coaching target
+680686,tunneling,48.3,44.75,14,small sample,coaching target
+680689,delivery,50.0,23.0,38,,"used often, not working: cut back or fix the pitch it depends on"
+680689,tunneling,13.7,100.0,9,small sample,effective but underused: use it more
+680702,delivery,25.3,95.7,129,,effective but underused: use it more
+680702,tunneling,95.7,85.45,28,,strength
+680704,delivery,43.3,30.099999999999994,157,,coaching target
+680704,tunneling,35.0,80.2,35,,effective but underused: use it more
+680723,delivery,30.4,7.200000000000003,300,,coaching target
+680723,tunneling,53.4,66.65,52,,strength
+680730,delivery,3.4,0.0999999999999943,663,,coaching target
+680730,tunneling,5.8,38.45,111,,coaching target
+680732,delivery,11.1,70.9,433,,effective but underused: use it more
+680732,tunneling,97.6,34.75,143,,"used often, not working: cut back or fix the pitch it depends on"
+680736,delivery,73.4,62.5,192,,strength
+680736,tunneling,90.9,97.85,57,,strength
+680742,delivery,42.2,44.7,966,,coaching target
+680742,tunneling,20.4,21.799999999999997,216,,coaching target
+680744,delivery,10.1,20.0,707,,coaching target
+680744,tunneling,3.0,49.15,162,,coaching target
+680755,delivery,54.3,74.0,1076,,strength
+680755,tunneling,21.8,38.050000000000004,243,,coaching target
+680767,delivery,10.7,22.599999999999994,1027,,coaching target
+680767,tunneling,31.2,50.4,232,,effective but underused: use it more
+680802,delivery,90.2,88.2,368,,strength
+680802,tunneling,88.2,44.0,95,,"used often, not working: cut back or fix the pitch it depends on"
+680880,delivery,68.8,25.90000000000001,34,,"used often, not working: cut back or fix the pitch it depends on"
+680880,tunneling,99.4,50.0,8,small sample,strength
+680899,delivery,88.9,69.3,289,,strength
+680899,tunneling,37.6,87.6,47,,effective but underused: use it more
+680916,delivery,25.7,8.700000000000003,427,,coaching target
+680916,tunneling,31.8,56.849999999999994,77,,effective but underused: use it more
+680951,delivery,96.4,23.599999999999994,39,,"used often, not working: cut back or fix the pitch it depends on"
+680951,tunneling,8.1,52.2,9,small sample,effective but underused: use it more
+681006,delivery,36.9,20.200000000000003,153,,coaching target
+681006,tunneling,56.1,25.5,34,,"used often, not working: cut back or fix the pitch it depends on"
+681084,delivery,56.4,8.0,43,,"used often, not working: cut back or fix the pitch it depends on"
+681084,tunneling,0.0,46.75,4,small sample,coaching target
+681151,delivery,63.5,36.8,304,,"used often, not working: cut back or fix the pitch it depends on"
+681151,tunneling,44.9,53.25,60,,effective but underused: use it more
+681168,delivery,27.8,27.3,187,,coaching target
+681168,tunneling,98.3,89.75,47,,strength
+681190,delivery,71.7,74.9,403,,strength
+681190,tunneling,96.4,92.05000000000001,134,,strength
+681217,delivery,47.4,55.3,1089,,effective but underused: use it more
+681217,tunneling,45.4,39.9,276,,coaching target
+681252,delivery,55.4,19.3,180,,"used often, not working: cut back or fix the pitch it depends on"
+681252,tunneling,15.7,37.9,41,,coaching target
+681293,delivery,43.8,52.6,268,,effective but underused: use it more
+681293,tunneling,9.7,57.1,68,,effective but underused: use it more
+681320,delivery,82.4,72.6,294,,strength
+681320,tunneling,59.4,79.9,42,,strength
+681347,delivery,100.0,77.6,7,small sample,strength
+681347,tunneling,99.9,100.0,2,small sample,strength
+681402,delivery,42.5,57.8,579,,effective but underused: use it more
+681402,tunneling,97.0,57.4,110,,strength
+681432,delivery,97.2,2.0,19,small sample,"used often, not working: cut back or fix the pitch it depends on"
+681432,tunneling,48.3,79.65,4,small sample,effective but underused: use it more
+681520,delivery,68.8,40.3,18,small sample,"used often, not working: cut back or fix the pitch it depends on"
+681520,tunneling,0.9,81.9,3,small sample,effective but underused: use it more
+681544,delivery,87.2,46.3,288,,"used often, not working: cut back or fix the pitch it depends on"
+681544,tunneling,8.0,74.4,51,,effective but underused: use it more
+681676,delivery,16.6,11.5,387,,coaching target
+681676,tunneling,54.0,79.65,93,,strength
+681751,delivery,47.0,49.1,228,,coaching target
+681751,tunneling,67.5,77.75,56,,strength
+681799,delivery,59.1,32.0,436,,"used often, not working: cut back or fix the pitch it depends on"
+681799,tunneling,30.6,84.75,96,,effective but underused: use it more
+681806,delivery,20.7,6.0,81,,coaching target
+681806,tunneling,48.3,77.19999999999999,21,small sample,effective but underused: use it more
+681810,delivery,51.6,45.3,879,,"used often, not working: cut back or fix the pitch it depends on"
+681810,tunneling,38.0,72.65,206,,effective but underused: use it more
+681867,delivery,87.4,87.9,642,,strength
+681867,tunneling,77.6,40.150000000000006,202,,"used often, not working: cut back or fix the pitch it depends on"
+681870,delivery,46.4,54.1,820,,effective but underused: use it more
+681870,tunneling,35.5,96.7,125,,effective but underused: use it more
+681892,delivery,57.1,38.5,876,,"used often, not working: cut back or fix the pitch it depends on"
+681892,tunneling,72.5,46.45,229,,"used often, not working: cut back or fix the pitch it depends on"
+681895,delivery,50.6,33.900000000000006,833,,"used often, not working: cut back or fix the pitch it depends on"
+681895,tunneling,60.3,26.1,212,,"used often, not working: cut back or fix the pitch it depends on"
+681911,delivery,52.4,13.200000000000005,1011,,"used often, not working: cut back or fix the pitch it depends on"
+681911,tunneling,72.8,26.1,257,,"used often, not working: cut back or fix the pitch it depends on"
+681916,delivery,42.8,26.599999999999994,703,,coaching target
+681916,tunneling,44.2,45.7,139,,coaching target
+681973,delivery,95.2,54.0,35,,strength
+681973,tunneling,3.7,76.65,7,small sample,effective but underused: use it more
+681982,delivery,23.2,8.900000000000006,915,,coaching target
+681982,tunneling,60.8,64.55,192,,strength
+682052,delivery,27.8,25.90000000000001,179,,coaching target
+682052,tunneling,16.5,45.6,48,,coaching target
+682120,delivery,11.8,20.3,983,,coaching target
+682120,tunneling,42.3,57.4,249,,effective but underused: use it more
+682227,delivery,61.6,44.0,158,,"used often, not working: cut back or fix the pitch it depends on"
+682227,tunneling,0.9,77.5,31,,effective but underused: use it more
+682243,delivery,21.0,4.799999999999997,83,,coaching target
+682243,tunneling,33.3,33.05,27,,coaching target
+682254,delivery,49.7,76.3,1098,,effective but underused: use it more
+682254,tunneling,75.9,78.25,236,,strength
+682274,delivery,29.5,97.2,193,,effective but underused: use it more
+682274,tunneling,99.7,8.7,56,,"used often, not working: cut back or fix the pitch it depends on"
+682445,delivery,97.2,91.5,129,,strength
+682445,tunneling,76.9,49.55,32,,"used often, not working: cut back or fix the pitch it depends on"
+682608,delivery,33.7,52.1,944,,effective but underused: use it more
+682608,tunneling,97.3,89.75,245,,strength
+682610,delivery,33.8,36.9,112,,coaching target
+682610,tunneling,20.7,23.55,28,,coaching target
+682668,delivery,0.0,,3,small sample,insufficient sample
+682668,tunneling,0.0,,0,small sample,insufficient sample
+682769,delivery,85.2,62.5,35,,strength
+682769,tunneling,0.0,31.9,4,small sample,coaching target
+682825,delivery,53.4,70.3,665,,strength
+682825,tunneling,9.8,38.3,89,,coaching target
+682842,delivery,67.6,99.6,918,,strength
+682842,tunneling,7.8,58.449999999999996,106,,effective but underused: use it more
+682982,delivery,87.5,77.3,203,,strength
+682982,tunneling,13.7,4.4,36,,coaching target
+682989,delivery,76.7,28.599999999999994,586,,"used often, not working: cut back or fix the pitch it depends on"
+682989,tunneling,13.2,69.8,116,,effective but underused: use it more
+682995,delivery,59.9,65.5,351,,strength
+682995,tunneling,51.1,40.35,92,,"used often, not working: cut back or fix the pitch it depends on"
+682997,delivery,0.0,,29,,insufficient sample
+682997,tunneling,0.0,,0,small sample,insufficient sample
+683000,delivery,37.1,66.1,555,,effective but underused: use it more
+683000,tunneling,22.1,45.7,96,,coaching target
+683155,delivery,91.9,56.8,54,,strength
+683155,tunneling,19.2,4.85,13,small sample,coaching target
+683175,delivery,60.4,28.3,590,,"used often, not working: cut back or fix the pitch it depends on"
+683175,tunneling,65.0,47.150000000000006,107,,"used often, not working: cut back or fix the pitch it depends on"
+683232,delivery,82.4,57.2,341,,strength
+683232,tunneling,97.9,20.5,113,,"used often, not working: cut back or fix the pitch it depends on"
+683363,delivery,100.0,73.9,63,,strength
+683363,tunneling,0.0,99.85,4,small sample,effective but underused: use it more
+683409,delivery,23.4,86.1,285,,effective but underused: use it more
+683409,tunneling,29.6,1.15,58,,coaching target
+683618,delivery,60.9,50.1,947,,strength
+683618,tunneling,2.7,78.35,186,,effective but underused: use it more
+683627,delivery,45.5,15.099999999999994,140,,coaching target
+683627,tunneling,67.2,69.55,34,,strength
+683734,delivery,0.0,,50,,insufficient sample
+683742,delivery,45.9,58.7,348,,effective but underused: use it more
+683742,tunneling,51.7,72.35,79,,strength
+683769,delivery,6.4,61.8,983,,effective but underused: use it more
+683769,tunneling,83.9,79.3,249,,strength
+684049,delivery,67.6,77.4,325,,strength
+684049,tunneling,69.7,49.7,66,,"used often, not working: cut back or fix the pitch it depends on"
+684320,delivery,66.5,52.3,172,,strength
+684320,tunneling,48.3,26.799999999999997,38,,coaching target
+684516,delivery,100.0,99.1,59,,strength
+684516,tunneling,84.9,2.85,16,small sample,"used often, not working: cut back or fix the pitch it depends on"
+684665,delivery,67.2,56.1,381,,strength
+684665,tunneling,4.4,33.75,69,,coaching target
+684974,delivery,54.3,63.8,635,,strength
+684974,tunneling,43.3,55.150000000000006,129,,effective but underused: use it more
+685005,delivery,61.2,40.3,178,,"used often, not working: cut back or fix the pitch it depends on"
+685005,tunneling,13.4,66.8,35,,effective but underused: use it more
+685112,delivery,61.6,71.9,238,,strength
+685112,tunneling,44.7,78.2,57,,effective but underused: use it more
+685126,delivery,51.6,74.6,689,,strength
+685126,tunneling,0.4,12.7,121,,coaching target
+685299,delivery,78.6,44.2,707,,"used often, not working: cut back or fix the pitch it depends on"
+685299,tunneling,98.1,40.45,211,,"used often, not working: cut back or fix the pitch it depends on"
+685464,delivery,21.6,6.0,245,,coaching target
+685464,tunneling,64.7,96.45,67,,strength
+685801,delivery,4.1,20.599999999999994,319,,coaching target
+685801,tunneling,15.5,12.7,61,,coaching target
+686218,delivery,95.2,90.1,93,,strength
+686218,tunneling,93.7,10.25,31,,"used often, not working: cut back or fix the pitch it depends on"
+686228,delivery,34.5,53.4,53,,effective but underused: use it more
+686228,tunneling,17.7,3.4,12,small sample,coaching target
+686560,delivery,24.6,56.4,480,,effective but underused: use it more
+686560,tunneling,50.3,20.75,128,,"used often, not working: cut back or fix the pitch it depends on"
+686563,delivery,92.9,39.8,80,,"used often, not working: cut back or fix the pitch it depends on"
+686563,tunneling,67.0,91.3,23,small sample,strength
+686580,delivery,83.7,56.7,508,,strength
+686580,tunneling,54.8,36.15,125,,"used often, not working: cut back or fix the pitch it depends on"
+686610,delivery,65.6,37.5,149,,"used often, not working: cut back or fix the pitch it depends on"
+686610,tunneling,10.8,77.5,30,,effective but underused: use it more
+686628,delivery,100.0,98.0,23,small sample,strength
+686628,tunneling,17.7,17.1,6,small sample,coaching target
+686678,delivery,68.8,58.8,58,,strength
+686678,tunneling,100.0,48.0,21,small sample,"used often, not working: cut back or fix the pitch it depends on"
+686730,delivery,47.0,34.400000000000006,85,,coaching target
+686730,tunneling,92.0,53.7,20,small sample,strength
+686747,delivery,38.4,27.8,8,small sample,coaching target
+686747,tunneling,0.0,,1,small sample,insufficient sample
+686751,delivery,7.0,39.3,569,,coaching target
+686751,tunneling,62.5,35.15,142,,"used often, not working: cut back or fix the pitch it depends on"
+686753,delivery,7.8,4.400000000000006,306,,coaching target
+686753,tunneling,59.7,54.7,82,,strength
+686780,delivery,0.0,,16,small sample,insufficient sample
+686780,tunneling,0.3,4.4,1,small sample,coaching target
+686796,delivery,39.6,25.90000000000001,42,,coaching target
+686796,tunneling,3.7,50.0,7,small sample,effective but underused: use it more
+686894,delivery,0.0,,20,small sample,insufficient sample
+686894,tunneling,0.3,63.8,1,small sample,effective but underused: use it more
+686930,delivery,49.7,25.700000000000003,438,,coaching target
+686930,tunneling,36.0,86.35,113,,effective but underused: use it more
+686934,delivery,12.9,30.3,312,,coaching target
+686934,tunneling,39.2,33.75,55,,coaching target
+686973,delivery,73.7,80.8,1236,,strength
+686973,tunneling,76.5,28.25,333,,"used often, not working: cut back or fix the pitch it depends on"
+686993,delivery,99.6,96.7,726,,strength
+686993,tunneling,82.9,48.25,206,,"used often, not working: cut back or fix the pitch it depends on"
+687060,delivery,97.2,68.8,37,,strength
+687060,tunneling,89.5,55.95,13,small sample,strength
+687075,delivery,75.3,52.6,171,,strength
+687075,tunneling,34.2,90.45,47,,effective but underused: use it more
+687134,delivery,25.3,4.799999999999997,200,,coaching target
+687134,tunneling,95.4,18.1,72,,"used often, not working: cut back or fix the pitch it depends on"
+687209,delivery,69.9,95.5,291,,strength
+687209,tunneling,71.8,2.3,61,,"used often, not working: cut back or fix the pitch it depends on"
+687223,delivery,22.9,18.5,80,,coaching target
+687223,tunneling,92.0,18.5,20,small sample,"used often, not working: cut back or fix the pitch it depends on"
+687239,delivery,55.5,36.1,282,,"used often, not working: cut back or fix the pitch it depends on"
+687239,tunneling,8.5,26.25,50,,coaching target
+687287,delivery,70.6,63.9,65,,strength
+687287,tunneling,3.7,36.8,16,small sample,coaching target
+687309,delivery,93.5,81.5,254,,strength
+687309,tunneling,14.8,5.4,54,,coaching target
+687312,delivery,99.1,36.1,53,,"used often, not working: cut back or fix the pitch it depends on"
+687312,tunneling,100.0,89.15,18,small sample,strength
+687330,delivery,90.8,37.9,987,,"used often, not working: cut back or fix the pitch it depends on"
+687330,tunneling,21.5,25.05,200,,coaching target
+687377,delivery,53.4,77.1,750,,strength
+687377,tunneling,25.5,46.85,179,,coaching target
+687396,delivery,93.2,80.5,1282,,strength
+687396,tunneling,66.2,64.4,281,,strength
+687473,delivery,38.4,15.299999999999995,137,,coaching target
+687473,tunneling,69.2,92.45,39,,strength
+687531,delivery,78.7,62.5,199,,strength
+687531,tunneling,70.9,83.30000000000001,53,,strength
+687562,delivery,97.2,64.2,65,,strength
+687562,tunneling,90.0,51.3,21,small sample,strength
+687570,delivery,84.8,54.8,141,,strength
+687570,tunneling,100.0,57.45,57,,strength
+687606,delivery,43.9,32.8,584,,coaching target
+687606,tunneling,28.3,66.1,137,,effective but underused: use it more
+687721,delivery,98.3,65.6,17,small sample,strength
+687721,tunneling,97.4,81.9,6,small sample,strength
+687765,delivery,17.8,11.900000000000006,137,,coaching target
+687765,tunneling,74.9,1.95,46,,"used often, not working: cut back or fix the pitch it depends on"
+687849,delivery,43.8,73.3,294,,effective but underused: use it more
+687849,tunneling,95.7,46.45,85,,"used often, not working: cut back or fix the pitch it depends on"
+687859,delivery,0.0,,35,,insufficient sample
+687859,tunneling,0.3,81.9,3,small sample,effective but underused: use it more
+687911,delivery,81.0,86.8,1048,,strength
+687911,tunneling,50.9,12.95,185,,"used often, not working: cut back or fix the pitch it depends on"
+687924,delivery,88.5,68.2,54,,strength
+687924,tunneling,63.0,50.0,15,small sample,strength
+687941,delivery,18.0,1.0,394,,coaching target
+687941,tunneling,42.9,33.35,80,,coaching target
+687985,delivery,97.2,16.200000000000003,43,,"used often, not working: cut back or fix the pitch it depends on"
+687985,tunneling,63.8,52.55,14,small sample,strength
+688107,delivery,58.8,36.4,82,,"used often, not working: cut back or fix the pitch it depends on"
+688107,tunneling,58.7,13.8,24,small sample,"used often, not working: cut back or fix the pitch it depends on"
+688158,delivery,28.8,23.200000000000003,597,,coaching target
+688158,tunneling,28.9,19.95,130,,coaching target
+688297,delivery,12.9,51.6,695,,effective but underused: use it more
+688297,tunneling,10.4,32.35,149,,coaching target
+688497,delivery,40.8,27.0,88,,coaching target
+688497,tunneling,96.3,83.9,29,,strength
+688642,delivery,7.5,24.3,1332,,coaching target
+688642,tunneling,53.1,10.15,381,,"used often, not working: cut back or fix the pitch it depends on"
+688692,delivery,92.3,90.1,67,,strength
+688692,tunneling,0.3,0.3,12,small sample,coaching target
+688883,delivery,96.4,85.1,442,,strength
+688883,tunneling,71.5,51.0,96,,strength
+689017,delivery,40.5,33.2,187,,coaching target
+689017,tunneling,58.4,66.5,49,,strength
+689147,delivery,11.5,4.099999999999994,1093,,coaching target
+689147,tunneling,21.2,38.05,242,,coaching target
+689149,delivery,35.4,30.40000000000001,260,,coaching target
+689149,tunneling,97.4,16.95,78,,"used often, not working: cut back or fix the pitch it depends on"
+689225,delivery,49.0,60.4,387,,effective but underused: use it more
+689225,tunneling,28.1,7.0,93,,coaching target
+689254,delivery,50.1,35.099999999999994,957,,"used often, not working: cut back or fix the pitch it depends on"
+689254,tunneling,57.1,25.2,203,,"used often, not working: cut back or fix the pitch it depends on"
+689266,delivery,38.5,5.299999999999997,779,,coaching target
+689266,tunneling,2.1,17.1,101,,coaching target
+689296,delivery,8.7,60.1,993,,effective but underused: use it more
+689296,tunneling,46.9,78.2,214,,effective but underused: use it more
+689441,delivery,100.0,81.0,19,small sample,strength
+689441,tunneling,100.0,63.8,7,small sample,strength
+689520,delivery,92.6,90.3,296,,strength
+689520,tunneling,16.5,69.4,43,,effective but underused: use it more
+689546,delivery,47.4,61.2,446,,effective but underused: use it more
+689546,tunneling,74.8,33.45,78,,"used often, not working: cut back or fix the pitch it depends on"
+689690,delivery,0.6,20.200000000000003,87,,coaching target
+689690,tunneling,85.9,24.05,21,small sample,"used often, not working: cut back or fix the pitch it depends on"
+689818,delivery,20.7,52.6,177,,effective but underused: use it more
+689818,tunneling,69.2,57.55,49,,strength
+690155,delivery,96.4,71.9,120,,strength
+690155,tunneling,4.0,97.3,27,,effective but underused: use it more
+690440,delivery,52.3,30.099999999999994,128,,"used often, not working: cut back or fix the pitch it depends on"
+690440,tunneling,81.5,41.2,35,,"used often, not working: cut back or fix the pitch it depends on"
+690829,delivery,98.9,90.3,259,,strength
+690829,tunneling,0.9,99.7,36,,effective but underused: use it more
+690925,delivery,58.4,49.0,796,,"used often, not working: cut back or fix the pitch it depends on"
+690925,tunneling,15.8,76.19999999999999,114,,effective but underused: use it more
+690928,delivery,1.7,7.700000000000003,224,,coaching target
+690928,tunneling,17.1,76.35,63,,effective but underused: use it more
+690953,delivery,100.0,71.9,81,,strength
+690953,tunneling,99.4,88.2,25,,strength
+690978,delivery,27.7,28.0,479,,coaching target
+690978,tunneling,32.3,9.549999999999999,130,,coaching target
+690986,delivery,92.9,37.8,80,,"used often, not working: cut back or fix the pitch it depends on"
+690986,tunneling,90.0,69.85,17,small sample,strength
+691008,delivery,78.8,50.3,163,,strength
+691008,tunneling,37.3,92.75,46,,effective but underused: use it more
+691384,delivery,43.5,63.1,250,,effective but underused: use it more
+691384,tunneling,41.0,84.2,65,,effective but underused: use it more
+691548,delivery,28.7,7.700000000000003,49,,coaching target
+691548,tunneling,68.8,50.0,10,small sample,strength
+691587,delivery,52.1,28.40000000000001,14,small sample,"used often, not working: cut back or fix the pitch it depends on"
+691587,tunneling,48.3,100.0,4,small sample,effective but underused: use it more
+691725,delivery,52.3,13.599999999999994,158,,"used often, not working: cut back or fix the pitch it depends on"
+691725,tunneling,54.1,91.3,46,,strength
+691769,delivery,1.0,3.5999999999999943,313,,coaching target
+691769,tunneling,79.6,34.8,78,,"used often, not working: cut back or fix the pitch it depends on"
+691799,delivery,76.7,49.9,1272,,"used often, not working: cut back or fix the pitch it depends on"
+691799,tunneling,69.4,37.3,319,,"used often, not working: cut back or fix the pitch it depends on"
+691945,delivery,76.0,84.1,117,,strength
+691945,tunneling,75.8,54.599999999999994,34,,strength
+691951,delivery,57.5,23.599999999999994,130,,"used often, not working: cut back or fix the pitch it depends on"
+691951,tunneling,3.7,46.7,25,,coaching target
+692030,delivery,99.1,81.5,104,,strength
+692030,tunneling,96.6,70.8,31,,strength
+692064,delivery,93.5,71.9,68,,strength
+692064,tunneling,100.0,53.400000000000006,25,,strength
+692230,delivery,23.4,32.400000000000006,182,,coaching target
+692230,tunneling,0.3,57.7,33,,effective but underused: use it more
+692437,delivery,80.0,23.599999999999994,33,,"used often, not working: cut back or fix the pitch it depends on"
+692437,tunneling,99.7,0.0,9,small sample,"used often, not working: cut back or fix the pitch it depends on"
+693308,delivery,18.3,1.2999999999999972,390,,coaching target
+693308,tunneling,5.3,74.80000000000001,67,,effective but underused: use it more
+693312,delivery,97.7,73.0,198,,strength
+693312,tunneling,48.3,72.65,50,,effective but underused: use it more
+693313,delivery,89.8,90.2,520,,strength
+693313,tunneling,8.1,57.1,99,,effective but underused: use it more
+693686,delivery,88.2,64.1,1140,,strength
+693686,tunneling,29.2,84.44999999999999,271,,effective but underused: use it more
+693713,delivery,90.9,44.6,43,,"used often, not working: cut back or fix the pitch it depends on"
+693713,tunneling,1.1,31.9,9,small sample,coaching target
+693855,delivery,21.3,53.6,888,,effective but underused: use it more
+693855,tunneling,63.1,40.2,279,,"used often, not working: cut back or fix the pitch it depends on"
+694037,delivery,34.2,18.0,477,,coaching target
+694037,tunneling,66.8,94.15,73,,strength
+694297,delivery,45.3,62.9,362,,effective but underused: use it more
+694297,tunneling,92.0,23.6,104,,"used often, not working: cut back or fix the pitch it depends on"
+694335,delivery,77.7,82.5,774,,strength
+694335,tunneling,80.2,31.45,226,,"used often, not working: cut back or fix the pitch it depends on"
+694341,delivery,66.5,4.799999999999997,62,,"used often, not working: cut back or fix the pitch it depends on"
+694341,tunneling,19.2,75.2,13,small sample,effective but underused: use it more
+694346,delivery,36.9,7.099999999999994,30,,coaching target
+694346,tunneling,48.3,81.9,4,small sample,effective but underused: use it more
+694350,delivery,49.1,2.299999999999997,48,,coaching target
+694350,tunneling,90.0,8.850000000000001,17,small sample,"used often, not working: cut back or fix the pitch it depends on"
+694357,delivery,21.6,3.700000000000003,123,,coaching target
+694357,tunneling,99.4,75.6,34,,strength
+694360,delivery,59.5,50.7,364,,strength
+694360,tunneling,56.3,36.050000000000004,100,,"used often, not working: cut back or fix the pitch it depends on"
+694361,delivery,2.4,2.700000000000003,674,,coaching target
+694361,tunneling,38.5,47.7,155,,coaching target
+694363,delivery,70.2,66.2,166,,strength
+694363,tunneling,68.4,53.55,51,,strength
+694397,delivery,31.4,15.599999999999994,100,,coaching target
+694397,tunneling,48.3,2.85,27,,coaching target
+694462,delivery,89.8,64.8,55,,strength
+694462,tunneling,75.2,73.65,15,small sample,strength
+694477,delivery,32.0,7.799999999999997,1266,,coaching target
+694477,tunneling,1.6,77.35,254,,effective but underused: use it more
+694494,delivery,46.4,27.599999999999994,161,,coaching target
+694494,tunneling,62.3,63.8,32,,strength
+694646,delivery,88.8,52.3,155,,strength
+694646,tunneling,3.4,4.949999999999999,31,,coaching target
+694680,delivery,79.5,82.7,265,,strength
+694680,tunneling,78.3,53.599999999999994,75,,strength
+694753,delivery,17.2,39.6,349,,coaching target
+694753,tunneling,20.1,71.1,83,,effective but underused: use it more
+694795,delivery,34.8,21.200000000000003,549,,coaching target
+694795,tunneling,73.6,42.9,135,,"used often, not working: cut back or fix the pitch it depends on"
+694820,delivery,4.0,2.299999999999997,104,,coaching target
+694820,tunneling,17.7,71.9,24,small sample,effective but underused: use it more
+694851,delivery,99.1,99.1,229,,strength
+694851,tunneling,28.8,83.30000000000001,43,,effective but underused: use it more
+694918,delivery,57.4,16.200000000000003,182,,"used often, not working: cut back or fix the pitch it depends on"
+694918,tunneling,44.4,44.85,47,,coaching target
+695001,delivery,44.3,50.6,238,,effective but underused: use it more
+695001,tunneling,9.7,24.799999999999997,50,,coaching target
+695034,delivery,48.3,40.3,195,,coaching target
+695034,tunneling,18.5,44.15,51,,coaching target
+695049,delivery,60.4,63.1,212,,strength
+695049,tunneling,44.4,8.8,50,,coaching target
+695076,delivery,19.5,27.0,106,,coaching target
+695076,tunneling,68.8,81.6,30,,strength
+695239,delivery,13.5,3.299999999999997,648,,coaching target
+695239,tunneling,46.6,65.7,157,,effective but underused: use it more
+695243,delivery,37.8,46.2,1149,,coaching target
+695243,tunneling,9.5,86.9,182,,effective but underused: use it more
+695378,delivery,0.6,2.799999999999997,167,,coaching target
+695378,tunneling,14.8,24.65,34,,coaching target
+695380,delivery,82.8,71.2,733,,strength
+695380,tunneling,14.7,39.75,128,,coaching target
+695418,delivery,11.1,55.5,1233,,effective but underused: use it more
+695418,tunneling,43.3,43.6,301,,coaching target
+695445,delivery,94.6,94.0,146,,strength
+695445,tunneling,48.3,50.15,31,,effective but underused: use it more
+695534,delivery,94.9,75.1,302,,strength
+695534,tunneling,42.6,41.449999999999996,79,,coaching target
+696062,delivery,3.8,48.2,638,,coaching target
+696062,tunneling,56.8,56.099999999999994,150,,strength
+696070,delivery,39.9,72.0,322,,effective but underused: use it more
+696070,tunneling,71.9,55.400000000000006,86,,strength
+696131,delivery,23.4,52.4,556,,effective but underused: use it more
+696131,tunneling,51.4,76.8,177,,strength
+696136,delivery,47.0,34.900000000000006,51,,coaching target
+696136,tunneling,0.0,50.0,7,small sample,effective but underused: use it more
+696146,delivery,79.1,52.7,436,,strength
+696146,tunneling,42.0,95.85,106,,effective but underused: use it more
+696147,delivery,59.1,53.0,830,,strength
+696147,tunneling,35.8,12.0,165,,coaching target
+696149,delivery,27.8,4.0,88,,coaching target
+696149,tunneling,26.2,69.25,18,small sample,effective but underused: use it more
+696270,delivery,46.7,36.9,90,,coaching target
+696270,tunneling,79.6,42.550000000000004,24,small sample,"used often, not working: cut back or fix the pitch it depends on"
+696519,delivery,38.8,68.0,580,,effective but underused: use it more
+696519,tunneling,18.4,67.1,69,,effective but underused: use it more
+696522,delivery,68.2,31.5,292,,"used often, not working: cut back or fix the pitch it depends on"
+696522,tunneling,64.5,17.650000000000002,81,,"used often, not working: cut back or fix the pitch it depends on"
+697811,delivery,98.6,47.7,11,small sample,"used often, not working: cut back or fix the pitch it depends on"
+697811,tunneling,3.1,63.8,2,small sample,effective but underused: use it more
+697812,delivery,27.8,24.40000000000001,211,,coaching target
+697812,tunneling,48.3,17.1,40,,coaching target
+699008,delivery,2.1,4.0,293,,coaching target
+699008,tunneling,88.9,22.05,72,,"used often, not working: cut back or fix the pitch it depends on"
+699044,delivery,83.0,15.299999999999995,212,,"used often, not working: cut back or fix the pitch it depends on"
+699044,tunneling,56.7,90.9,32,,strength
+699134,delivery,30.4,36.5,1135,,coaching target
+699134,tunneling,49.9,43.75,258,,coaching target
+699151,delivery,68.0,54.8,142,,strength
+699151,tunneling,95.2,8.7,41,,"used often, not working: cut back or fix the pitch it depends on"
+699823,delivery,41.2,11.799999999999995,488,,coaching target
+699823,tunneling,36.9,9.4,88,,coaching target
+700187,delivery,100.0,97.7,51,,strength
+700187,tunneling,0.9,0.0,8,small sample,coaching target
+700249,delivery,100.0,81.0,87,,strength
+700249,tunneling,88.5,1.4,23,small sample,"used often, not working: cut back or fix the pitch it depends on"
+700270,delivery,16.5,5.099999999999994,146,,coaching target
+700270,tunneling,63.0,81.6,31,,strength
+700327,delivery,2.8,21.0,45,,coaching target
+700327,tunneling,48.3,25.5,11,small sample,coaching target
+700363,delivery,30.4,29.0,172,,coaching target
+700363,tunneling,27.4,35.45,39,,coaching target
+700413,delivery,34.2,30.099999999999994,45,,coaching target
+700413,tunneling,100.0,100.0,20,small sample,strength
+700669,delivery,48.3,42.5,1184,,coaching target
+700669,tunneling,48.3,43.75,326,,coaching target
+700712,delivery,93.5,76.1,62,,strength
+700712,tunneling,99.7,70.5,19,small sample,strength
+700842,delivery,62.1,33.2,41,,"used often, not working: cut back or fix the pitch it depends on"
+700842,tunneling,99.7,0.0,9,small sample,"used often, not working: cut back or fix the pitch it depends on"
+701121,delivery,75.3,31.8,194,,"used often, not working: cut back or fix the pitch it depends on"
+701121,tunneling,84.2,51.85,44,,strength
+701474,delivery,19.3,19.90000000000001,121,,coaching target
+701474,tunneling,74.9,63.8,31,,strength
+701519,delivery,0.1,12.099999999999994,950,,coaching target
+701519,tunneling,61.4,44.9,250,,"used often, not working: cut back or fix the pitch it depends on"
+701542,delivery,92.3,81.0,98,,strength
+701542,tunneling,88.5,34.5,23,small sample,"used often, not working: cut back or fix the pitch it depends on"
+701552,delivery,8.1,4.799999999999997,198,,coaching target
+701552,tunneling,0.9,15.100000000000001,30,,coaching target
+701719,delivery,68.0,36.4,292,,"used often, not working: cut back or fix the pitch it depends on"
+701719,tunneling,10.0,61.3,59,,effective but underused: use it more
+701780,delivery,55.5,29.8,25,,"used often, not working: cut back or fix the pitch it depends on"
+701780,tunneling,100.0,98.0,5,small sample,strength
+702021,delivery,5.8,26.8,755,,coaching target
+702021,tunneling,94.4,56.0,226,,strength
+702047,delivery,17.9,4.799999999999997,98,,coaching target
+702047,tunneling,85.9,91.3,21,small sample,strength
+702070,delivery,43.9,42.0,97,,coaching target
+702070,tunneling,56.8,35.65,30,,"used often, not working: cut back or fix the pitch it depends on"
+702153,delivery,92.6,68.8,109,,strength
+702153,tunneling,4.0,96.85,24,small sample,effective but underused: use it more
+702193,delivery,73.4,57.5,1212,,strength
+702193,tunneling,36.3,41.6,284,,coaching target
+702273,delivery,4.8,13.599999999999994,182,,coaching target
+702273,tunneling,58.1,29.5,50,,"used often, not working: cut back or fix the pitch it depends on"
+702275,delivery,40.2,70.0,305,,effective but underused: use it more
+702275,tunneling,19.8,50.6,72,,effective but underused: use it more
+702303,delivery,94.9,52.3,112,,strength
+702303,tunneling,58.1,51.4,25,,strength
+702352,delivery,0.0,2.299999999999997,55,,coaching target
+702352,tunneling,0.0,1.0,8,small sample,coaching target
+702474,delivery,10.1,9.099999999999994,204,,coaching target
+702474,tunneling,78.3,67.95,56,,strength
+702566,delivery,66.6,38.1,163,,"used often, not working: cut back or fix the pitch it depends on"
+702566,tunneling,10.3,25.05,36,,coaching target
+702752,delivery,69.6,40.5,523,,"used often, not working: cut back or fix the pitch it depends on"
+702752,tunneling,62.0,64.5,113,,strength
+702885,delivery,32.8,4.299999999999997,58,,coaching target
+702885,tunneling,67.0,92.69999999999999,12,small sample,strength
+703615,delivery,28.3,52.3,114,,effective but underused: use it more
+703615,tunneling,27.4,43.45,30,,coaching target
+703725,delivery,24.3,27.40000000000001,599,,coaching target
+703725,tunneling,79.9,39.5,179,,"used often, not working: cut back or fix the pitch it depends on"
+800311,delivery,33.2,72.3,1157,,effective but underused: use it more
+800311,tunneling,85.9,68.65,189,,strength
+800600,delivery,91.9,46.3,72,,"used often, not working: cut back or fix the pitch it depends on"
+800600,tunneling,85.9,15.55,21,small sample,"used often, not working: cut back or fix the pitch it depends on"
+801403,delivery,99.3,96.2,521,,strength
+801403,tunneling,44.2,42.050000000000004,139,,coaching target
+801434,delivery,41.2,68.2,124,,effective but underused: use it more
+801434,tunneling,3.1,44.45,25,,coaching target
+801725,delivery,62.5,27.599999999999994,126,,"used often, not working: cut back or fix the pitch it depends on"
+801725,tunneling,48.3,28.8,22,small sample,coaching target
+802408,delivery,50.0,50.9,266,,strength
+802408,tunneling,63.5,94.05,71,,strength
+804619,delivery,12.4,31.8,148,,coaching target
+804619,tunneling,5.4,88.6,31,,effective but underused: use it more
+804636,delivery,67.6,24.40000000000001,187,,"used often, not working: cut back or fix the pitch it depends on"
+804636,tunneling,86.9,45.150000000000006,50,,"used often, not working: cut back or fix the pitch it depends on"
+804668,delivery,0.0,,8,small sample,insufficient sample
+804668,tunneling,0.0,,0,small sample,insufficient sample
+804926,delivery,52.1,30.099999999999994,105,,"used often, not working: cut back or fix the pitch it depends on"
+804926,tunneling,21.9,11.95,29,,coaching target
+805074,delivery,23.4,11.099999999999994,139,,coaching target
+805074,tunneling,14.8,84.35,19,small sample,effective but underused: use it more
+805123,delivery,51.0,51.8,1640,,strength
+805123,tunneling,12.7,36.45,318,,coaching target
+805299,delivery,66.9,85.7,705,,strength
+805299,tunneling,40.0,89.3,147,,effective but underused: use it more
+805326,delivery,65.5,58.9,566,,strength
+805326,tunneling,77.1,85.2,153,,strength
+805345,delivery,29.5,25.099999999999994,368,,coaching target
+805345,tunneling,66.0,85.9,103,,strength
+805427,delivery,81.4,95.0,642,,strength
+805427,tunneling,74.1,51.300000000000004,174,,strength
+806188,delivery,14.6,22.90000000000001,854,,coaching target
+806188,tunneling,26.8,81.65,226,,effective but underused: use it more
+806960,delivery,31.0,40.3,198,,coaching target
+806960,tunneling,3.4,13.35,38,,coaching target
+808825,delivery,60.7,27.0,157,,"used often, not working: cut back or fix the pitch it depends on"
+808825,tunneling,0.6,5.25,28,,coaching target
+808963,delivery,100.0,98.6,48,,strength
+808963,tunneling,0.3,0.0,9,small sample,coaching target
+808970,delivery,83.1,84.1,86,,strength
+808970,tunneling,89.2,18.95,22,small sample,"used often, not working: cut back or fix the pitch it depends on"
+811315,delivery,95.9,93.8,103,,strength
+811315,tunneling,16.2,18.9,21,small sample,coaching target
+814305,delivery,84.1,86.9,294,,strength
+814305,tunneling,29.6,45.2,68,,coaching target
+814490,delivery,86.6,77.6,180,,strength
+814490,tunneling,75.2,16.7,59,,"used often, not working: cut back or fix the pitch it depends on"
+815081,delivery,66.9,25.599999999999994,298,,"used often, not working: cut back or fix the pitch it depends on"
+815081,tunneling,69.5,70.1,67,,strength
+815083,delivery,78.3,64.9,961,,strength
+815083,tunneling,47.4,81.35,240,,effective but underused: use it more
+820862,delivery,33.2,69.7,981,,effective but underused: use it more
+820862,tunneling,60.0,18.1,200,,"used often, not working: cut back or fix the pitch it depends on"
+837227,delivery,8.1,12.900000000000006,300,,coaching target
+837227,tunneling,11.5,29.900000000000002,46,,coaching target

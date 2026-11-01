@@ -46,6 +46,7 @@ python -m src.fangraphs                                            # Step 2 (add
 python -m src.stuff                                                # Step 4 -> outputs/tables/stuff_by_pitch.csv
 python -m src.deception                                            # Step 5A delivery + tunneling
 python -m src.execution                                            # Step 5 -> outputs/tables/execution_by_reliever.csv
+python -m src.leak_map                                             # Step 6 -> outputs/tables/leak_map.csv
 python -m pytest
 ```
 
