@@ -32,3 +32,12 @@ def test_build_keeps_pitchers_and_flags_data():
     assert out.loc["Ben Kudrna", "data"] == "no tracking data loaded"
     assert out.loc["Ben Kudrna", "timing"] == "convert"
     assert list(out.index) == ["Luinder Avila", "Eric Cerantola", "Ben Kudrna"]
+
+
+def test_future_grade_and_fit():
+    from src.prospects import future_grade, grade_fit
+    assert future_grade("50/60") == 60 and pd.isna(future_grade(None))
+    row = pd.Series(dict(slider="70/70", curveball=None, changeup=None, cutter="45/45", command="30/35", tops=98))
+    assert grade_fit(row) == "bat-miss slider (70), velocity (tops 98)"
+    row2 = pd.Series(dict(slider="55/60", curveball="50/50", changeup="40/40", cutter=None, command="50/50", tops=95))
+    assert grade_fit(row2) == "bat-miss slider (60), strike-thrower"
