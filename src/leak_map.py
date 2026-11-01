@@ -283,10 +283,13 @@ def build(stuff, exe, seq, ages, qualified_ids, kc_qualified_ids=None, contracts
         ptxt = worst_pitch(stuff, r.pitcher, smed)
         if r.quadrant == "Stuff fix" or (r.quadrant == "Replace candidate" and r.stuff_score < r.execution_score):
             primary = f"Stuff: {ptxt}" if ptxt else "Stuff"
+            leak_area, leak_metric = "stuff", "stuff_score"
         elif r.quadrant in ("Execution fix", "Replace candidate"):
             primary = f"Execution: {etxt}"
+            leak_area, leak_metric = "execution", em
         else:
             primary = f"Smallest gap: {etxt}" if etxt else ""
+            leak_area, leak_metric = "execution", em
         plan = seq_plan(tri, r.pitcher)
         flags = []
         if pd.notna(r.age) and r.age >= AGE_FLAG:
@@ -296,7 +299,7 @@ def build(stuff, exe, seq, ages, qualified_ids, kc_qualified_ids=None, contracts
         fix = fixable(quad, r.age)
         out.append(dict(pitcher=r.pitcher, reliever=r.name, qualified=r.qualified, age=r.age,
                         stuff_score=r.stuff_score, execution_score=r.execution_score, quadrant=quad,
-                        quadrant_if_full_sample=r.quadrant, stuff_composite=r.stuff_composite,
+                        quadrant_if_full_sample=r.quadrant, leak_area=leak_area, leak_metric=leak_metric, stuff_composite=r.stuff_composite,
                         execution_composite=r.execution_composite,
                         primary_leak=primary, weakest_pitch=ptxt, weakest_execution=etxt,
                         sequencing_plan=plan, fixable=fix, fixability_flags="; ".join(flags),

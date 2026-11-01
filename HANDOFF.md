@@ -13,6 +13,7 @@ Read this together with `CLAUDE.md` at the start of a new session.
 - Step 1 dry run on the existing file: 320 of 707 MLB relievers qualify, and 10 KC relievers qualify (Cruz, Lange, Schreiber, Erceg, Lynch, Black, Strahm, Pearson, Cuas, Way), with 21 small samples. Rerun after the missing month is filled.
 
 - 2026-11-01: Step 6 leak map (`python -m src.leak_map`, branch step-6-leak-map). KC: Keep = Cruz, Strahm. Execution fix = Avila, Schreiber, Lynch, Way, Pearson, Cuas, Lange. Replace candidates = Mears, Black, Erceg, Morgan. The bullpen's leak is execution, not stuff: 9 of 13 have above-average Stuff, but 11 of 13 are below average on Execution. Still open: 2024-25 velocity trend and the contracts file.
+- 2026-11-01: Step 7 free-agent targets (`python -m src.targets`). Morejon, Phillips and Fairbanks top most leak matches; Strahm and Schreiber are KC free agents. Prospects are still to come.
 
 ## Known limits
 - The Claude cloud workspace can't reach Baseball Savant, FanGraphs or the MLB Stats API. Neither can the Linux shell on the laptop. Data pulls run in VS Code on Windows, or the data comes in as manual exports.
