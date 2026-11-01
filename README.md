@@ -47,6 +47,7 @@ python -m src.stuff                                                # Step 4 -> o
 python -m src.deception                                            # Step 5A delivery + tunneling
 python -m src.execution                                            # Step 5 -> outputs/tables/execution_by_reliever.csv
 python -m src.leak_map                                             # Step 6 -> outputs/tables/leak_map.csv
+python -m src.targets                                              # Step 7 -> outputs/tables/targets.csv (needs data/manual/fa_relievers_2026.csv)
 python -m pytest
 ```
 

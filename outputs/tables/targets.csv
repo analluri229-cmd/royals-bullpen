@@ -1,0 +1,19 @@
+kc_reliever,kc_quadrant,reason,leak,match_on,rank,target,throws,age,option,war_mlbtr,target_value,target_pctile,target_stuff_score,target_execution_score,target_quadrant,target_primary_fb,target_best_secondary,note
+"Schreiber, John",Execution fix,KC free agent: re-sign or replace,Execution: 3PS% 56.7 vs league 63.4 (10th pct),3PS%,1,Evan Phillips,R,32,,0.5,71.8,96.1,95.9,96.1,Keep,FF,ST,3PS% 96th pct
+"Schreiber, John",Execution fix,KC free agent: re-sign or replace,Execution: 3PS% 56.7 vs league 63.4 (10th pct),3PS%,2,Adrian Morejon,L,28,,5.1,69.7,92.3,99.3,98.1,Keep,SI,FF,3PS% 92nd pct
+"Schreiber, John",Execution fix,KC free agent: re-sign or replace,Execution: 3PS% 56.7 vs league 63.4 (10th pct),3PS%,3,Pete Fairbanks,R,33,,0.9,69.7,92.3,97.3,78.3,Keep,FF,FC,3PS% 92nd pct; age 33
+"Strahm, Matt",Keep,KC free agent: re-sign or replace,Smallest gap: Kill% 31.9 vs league 42.7 (10th pct),Kill%,1,Adrian Morejon,L,28,,5.1,54.3,94.4,99.3,98.1,Keep,SI,FF,Kill% 94th pct
+"Strahm, Matt",Keep,KC free agent: re-sign or replace,Smallest gap: Kill% 31.9 vs league 42.7 (10th pct),Kill%,2,Evan Phillips,R,32,,0.5,51.6,89.6,95.9,96.1,Keep,FF,ST,Kill% 90th pct
+"Strahm, Matt",Keep,KC free agent: re-sign or replace,Smallest gap: Kill% 31.9 vs league 42.7 (10th pct),Kill%,3,Pete Fairbanks,R,33,,0.9,48.3,77.1,97.3,78.3,Keep,FF,FC,Kill% 77th pct; age 33
+"Mears, Nick",Replace candidate,replace candidate,Execution: F-Strike% 53.7 vs league 61.3 (6th pct),F-Strike%,1,Pete Fairbanks,R,33,,0.9,68.6,93.7,97.3,78.3,Keep,FF,FC,F-Strike% 94th pct; age 33
+"Mears, Nick",Replace candidate,replace candidate,Execution: F-Strike% 53.7 vs league 61.3 (6th pct),F-Strike%,2,Jonathan Loáisiga,R,32,,0.6,67.4,89.9,91.9,86.7,Keep,SI,CU,F-Strike% 90th pct
+"Mears, Nick",Replace candidate,replace candidate,Execution: F-Strike% 53.7 vs league 61.3 (6th pct),F-Strike%,3,Antonio Senzatela,R,32,club option,0.9,67.3,89.1,85.7,65.1,Keep,FC,SI,F-Strike% 89th pct
+"Black, Mason",Replace candidate,replace candidate,Execution: Chase% 21.4 vs league 30.1 (1st pct),Chase%,1,Adrian Morejon,L,28,,5.1,38.6,97.9,99.3,98.1,Keep,SI,FF,Chase% 98th pct
+"Black, Mason",Replace candidate,replace candidate,Execution: Chase% 21.4 vs league 30.1 (1st pct),Chase%,2,David Bednar,R,32,,4.0,38.4,97.0,68.0,81.4,Keep,FF,FS,Chase% 97th pct
+"Black, Mason",Replace candidate,replace candidate,Execution: Chase% 21.4 vs league 30.1 (1st pct),Chase%,3,Jonathan Loáisiga,R,32,,0.6,35.9,92.9,91.9,86.7,Keep,SI,CU,Chase% 93rd pct
+"Erceg, Lucas",Replace candidate,replace candidate,Execution: Kill% 28.6 vs league 42.7 (5th pct),Kill%,1,Adrian Morejon,L,28,,5.1,54.3,94.4,99.3,98.1,Keep,SI,FF,Kill% 94th pct
+"Erceg, Lucas",Replace candidate,replace candidate,Execution: Kill% 28.6 vs league 42.7 (5th pct),Kill%,2,Evan Phillips,R,32,,0.5,51.6,89.6,95.9,96.1,Keep,FF,ST,Kill% 90th pct
+"Erceg, Lucas",Replace candidate,replace candidate,Execution: Kill% 28.6 vs league 42.7 (5th pct),Kill%,3,Pete Fairbanks,R,33,,0.9,48.3,77.1,97.3,78.3,Keep,FF,FC,Kill% 77th pct; age 33
+"Morgan, Eli",Replace candidate,replace candidate,"Stuff: FF Stuff+ 79 vs league 97 (3rd pct, 37% usage; velo 2nd pct)",Stuff score,1,Adrian Morejon,L,28,,5.1,99.3,99.3,99.3,98.1,Keep,SI,FF,Stuff score 99th pct
+"Morgan, Eli",Replace candidate,replace candidate,"Stuff: FF Stuff+ 79 vs league 97 (3rd pct, 37% usage; velo 2nd pct)",Stuff score,2,Ryan Thompson,R,35,,0.5,98.1,98.1,98.1,77.0,Keep,SI,SL,Stuff score 98th pct; age 35
+"Morgan, Eli",Replace candidate,replace candidate,"Stuff: FF Stuff+ 79 vs league 97 (3rd pct, 37% usage; velo 2nd pct)",Stuff score,3,Pete Fairbanks,R,33,,0.9,97.3,97.3,97.3,78.3,Keep,FF,FC,Stuff score 97th pct; age 33
