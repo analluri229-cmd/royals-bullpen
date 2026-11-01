@@ -26,6 +26,7 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
 from src.config import OUT_TABLES, ROOT  # noqa: E402
+from src.leak_map import ordinal  # noqa: E402
 from src.stuff import PITCH_GROUPS  # noqa: E402
 
 KC_BLUE = "#004687"
@@ -279,6 +280,56 @@ def slide3_often_vs_well(tri: pd.DataFrame, leak: pd.DataFrame, scores: pd.DataF
     return save(fig, "slide3_often_vs_well.png")
 
 
+PITCH_COLORS = ["#004687", "#C8102E", "#2E7D32", "#F2A900", "#6A3D9A", "#8C564B"]
+ARM_LEN_IN = 30.0  # drawn arm length, for display only
+
+
+def delivery_overlay(dpitch: pd.DataFrame, dpitcher: pd.DataFrame, names: list[str]):
+    """Catcher's-view overlay of each pitch type's release point and arm slot, one panel per pitcher.
+
+    Dots are mean release points (inches), ellipses are 1 SD, and the line is a 30-inch arm drawn
+    back from release at that pitch type's mean Statcast arm angle. Pitches that share a slot overlap.
+    """
+    from matplotlib.patches import Ellipse
+    fig, axes = plt.subplots(1, len(names), figsize=(6.2 * len(names), 6.4))
+    axes = np.atleast_1d(axes)
+    for ax, nm in zip(axes, names):
+        d = dpitch[(dpitch["name"] == nm) & (dpitch["n_pitches"] >= 50)].sort_values("n_pitches", ascending=False)
+        summ = dpitcher[dpitcher["name"] == nm].iloc[0]
+        lefty = d["throws"].iloc[0] == "L"
+        for i, r in enumerate(d.itertuples()):
+            c = PITCH_COLORS[i % len(PITCH_COLORS)]
+            x, z = r.rx_mean, r.rz_mean
+            ang = np.radians(r.arm_mean)
+            dx = ARM_LEN_IN * np.cos(ang) * (1 if lefty else -1)
+            ax.plot([x - dx, x], [z - ARM_LEN_IN * np.sin(ang), z], color=c, lw=2.5, alpha=0.85)
+            ax.add_patch(Ellipse((x, z), 2 * r.sd_side_in, 2 * r.sd_height_in, facecolor=c, alpha=0.18,
+                                 edgecolor=c, lw=1))
+            ax.scatter(x, z, s=70, color=c, edgecolor="white", zorder=3,
+                       label=f"{r.pitch_type}  {r.arm_mean:.0f}°  gap {r.release_gap_in:.1f} in")
+        cx, cz = d["rx_mean"].mean(), d["rz_mean"].mean()
+        ax.set_xlim(cx - 36, cx + 36)
+        ax.set_ylim(cz - 40, cz + 14)
+        ax.set_aspect("equal")
+        ax.set_xlabel("Release side (in, catcher's view)")
+        verdict = "consistent: every pitch from one slot" if summ["avg_release_gap_in"] <= 1.5 else \
+            "inconsistent: the release tips the pitch"
+        ax.set_title(f"{short(nm)} ({'L' if lefty else 'R'}HP): {verdict}\n"
+                     f"avg release gap {summ['avg_release_gap_in']:.1f} in "
+                     f"({ordinal(summ['avg_release_gap_in_pctile'])} pct, higher = tighter)",
+                     loc="left", fontsize=10, color=KC_BLUE)
+        ax.legend(frameon=False, fontsize=8, loc="lower left", title="pitch, arm angle, gap vs FB",
+                  title_fontsize=8)
+    axes[0].set_ylabel("Release height (in)")
+    fig.suptitle("Delivery overlay: each pitch type's release point and arm slot, drawn on top of each other",
+                 x=0.01, ha="left", fontsize=12, fontweight="bold", color=DARK)
+    fig.text(0.01, -0.02, "Dot = mean release point, shaded = 1 SD, line = arm drawn back from release at the mean "
+             "Statcast arm angle (length for display only). Source: delivery_by_pitch.csv (Step 5A)",
+             fontsize=6.5, color=DARK)
+    fig.tight_layout()
+    return save(fig, "slide3_delivery_overlay.png")
+
+
 # ---------------------------------------------------------------- slide 5
 
 def slide5_targets(targets: pd.DataFrame):
@@ -334,6 +385,8 @@ def main() -> int:
         slide3_tunnel(pd.read_csv(T / "sequence_pairs.csv")),
         slide3_sequence_heatmap(pd.read_csv(T / "sequence_summary.csv"), kc_ids),
         slide3_often_vs_well(pd.read_csv(T / "sequencing_triage.csv"), leak, scores),
+        delivery_overlay(pd.read_csv(T / "delivery_by_pitch.csv"), pd.read_csv(T / "delivery_by_pitcher.csv"),
+                         ["Erceg, Lucas", "Strahm, Matt"]),
     ]
     if (T / "targets.csv").exists():
         paths.append(slide5_targets(pd.read_csv(T / "targets.csv")))

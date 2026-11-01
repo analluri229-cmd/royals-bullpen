@@ -18,3 +18,17 @@ def test_slide1_writes_png(tmp_path, monkeypatch):
     assert p.exists() and p.stat().st_size > 10_000
     from PIL import Image
     assert round(Image.open(p).info["dpi"][0]) == 300
+
+
+def test_delivery_overlay_writes_png(tmp_path, monkeypatch):
+    monkeypatch.setattr(figures, "OUT_FIGS", tmp_path)
+    dp = pd.DataFrame([dict(name="A, B", throws="R", pitch_type=pt, n_pitches=100, rx_mean=-20 + i, rz_mean=70,
+                            sd_side_in=1.5, sd_height_in=1.0, arm_mean=40, release_gap_in=float(i))
+                       for i, pt in enumerate(["FF", "SL"])])
+    dr = pd.DataFrame([dict(name="A, B", avg_release_gap_in=0.5, avg_release_gap_in_pctile=90.0)])
+    assert figures.delivery_overlay(dp, dr, ["A, B"]).exists()
+
+
+def test_headshot_file_name():
+    from src.fetch_headshots import file_name
+    assert file_name("Lynch IV, Daniel", 663738) == "lynch_iv__daniel_663738.png"
