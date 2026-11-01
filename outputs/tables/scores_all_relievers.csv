@@ -1,0 +1,438 @@
+pitcher,name,group,qualified,stuff_score,execution_score,quadrant,stuff_composite,execution_composite
+445276,"Jansen, Kenley",MLB reliever,True,77.6,71.3,Keep,73.3,60.7
+455119,"Martin, Chris",MLB reliever,False,73.3,78.6,Keep,69.6,65.2
+471911,"Carrasco, Carlos",MLB reliever,False,1.1,56.9,Stuff fix,10.2,53.3
+472610,"García, Luis",MLB reliever,False,23.7,42.4,Replace candidate,37.8,47.0
+489446,"Yates, Kirby",MLB reliever,True,5.3,58.1,Stuff fix,18.0,54.1
+518585,"Cruz, Fernando",MLB reliever,True,15.3,20.1,Replace candidate,31.5,34.1
+518886,"Kimbrel, Craig",KC reliever,False,96.7,3.0,Execution fix,92.7,18.3
+519141,"Pomeranz, Drew",MLB reliever,True,41.0,16.1,Replace candidate,48.1,30.4
+542888,"Armstrong, Shawn",MLB reliever,True,46.1,26.3,Replace candidate,51.9,37.5
+543056,"Coulombe, Danny",MLB reliever,True,34.1,1.1,Replace candidate,43.4,13.4
+543238,"Gose, Anthony",KC reliever,False,84.0,53.0,Keep,78.4,51.2
+544150,"Suárez, Albert",MLB reliever,True,9.4,51.3,Stuff fix,23.6,50.5
+547179,"Lorenzen, Michael",MLB reliever,False,,24.0,Insufficient sample,,35.7
+547973,"Chapman, Aroldis",MLB reliever,True,84.6,88.4,Keep,78.6,71.4
+548384,"Raley, Brooks",MLB reliever,True,60.4,70.1,Keep,61.8,60.4
+552640,"Kittredge, Andrew",MLB reliever,True,20.7,96.4,Stuff fix,35.0,81.4
+571927,"Matz, Steven",MLB reliever,True,47.0,83.9,Stuff fix,52.6,67.8
+571945,"Mikolas, Miles",MLB reliever,True,4.4,70.9,Stuff fix,17.5,60.5
+571948,"Milner, Hoby",MLB reliever,True,68.4,61.6,Keep,67.1,56.4
+572143,"Smith, Burch",MLB reliever,False,47.6,40.3,Replace candidate,53.0,45.9
+572955,"Johnson, Pierce",MLB reliever,True,17.3,73.6,Stuff fix,32.4,61.8
+573009,"Mantiply, Joe",MLB reliever,True,83.6,68.7,Keep,78.1,60.0
+573124,"Rogers, Taylor",MLB reliever,True,29.1,34.3,Replace candidate,41.7,42.4
+573204,"Thielbar, Caleb",MLB reliever,True,80.6,92.4,Keep,75.3,76.3
+592094,"Adam, Jason",MLB reliever,True,21.3,53.6,Stuff fix,35.6,51.6
+592155,"Booser, Cam",MLB reliever,True,92.1,99.0,Keep,83.8,90.0
+592773,"Stanek, Ryne",MLB reliever,True,74.4,48.4,Execution fix,70.7,49.6
+592779,"Stewart, Brock",MLB reliever,True,84.6,82.7,Keep,78.6,67.0
+592866,"Williams, Trevor",MLB reliever,True,23.3,32.7,Replace candidate,37.5,41.4
+593974,"Peralta, Wandy",MLB reliever,True,31.9,47.0,Replace candidate,43.1,49.1
+594027,"Guerrero, Tyron",MLB reliever,True,94.4,98.7,Keep,86.2,89.2
+594580,"Moll, Sam",MLB reliever,True,41.6,4.1,Replace candidate,48.5,19.7
+595014,"Treinen, Blake",MLB reliever,True,76.4,76.4,Keep,72.2,64.4
+595345,"Okert, Steven",MLB reliever,True,29.6,85.3,Stuff fix,41.9,69.1
+596001,"Junis, Jakob",MLB reliever,True,5.7,63.9,Stuff fix,19.0,57.8
+596133,"Weaver, Luke",MLB reliever,True,73.3,94.7,Keep,69.6,78.8
+605130,"Barlow, Scott",MLB reliever,True,1.3,4.6,Replace candidate,10.7,20.0
+605242,"Fulmer, Michael",MLB reliever,False,56.9,71.4,Keep,59.2,60.8
+605288,"Houser, Adrian",MLB reliever,True,15.0,38.0,Replace candidate,31.3,44.8
+605447,"Romano, Jordan",MLB reliever,True,10.7,48.9,Replace candidate,25.6,49.8
+605452,"Ross, Joe",MLB reliever,False,12.6,18.0,Replace candidate,27.7,32.8
+606996,"Hart, Kyle",MLB reliever,True,28.7,31.9,Replace candidate,41.5,40.6
+607067,"Rea, Colin",MLB reliever,True,34.1,39.0,Replace candidate,43.4,45.2
+607200,"Fedde, Erick",MLB reliever,True,1.9,23.9,Replace candidate,11.7,35.6
+607455,"Banda, Anthony",MLB reliever,True,36.1,10.7,Replace candidate,45.1,25.5
+608650,"Enns, Dietrich",MLB reliever,False,41.7,15.3,Replace candidate,48.8,29.9
+608718,"Suter, Brent",MLB reliever,True,22.0,85.0,Stuff fix,35.9,69.0
+608723,"Voth, Austin",MLB reliever,False,20.3,0.3,Replace candidate,34.0,8.6
+615698,"Quantrill, Cal",MLB reliever,True,25.3,45.0,Replace candidate,38.5,48.3
+621016,"Cuas, Jose",KC reliever,True,59.3,8.6,Execution fix,60.8,23.2
+621053,"Ferguson, Tyler",MLB reliever,False,48.9,95.1,Stuff fix,53.9,79.6
+621074,"Rucker, Michael",MLB reliever,True,80.1,61.0,Keep,75.2,55.7
+621097,"Waguespack, Jacob",MLB reliever,True,36.6,68.7,Stuff fix,45.2,60.0
+621112,"Blackburn, Paul",MLB reliever,True,37.3,42.4,Replace candidate,46.0,47.0
+621237,"Alvarado, José",MLB reliever,True,92.7,26.3,Execution fix,84.3,37.5
+621242,"Díaz, Edwin",MLB reliever,True,79.3,48.0,Execution fix,74.5,49.5
+621345,"Minter, A.J.",MLB reliever,True,70.9,79.3,Keep,68.4,65.6
+621366,"Borucki, Ryan",MLB reliever,True,4.0,28.3,Replace candidate,17.3,38.4
+621381,"Strahm, Matt",KC reliever,True,63.6,67.6,Keep,64.3,59.5
+621383,"Banks, Tanner",MLB reliever,True,13.9,77.6,Stuff fix,30.9,65.0
+622088,"Antone, Tejay",MLB reliever,True,34.1,87.0,Stuff fix,43.4,70.8
+622491,"Castillo, Luis",MLB reliever,False,47.0,63.6,Stuff fix,52.6,57.7
+622554,"Domínguez, Seranthony",MLB reliever,True,83.0,18.4,Execution fix,78.0,33.0
+622608,"Senzatela, Antonio",MLB reliever,True,85.7,65.1,Keep,80.2,58.2
+622694,"Hernández, Elieser",MLB reliever,False,42.7,44.4,Replace candidate,49.7,48.2
+623149,"Sewald, Paul",MLB reliever,True,75.4,81.9,Keep,71.4,66.7
+623211,"Brazobán, Huascar",MLB reliever,True,43.9,85.9,Stuff fix,50.3,69.4
+623352,"Hader, Josh",MLB reliever,True,89.9,91.3,Keep,82.4,74.8
+623437,"Topa, Justin",MLB reliever,True,27.0,7.9,Replace candidate,40.7,22.8
+623454,"Anderson, Drew",MLB reliever,True,39.6,65.1,Stuff fix,47.0,58.2
+623465,"Phillips, Evan",MLB reliever,True,95.9,96.1,Keep,91.0,81.1
+623474,"Herget, Jimmy",MLB reliever,True,5.0,14.9,Replace candidate,17.7,29.7
+624522,"Thompson, Keegan",MLB reliever,False,26.0,52.0,Stuff fix,39.8,50.9
+625643,"López, Reynaldo",MLB reliever,True,6.9,34.3,Replace candidate,21.3,42.4
+628452,"Iglesias, Raisel",MLB reliever,True,71.6,96.7,Keep,68.6,81.9
+640448,"Finnegan, Kyle",MLB reliever,True,37.3,13.3,Replace candidate,46.0,28.2
+640455,"Manaea, Sean",MLB reliever,True,39.1,33.3,Replace candidate,46.9,41.6
+641302,"Alexander, Tyler",MLB reliever,True,33.3,63.6,Stuff fix,43.3,57.7
+641312,"Anderson, Shaun",MLB reliever,True,7.3,18.4,Replace candidate,21.4,33.0
+641329,"Baker, Bryan",MLB reliever,True,87.0,93.6,Keep,80.7,77.8
+641401,"Brogdon, Connor",MLB reliever,False,45.1,13.9,Replace candidate,51.2,28.8
+641745,"Keller, Brad",MLB reliever,True,66.6,27.4,Execution fix,66.7,38.0
+641755,"Kinley, Tyler",MLB reliever,True,24.4,28.7,Replace candidate,38.1,38.7
+641778,"Lauer, Eric",MLB reliever,False,3.3,62.7,Stuff fix,15.9,57.0
+641793,"Littell, Zack",MLB reliever,True,0.4,62.1,Stuff fix,7.3,56.6
+641835,"Mayza, Tim",MLB reliever,True,8.3,60.1,Stuff fix,21.9,55.2
+641941,"Pagán, Emilio",MLB reliever,True,78.9,84.7,Keep,74.4,68.9
+642048,"Saucedo, Tayler",MLB reliever,True,31.0,66.7,Stuff fix,42.9,59.0
+642100,"Speier, Gabe",MLB reliever,True,87.3,94.4,Keep,81.1,78.2
+642121,"Sulser, Cole",MLB reliever,True,40.3,65.6,Stuff fix,47.5,58.4
+642207,"Williams, Devin",MLB reliever,True,89.1,46.6,Execution fix,82.2,49.0
+642232,"Yarbrough, Ryan",MLB reliever,True,33.3,28.3,Replace candidate,43.3,38.4
+642376,"Yan, Jefry",MLB reliever,True,98.4,31.9,Execution fix,95.5,40.6
+642397,"Soto, Gregory",MLB reliever,True,75.9,40.7,Execution fix,72.0,46.2
+642528,"Loáisiga, Jonathan",MLB reliever,True,91.9,86.7,Keep,83.6,70.7
+642546,"Hernández, Jonathan",MLB reliever,True,66.6,17.3,Execution fix,66.7,32.0
+642701,"Santana, Dennis",MLB reliever,True,7.7,46.6,Replace candidate,21.6,49.0
+643410,"Leiter Jr., Mark",MLB reliever,True,11.3,81.0,Stuff fix,26.1,66.4
+643511,"Rogers, Tyler",MLB reliever,True,99.6,79.9,Keep,98.2,66.1
+646241,"De Jesus, Enmanuel",MLB reliever,True,75.4,74.7,Keep,71.4,62.8
+650556,"Abreu, Bryan",MLB reliever,True,48.1,9.6,Replace candidate,53.1,24.1
+650644,"Civale, Aaron",MLB reliever,True,57.9,77.6,Keep,59.9,65.0
+650960,"Duarte, Daniel",MLB reliever,True,73.0,97.0,Keep,69.5,83.1
+656212,"Barnes, Charlie",MLB reliever,False,0.0,2.3,Replace candidate,1.1,17.6
+656222,"Beeks, Jalen",MLB reliever,True,2.4,73.3,Stuff fix,13.9,61.6
+656234,"Bird, Jake",MLB reliever,True,67.3,41.9,Execution fix,66.8,46.9
+656240,"Blewett, Scott",MLB reliever,True,10.3,66.3,Stuff fix,24.8,58.9
+656271,"Burke, Brock",MLB reliever,True,59.6,56.7,Keep,61.0,53.1
+656288,"Canning, Griffin",MLB reliever,True,13.6,35.4,Replace candidate,29.5,43.4
+656464,"Ginkel, Kevin",MLB reliever,True,15.9,86.4,Stuff fix,31.8,70.5
+656529,"Hentges, Sam",MLB reliever,True,25.6,17.9,Replace candidate,38.6,32.7
+656546,"Hoffman, Jeff",MLB reliever,True,78.4,49.3,Execution fix,73.9,49.9
+656638,"Lange, Alex",KC reliever,True,51.9,14.4,Execution fix,56.8,29.6
+656641,"Latz, Jacob",MLB reliever,True,94.7,92.9,Keep,86.7,77.5
+656730,"Megill, Trevor",MLB reliever,True,85.3,99.6,Keep,80.0,93.3
+656756,"Montgomery, Jordan",MLB reliever,True,9.0,54.1,Stuff fix,22.9,51.8
+656794,"Newcomb, Sean",MLB reliever,True,47.0,47.3,Replace candidate,52.6,49.3
+656848,"Petersen, Michael",MLB reliever,True,85.7,75.7,Keep,80.2,64.0
+656849,"Peterson, David",MLB reliever,True,18.4,43.9,Replace candidate,33.1,47.4
+656945,"Scott, Tanner",MLB reliever,True,97.0,99.9,Keep,93.2,94.3
+656986,"Sousa, Bennett",MLB reliever,True,22.4,75.7,Stuff fix,36.4,64.0
+657044,"Thompson, Ryan",MLB reliever,True,98.1,77.0,Keep,94.3,64.8
+657097,"Webb, Jacob",MLB reliever,True,44.7,79.0,Stuff fix,50.8,65.5
+657265,"Strzelecki, Peter",MLB reliever,False,36.9,0.9,Replace candidate,45.7,12.4
+657424,"Gage, Matt",MLB reliever,True,14.6,12.1,Replace candidate,31.2,26.7
+657514,"Bernardino, Brennan",MLB reliever,True,0.7,37.4,Replace candidate,7.5,44.6
+657571,"Ferguson, Caleb",MLB reliever,True,74.0,16.4,Execution fix,70.1,30.6
+657612,"Hill, Tim",MLB reliever,True,89.1,52.4,Keep,82.2,51.0
+660604,"Rangel, Alan",MLB reliever,False,39.7,75.1,Stuff fix,47.1,63.0
+660761,"Suarez, José",MLB reliever,True,17.7,25.9,Replace candidate,32.5,36.6
+660787,"De los Santos, Yerry",MLB reliever,True,50.1,74.0,Keep,54.9,62.2
+660825,"Bazardo, Eduard",MLB reliever,True,60.9,73.0,Keep,62.0,61.4
+660853,"De Los Santos, Enyel",MLB reliever,True,21.0,87.3,Stuff fix,35.4,71.1
+661395,"Duran, Jhoan",MLB reliever,True,91.0,69.3,Keep,83.2,60.1
+662253,"Muñoz, Andrés",MLB reliever,True,95.0,63.3,Keep,88.6,57.5
+663158,"Suarez, Robert",MLB reliever,True,90.7,83.6,Keep,83.1,67.4
+663362,"Waldron, Matt",MLB reliever,True,27.9,59.0,Stuff fix,41.2,54.5
+663372,"Feltner, Ryan",MLB reliever,False,39.9,85.3,Stuff fix,47.4,69.1
+663423,"Thornton, Trent",MLB reliever,True,38.1,54.4,Stuff fix,46.2,51.9
+663485,"Sands, Cole",MLB reliever,False,3.4,26.0,Replace candidate,16.1,37.3
+663542,"Hudson, Bryan",MLB reliever,True,54.6,57.6,Keep,58.2,53.8
+663558,"Morán, Jovani",MLB reliever,True,43.3,38.0,Replace candidate,49.9,44.8
+663574,"Santillan, Tony",MLB reliever,True,9.4,6.9,Replace candidate,23.6,22.2
+663687,"Harris, Hogan",MLB reliever,True,71.9,16.7,Execution fix,69.1,31.5
+663738,"Lynch IV, Daniel",KC reliever,True,76.7,44.4,Execution fix,72.4,48.2
+663765,"Woodford, Jake",MLB reliever,True,52.7,50.7,Keep,57.4,50.4
+663767,"Shugart, Chase",MLB reliever,True,78.9,44.4,Execution fix,74.4,48.2
+663855,"Hicks, Jordan",MLB reliever,True,95.3,63.0,Keep,89.2,57.1
+663878,"Pearson, Nate",KC reliever,True,67.3,14.1,Execution fix,66.8,29.4
+663893,"Little, Brendon",MLB reliever,True,66.1,11.9,Execution fix,66.6,26.6
+663941,"Beck, Tristan",MLB reliever,True,9.9,19.9,Replace candidate,24.1,33.8
+663947,"Holton, Tyler",MLB reliever,True,43.0,55.9,Stuff fix,49.8,52.7
+663969,"Phillips, Tyler",MLB reliever,True,34.7,22.6,Replace candidate,43.7,35.1
+663978,"Paddack, Chris",MLB reliever,False,13.7,47.3,Replace candidate,30.0,49.3
+663992,"Lovelady, Richard",MLB reliever,True,12.1,11.6,Replace candidate,27.5,26.5
+664076,"Cleavinger, Garrett",MLB reliever,True,49.9,47.6,Replace candidate,54.7,49.4
+664126,"Fairbanks, Pete",MLB reliever,True,97.3,78.3,Keep,93.7,65.1
+664129,"Hartlieb, Geoff",MLB reliever,True,13.0,39.7,Replace candidate,27.9,45.7
+664141,"Brubaker, JT",MLB reliever,True,17.0,27.0,Replace candidate,32.3,37.9
+664199,"Clarke, Taylor",MLB reliever,True,8.7,59.7,Stuff fix,22.8,55.0
+664208,"Maton, Phil",MLB reliever,True,56.7,51.7,Keep,59.1,50.8
+664299,"Javier, Cristian",MLB reliever,False,50.9,95.1,Keep,56.0,79.5
+664353,"Urquidy, José",MLB reliever,True,32.4,93.3,Stuff fix,43.2,77.6
+664849,"Young, Danny",MLB reliever,False,46.4,12.7,Replace candidate,52.2,27.1
+664854,"Helsley, Ryan",MLB reliever,False,96.0,17.6,Execution fix,91.3,32.5
+664875,"Lawrence, Justin",MLB reliever,True,48.7,7.3,Replace candidate,53.3,22.5
+664991,"Wolfram, Grant",MLB reliever,True,79.6,67.1,Keep,74.8,59.2
+665622,"Medina, Luis",MLB reliever,True,58.6,13.9,Execution fix,60.1,28.8
+665660,"Alvarado, Elvis",MLB reliever,True,81.3,40.4,Execution fix,76.1,46.1
+665665,"Sanmartin, Reiver",MLB reliever,True,12.4,50.7,Stuff fix,27.6,50.4
+665871,"Assad, Javier",MLB reliever,True,65.3,50.1,Keep,65.8,50.2
+666171,"Zeferjahn, Ryan",MLB reliever,True,95.6,18.4,Execution fix,90.0,33.0
+666277,"Soriano, George",MLB reliever,True,29.1,46.0,Replace candidate,41.7,48.9
+666374,"Brash, Matt",MLB reliever,False,49.4,30.0,Replace candidate,54.3,39.5
+666661,"Morillo, Juan",MLB reliever,True,91.3,84.1,Keep,83.3,68.0
+666808,"Doval, Camilo",MLB reliever,True,35.3,25.1,Replace candidate,44.5,36.4
+666974,"Cano, Yennier",MLB reliever,True,87.6,57.3,Keep,81.3,53.7
+667297,"Nance, Tommy",MLB reliever,True,22.0,68.7,Stuff fix,35.9,60.0
+667463,"King, John",MLB reliever,True,3.6,53.3,Stuff fix,17.1,51.3
+667652,"Ralston, Jack",MLB reliever,False,34.6,35.1,Replace candidate,43.5,43.2
+668390,"Winn, Cole",MLB reliever,True,61.9,82.1,Keep,62.5,66.9
+668674,"Erceg, Lucas",KC reliever,True,39.9,11.0,Replace candidate,47.4,25.6
+668820,"Kranick, Max",MLB reliever,True,8.3,12.4,Replace candidate,21.9,27.0
+668831,"Stallings, Garrett",MLB reliever,False,6.3,90.0,Stuff fix,19.4,73.2
+668873,"Kilian, Caleb",MLB reliever,True,60.1,64.6,Keep,61.4,58.1
+668933,"Ashcraft, Graham",MLB reliever,True,30.1,35.4,Replace candidate,42.0,43.4
+668941,"Romero, JoJo",MLB reliever,True,59.9,43.6,Execution fix,61.2,47.3
+668964,"Myers, Tobias",MLB reliever,True,61.3,78.3,Keep,62.1,65.1
+668970,"Hollowell, Gavin",MLB reliever,False,78.0,16.6,Execution fix,73.4,31.0
+668984,"Legumina, Casey",MLB reliever,True,87.9,85.6,Keep,81.4,69.2
+669020,"Rolison, Ryan",MLB reliever,True,43.6,20.9,Replace candidate,50.1,34.4
+669060,"Wilson, Bryse",MLB reliever,True,41.3,95.0,Stuff fix,48.4,79.2
+669062,"Miller, Erik",MLB reliever,True,88.1,8.6,Execution fix,81.9,23.2
+669084,"Hall, DL",MLB reliever,True,57.3,31.1,Execution fix,59.6,40.3
+669093,"Estrada, Jeremiah",MLB reliever,True,86.3,24.3,Execution fix,80.4,36.0
+669165,"Hurt, Kyle",MLB reliever,True,24.9,62.4,Stuff fix,38.2,56.8
+669199,"Bachar, Lake",MLB reliever,True,49.0,33.0,Replace candidate,54.1,41.5
+669211,"Akin, Keegan",MLB reliever,True,37.3,46.0,Replace candidate,46.0,48.9
+669212,"Morgan, Eli",KC reliever,True,16.4,45.6,Replace candidate,32.1,48.8
+669270,"Kuhnel, Joel",MLB reliever,True,55.1,22.1,Execution fix,58.4,35.0
+669276,"Lee, Dylan",MLB reliever,True,83.6,93.9,Keep,78.1,78.0
+669330,"Wells, Tyler",MLB reliever,True,59.0,97.3,Keep,60.2,83.3
+669371,"Henry, Cole",MLB reliever,False,13.7,11.9,Replace candidate,30.3,26.6
+669387,"Mlodzinski, Carmen",MLB reliever,True,4.0,57.9,Stuff fix,17.3,54.0
+669438,"Englert, Mason",MLB reliever,True,24.9,91.0,Stuff fix,38.2,74.0
+669620,"Basso, Brady",MLB reliever,True,20.1,70.9,Stuff fix,33.9,60.5
+669622,"Bender, Anthony",MLB reliever,True,64.6,62.7,Keep,65.6,57.0
+669684,"Murphy, Chris",MLB reliever,True,57.3,52.4,Keep,59.6,51.0
+669711,"Weissert, Greg",MLB reliever,True,60.9,88.0,Keep,62.0,71.3
+669724,"Hanifee, Brenan",MLB reliever,False,79.4,46.6,Execution fix,74.6,49.0
+669947,"Scholtens, Jesse",MLB reliever,True,35.6,69.6,Stuff fix,44.8,60.3
+670036,"Festa, Matt",MLB reliever,True,68.9,48.9,Execution fix,67.2,49.8
+670059,"Holderman, Colin",MLB reliever,True,56.3,34.7,Execution fix,58.8,42.6
+670062,"Garcia, Julian",MLB reliever,True,2.1,53.9,Stuff fix,12.5,51.7
+670103,"Burgos, Raymond",MLB reliever,True,5.7,92.9,Stuff fix,19.0,77.5
+670167,"Schreiber, John",KC reliever,True,77.6,9.0,Execution fix,73.3,23.3
+670183,"Acton, Garrett",MLB reliever,False,25.7,32.3,Replace candidate,38.7,40.7
+670245,"Watson, Ryan",MLB reliever,True,11.6,80.3,Stuff fix,26.2,66.2
+670280,"Bednar, David",MLB reliever,True,68.0,81.4,Keep,66.9,66.5
+670329,"Garcia, Rico",MLB reliever,True,45.3,70.1,Stuff fix,51.4,60.4
+670950,"Richards, Trevor",MLB reliever,True,15.6,78.7,Stuff fix,31.7,65.3
+670970,"Morejon, Adrian",MLB reliever,True,99.3,98.1,Keep,97.8,87.1
+670990,"Ramírez, Yohan",MLB reliever,True,65.9,36.9,Execution fix,66.4,44.2
+671111,"Peralta, Sammy",MLB reliever,True,11.0,76.7,Stuff fix,25.9,64.5
+671162,"Thomas, Connor",KC reliever,False,38.1,90.4,Stuff fix,46.2,73.5
+671345,"Foley, Jason",MLB reliever,True,45.7,7.6,Replace candidate,51.5,22.6
+671922,"Smith, Cade",MLB reliever,True,90.1,89.0,Keep,82.7,72.2
+671936,"Macko, Adam",MLB reliever,True,22.7,43.3,Replace candidate,36.9,47.2
+672335,"Pérez, Cionel",MLB reliever,True,70.1,29.3,Execution fix,68.2,39.0
+672442,"Cruz, Yovanny",MLB reliever,False,82.6,26.7,Execution fix,77.0,37.7
+672456,"Montero, Keider",MLB reliever,False,72.6,90.6,Keep,69.3,73.6
+672582,"Zerpa, Angel",MLB reliever,False,75.7,37.1,Execution fix,71.8,44.4
+672629,"Carrillo, Gerardo",MLB reliever,True,63.1,5.3,Execution fix,63.8,20.3
+672782,"Gómez, Yoendrys",MLB reliever,True,92.4,25.1,Execution fix,84.0,36.4
+672841,"Vargas, Carlos",MLB reliever,False,76.9,92.6,Keep,72.8,77.1
+673380,"Núñez, Dedniel",MLB reliever,False,56.9,100.0,Keep,59.3,95.0
+673513,"Matsui, Yuki",MLB reliever,True,38.7,39.3,Replace candidate,46.4,45.3
+673540,"Senga, Kodai",MLB reliever,True,23.7,10.0,Replace candidate,37.8,24.7
+673929,"Leasure, Jordan",MLB reliever,False,65.7,63.3,Keep,66.1,57.5
+674073,"Weisenburger, Jack",MLB reliever,False,80.9,83.7,Keep,75.4,67.6
+674370,"Bido, Osvaldo",MLB reliever,True,27.3,19.0,Replace candidate,40.8,33.1
+674444,"Cruz, Steven",KC reliever,True,94.1,83.3,Keep,86.0,67.1
+674841,"Alvarez, Andrew",MLB reliever,True,14.1,22.6,Replace candidate,31.1,35.1
+675540,"Curry, Xzavion",MLB reliever,False,0.7,6.3,Replace candidate,7.5,21.8
+675660,"Drohan, Shane",MLB reliever,True,42.1,95.9,Stuff fix,49.4,81.0
+675848,"Mejia, Juan",MLB reliever,True,19.0,19.3,Replace candidate,33.4,33.2
+675989,"Bolton, Cody",MLB reliever,False,88.7,12.9,Execution fix,82.1,28.1
+676254,"Walker, Ryan",MLB reliever,True,72.3,13.3,Execution fix,69.2,28.2
+676263,"Dreyer, Jack",MLB reliever,True,40.7,88.7,Stuff fix,47.6,71.6
+676282,"Cantillo, Joey",MLB reliever,False,0.9,53.4,Stuff fix,7.8,51.4
+676395,"Garcia, Robert",MLB reliever,False,68.4,25.1,Execution fix,67.1,36.4
+676428,"Hurter, Brant",MLB reliever,True,86.7,42.9,Execution fix,80.6,47.1
+676467,"Gordon, Colton",MLB reliever,False,12.0,5.9,Replace candidate,26.8,21.4
+676477,"Whitlock, Garrett",MLB reliever,True,48.1,99.3,Stuff fix,53.1,92.9
+676534,"Faucher, Calvin",MLB reliever,True,82.1,26.7,Execution fix,76.5,37.7
+676571,"Poulin, PJ",MLB reliever,True,3.0,0.4,Replace candidate,15.5,8.8
+676604,"Zuber, Tyler",MLB reliever,True,88.7,81.4,Keep,82.1,66.5
+676617,"O'Brien, Riley",MLB reliever,True,65.0,49.6,Execution fix,65.7,50.0
+676620,"Weiman, Blake",MLB reliever,False,0.9,91.1,Stuff fix,7.7,74.7
+676680,"Cosgrove, Tom",MLB reliever,False,6.3,67.1,Stuff fix,19.5,59.2
+676684,"Vest, Will",MLB reliever,True,74.0,70.1,Keep,70.1,60.4
+676742,"Sanders, Cam",MLB reliever,True,52.1,14.9,Execution fix,57.0,29.7
+676755,"Mattson, Isaac",MLB reliever,True,46.4,30.7,Replace candidate,52.2,40.1
+676760,"Marinaccio, Ron",MLB reliever,True,30.1,8.1,Replace candidate,42.0,23.0
+676775,"Winn, Keaton",MLB reliever,True,18.7,59.7,Stuff fix,33.3,55.0
+676879,"Ashby, Aaron",MLB reliever,True,96.4,27.9,Execution fix,92.1,38.2
+676962,"Brown, Ben",MLB reliever,True,51.3,49.9,Execution fix,56.3,50.1
+677020,"Walker, Josh",MLB reliever,True,31.4,58.4,Stuff fix,43.0,54.3
+677053,"Nardi, Andrew",MLB reliever,True,67.3,67.9,Keep,66.8,59.7
+677161,"Kelly, Zack",MLB reliever,False,76.9,8.6,Execution fix,72.5,23.2
+677865,"Bruihl, Justin",MLB reliever,True,51.6,33.6,Execution fix,56.5,42.1
+677944,"Cecconi, Slade",MLB reliever,False,80.0,92.1,Keep,75.1,76.0
+677955,"Hill, Jaden",MLB reliever,True,28.4,15.9,Replace candidate,41.4,30.2
+677958,"Rocker, Kumar",MLB reliever,False,6.3,96.9,Stuff fix,19.4,82.3
+677961,"Wilcox, Cole",MLB reliever,True,31.4,33.9,Replace candidate,43.0,42.2
+678020,"Halvorsen, Seth",MLB reliever,True,62.4,5.9,Execution fix,63.5,21.4
+678022,"Perkins, Jack",MLB reliever,True,52.4,87.6,Keep,57.2,71.2
+678061,"Kerr, Ray",MLB reliever,False,22.9,99.1,Stuff fix,37.1,91.3
+678394,"Bello, Brayan",MLB reliever,True,42.7,90.1,Stuff fix,49.7,73.3
+678606,"Ferrer, José A.",MLB reliever,True,99.0,80.7,Keep,96.2,66.3
+678906,"Teng, Kai-Wei",MLB reliever,True,38.1,30.1,Replace candidate,46.2,39.8
+679358,"Orze, Eric",MLB reliever,True,35.9,31.1,Replace candidate,44.9,40.3
+679775,"Backhus, Kyle",MLB reliever,True,61.6,55.0,Keep,62.2,52.1
+679883,"Avila, Luinder",KC reliever,True,80.6,3.6,Execution fix,75.3,18.9
+679885,"Martinez, Justin",MLB reliever,False,99.7,33.4,Execution fix,98.6,41.7
+680573,"Woods Richardson, Simeon",MLB reliever,True,1.6,1.1,Replace candidate,11.2,13.4
+680604,"Castaño, Blas",MLB reliever,True,19.7,56.3,Stuff fix,33.8,53.0
+680723,"Rom, Drew",MLB reliever,True,3.3,36.9,Replace candidate,15.9,44.2
+680730,"Parker, Mitchell",MLB reliever,True,6.9,54.7,Stuff fix,21.3,52.0
+680732,"Burke, Sean",MLB reliever,True,54.6,89.6,Keep,58.2,72.5
+680736,"Wrobleski, Justin",MLB reliever,False,56.3,60.7,Keep,58.8,55.4
+680742,"Bowlan, Jonathan",MLB reliever,True,93.6,75.0,Keep,85.3,62.9
+680744,"Madden, Ty",MLB reliever,True,7.7,58.7,Stuff fix,21.6,54.4
+680755,"Fisher, Braydon",MLB reliever,True,11.9,21.9,Replace candidate,26.4,34.8
+680767,"Vodnik, Victor",MLB reliever,True,63.1,2.7,Execution fix,63.8,18.1
+680802,"Weiss, Ryan",MLB reliever,True,55.1,17.0,Execution fix,58.4,31.6
+680899,"Tolman, Erik",MLB reliever,False,94.9,33.4,Execution fix,87.6,42.0
+680916,"Aleman, Franco",MLB reliever,True,54.1,24.7,Execution fix,58.1,36.2
+681151,"Murray, Jayden",MLB reliever,True,39.1,23.1,Replace candidate,46.9,35.4
+681168,"Curvelo, Luis",MLB reliever,False,22.6,40.3,Replace candidate,36.5,46.0
+681190,"Vásquez, Randy",MLB reliever,True,33.3,90.7,Stuff fix,43.3,73.7
+681217,"Silseth, Chase",MLB reliever,True,30.7,41.1,Replace candidate,42.2,46.8
+681293,"Arrighetti, Spencer",MLB reliever,False,84.0,4.0,Execution fix,78.2,19.4
+681320,"Lavender, Nate",MLB reliever,True,30.1,94.1,Stuff fix,42.0,78.1
+681402,"Varland, Gus",MLB reliever,True,55.7,86.1,Keep,58.5,70.2
+681544,"Olds, Wyatt",MLB reliever,False,93.1,12.9,Execution fix,84.6,27.8
+681676,"Fernandez, Ryan",MLB reliever,True,18.1,44.4,Replace candidate,32.9,48.2
+681751,"Estrada, Lazaro",MLB reliever,False,18.0,4.3,Replace candidate,32.6,19.9
+681799,"Roberts, Ethan",MLB reliever,True,23.0,6.4,Replace candidate,37.3,22.0
+681810,"Warren, Austin",MLB reliever,True,69.7,10.4,Execution fix,67.8,24.8
+681867,"Criswell, Cooper",MLB reliever,True,74.7,65.9,Keep,70.8,58.8
+681870,"Sabrowski, Erik",MLB reliever,True,71.3,40.1,Execution fix,68.5,45.8
+681892,"Funderburk, Kody",MLB reliever,True,36.6,21.4,Replace candidate,45.2,34.6
+681895,"Sisk, Evan",MLB reliever,True,45.7,2.4,Replace candidate,51.5,17.9
+681911,"Vesia, Alex",MLB reliever,True,86.3,57.0,Keep,80.4,53.4
+681916,"Smith, Dylan",MLB reliever,True,62.7,38.6,Execution fix,63.7,44.9
+681982,"Anderson, Grant",MLB reliever,True,64.1,29.0,Execution fix,65.5,38.8
+682120,"Herrin, Tim",MLB reliever,True,45.0,17.6,Replace candidate,51.1,32.5
+682254,"Montgomery, Mason",MLB reliever,True,89.6,80.3,Keep,82.3,66.2
+682608,"Gray, Peyton",MLB reliever,True,19.3,91.6,Stuff fix,33.5,75.5
+682825,"Mey, Luis",MLB reliever,True,63.9,24.3,Execution fix,65.1,36.0
+682842,"Uribe, Abner",MLB reliever,True,73.6,55.3,Keep,70.0,52.4
+682989,"Mederos, Victor",MLB reliever,True,72.7,37.4,Execution fix,69.4,44.6
+682995,"Barco, Hunter",MLB reliever,True,48.1,0.1,Replace candidate,53.1,7.7
+683000,"Cornelio, Riley",MLB reliever,True,50.7,4.6,Execution fix,55.6,20.0
+683175,"Phillips, Connor",MLB reliever,True,79.9,0.7,Execution fix,74.9,9.2
+683232,"Mears, Nick",KC reliever,True,49.3,5.6,Replace candidate,54.2,21.1
+683409,"Chivilli, Angel",MLB reliever,False,22.3,22.6,Replace candidate,36.3,35.1
+683618,"Henriquez, Edgardo",MLB reliever,True,99.9,66.3,Keep,99.3,58.9
+683742,"Franco, Jose",MLB reliever,True,13.3,1.6,Replace candidate,28.4,13.5
+683769,"Gaddis, Hunter",MLB reliever,True,41.9,67.1,Stuff fix,48.9,59.2
+684049,"Bidois, Brandan",MLB reliever,True,68.9,13.3,Execution fix,67.2,28.2
+684665,"Murphy, Luke",MLB reliever,True,32.4,3.3,Replace candidate,43.2,18.6
+684974,"Yoho, Craig",MLB reliever,True,42.4,53.0,Stuff fix,49.6,51.2
+685112,"McCambley, Zach",MLB reliever,False,43.9,63.1,Stuff fix,50.3,57.4
+685126,"Eisert, Brandon",MLB reliever,True,0.1,52.4,Stuff fix,5.0,51.0
+685299,"Gordon, Tanner",MLB reliever,True,6.4,97.9,Stuff fix,20.9,86.3
+685464,"Winquest, Cade",MLB reliever,False,10.9,12.9,Replace candidate,25.7,27.9
+685801,"Bigge, Hunter",MLB reliever,True,19.7,1.9,Replace candidate,33.8,14.5
+686560,"Collyer, Gavin",MLB reliever,True,97.6,3.9,Execution fix,93.8,19.2
+686580,"Slaten, Justin",MLB reliever,True,83.6,95.4,Keep,78.1,79.9
+686751,"Johnson, Seth",MLB reliever,True,77.6,20.9,Execution fix,73.3,34.4
+686753,"Jameson, Drey",MLB reliever,True,16.7,48.0,Replace candidate,32.2,49.5
+686930,"Barnett, Mason",MLB reliever,True,26.7,25.6,Replace candidate,40.2,36.5
+686934,"McFarlane, Alex",MLB reliever,True,98.7,36.1,Execution fix,96.0,43.9
+686973,"Varland, Louis",MLB reliever,True,85.0,95.4,Keep,78.8,79.9
+686993,"Sterner, Justin",MLB reliever,True,51.0,55.6,Keep,56.1,52.5
+687209,"Maxwell, Zach",MLB reliever,False,86.7,14.4,Execution fix,80.6,29.6
+687239,"Peoples, Ben",MLB reliever,False,47.4,36.4,Replace candidate,52.8,44.0
+687309,"Hjerpe, Cooper",MLB reliever,False,17.0,18.0,Replace candidate,32.3,32.9
+687330,"Kelly, Kevin",MLB reliever,True,97.9,97.6,Keep,94.1,84.3
+687377,"Ribalta, Orlando",MLB reliever,True,58.6,60.4,Keep,60.1,55.3
+687396,"Headrick, Brent",MLB reliever,True,49.6,89.9,Stuff fix,54.5,72.9
+687531,"Kempner, William",MLB reliever,False,99.1,62.3,Keep,97.6,56.7
+687606,"Schultz, Paxton",MLB reliever,True,24.1,30.4,Replace candidate,37.9,39.9
+687849,"Kent, Zak",MLB reliever,False,10.6,19.4,Replace candidate,25.3,33.4
+687911,"King, Bryan",MLB reliever,True,25.9,68.1,Stuff fix,39.7,59.9
+687941,"Gamboa, Alec",MLB reliever,True,75.0,77.6,Keep,71.1,65.0
+688158,"Morgan, David",MLB reliever,True,56.3,39.7,Execution fix,58.8,45.7
+688297,"Roycroft, Chris",MLB reliever,True,57.3,32.4,Execution fix,59.6,40.9
+688642,"Agnos, Zach",MLB reliever,True,4.7,41.1,Replace candidate,17.6,46.8
+688883,"Pallette, Peyton",MLB reliever,True,12.7,2.1,Replace candidate,27.8,15.3
+689017,"Knack, Landon",MLB reliever,False,5.4,51.7,Stuff fix,18.8,50.8
+689147,"Kerkering, Orion",MLB reliever,True,55.7,15.3,Execution fix,58.5,29.9
+689149,"Dallas, Chad",MLB reliever,False,42.0,36.9,Replace candidate,49.3,44.2
+689225,"Brieske, Beau",MLB reliever,True,26.4,91.9,Stuff fix,40.0,75.7
+689254,"Fluharty, Mason",MLB reliever,True,69.3,71.6,Keep,67.4,61.0
+689266,"Dodd, Dylan",MLB reliever,True,77.0,84.4,Keep,72.9,68.1
+689296,"Nunez, Anthony",MLB reliever,True,82.1,61.9,Keep,76.5,56.5
+689520,"Laweryson, Cody",MLB reliever,False,47.6,58.4,Stuff fix,53.0,54.3
+689546,"Davila, Nick",MLB reliever,True,2.7,29.9,Replace candidate,15.0,39.3
+690829,"Joyce, Ben",MLB reliever,False,90.0,19.4,Execution fix,82.6,33.3
+690925,"Beeter, Clayton",MLB reliever,True,26.1,11.3,Replace candidate,39.9,25.7
+690928,"Dobbins, Hunter",MLB reliever,False,5.4,59.1,Stuff fix,18.8,54.6
+690978,"Fulton, Dax",MLB reliever,True,53.9,19.6,Execution fix,57.8,33.6
+691384,"Perales, Luis",MLB reliever,False,86.7,16.3,Execution fix,80.6,30.5
+691769,"Abner, Philip",MLB reliever,True,6.1,12.7,Replace candidate,19.3,27.1
+691799,"Taylor, Grant",MLB reliever,True,76.1,74.4,Keep,72.1,62.7
+693308,"Frasso, Nick",MLB reliever,True,28.1,75.3,Stuff fix,41.3,63.8
+693313,"Seymour, Carson",MLB reliever,True,84.1,9.3,Execution fix,78.5,24.0
+693686,"Miles, Spencer",MLB reliever,True,50.4,88.0,Keep,55.4,71.3
+693855,"Seymour, Ian",MLB reliever,True,64.6,92.1,Keep,65.6,76.0
+694037,"Palencia, Daniel",MLB reliever,True,44.1,41.9,Replace candidate,50.6,46.9
+694297,"Pfaadt, Brandon",MLB reliever,True,53.3,27.4,Execution fix,57.6,38.0
+694335,"Svanson, Matt",MLB reliever,True,16.1,23.1,Replace candidate,31.9,35.4
+694360,"Way, Beck",KC reliever,True,70.4,42.9,Execution fix,68.3,47.1
+694361,"Klein, Will",MLB reliever,True,20.4,38.6,Replace candidate,34.8,44.9
+694477,"Patrick, Chad",MLB reliever,True,72.3,59.3,Keep,69.2,54.8
+694680,"Martin, Trevor",MLB reliever,False,60.3,27.7,Execution fix,61.7,38.1
+694753,"Curtis, Khristian",MLB reliever,True,44.4,6.1,Replace candidate,50.7,21.6
+694795,"Ekness, Josh",MLB reliever,True,96.1,20.4,Execution fix,92.0,34.2
+694851,"Hoffmann, Andrew",MLB reliever,False,20.9,9.7,Replace candidate,35.1,24.6
+695001,"Santa, Alimber",MLB reliever,False,39.7,13.7,Replace candidate,47.1,28.4
+695034,"Morris, Kade",MLB reliever,False,0.9,14.1,Replace candidate,7.9,29.4
+695049,"Kerry, Brett",MLB reliever,False,1.1,79.7,Stuff fix,10.0,66.0
+695239,"Ahlstrom, Robby",MLB reliever,True,70.9,31.9,Execution fix,68.4,40.6
+695243,"Miller, Mason",MLB reliever,True,93.9,72.3,Keep,85.5,61.2
+695380,"Hoppe, Alex",MLB reliever,True,91.6,41.9,Execution fix,83.4,46.9
+695418,"Lord, Brad",MLB reliever,True,23.7,72.3,Stuff fix,37.8,61.2
+695534,"Petty, Chase",MLB reliever,True,35.0,61.3,Stuff fix,44.1,55.9
+696062,"Dotel, Wilber",MLB reliever,True,68.0,36.4,Execution fix,66.9,44.0
+696070,"Rojas, Kendry",MLB reliever,True,58.1,23.6,Execution fix,60.0,35.5
+696131,"Black, Mason",KC reliever,True,40.3,5.0,Replace candidate,47.5,20.2
+696146,"Smith, Hagen",MLB reliever,True,78.1,29.6,Execution fix,73.5,39.2
+696147,"Bachman, Sam",MLB reliever,True,53.0,35.0,Execution fix,57.5,42.8
+696519,"Natera Jr., Samy",MLB reliever,True,88.4,51.7,Keep,82.0,50.8
+696522,"Juenger, Hayden",MLB reliever,False,3.1,5.9,Replace candidate,15.7,21.4
+697812,"Rock, Joe",MLB reliever,False,15.9,14.0,Replace candidate,31.8,29.0
+699008,"Kelly, Antwone",MLB reliever,False,79.3,48.9,Execution fix,74.5,49.8
+699044,"Ullola, Miguel",MLB reliever,False,56.6,91.7,Keep,58.9,75.6
+699134,"Rodriguez, Bradgley",MLB reliever,True,81.6,82.7,Keep,76.3,67.0
+699823,"Davis, Tyler",MLB reliever,True,47.6,79.6,Stuff fix,53.0,65.9
+700669,"Graceffo, Gordon",MLB reliever,True,14.6,21.4,Replace candidate,31.2,34.6
+701519,"Adams, Travis",MLB reliever,True,27.6,56.3,Stuff fix,41.0,53.0
+701552,"Granillo, Andre",MLB reliever,False,48.9,0.0,Replace candidate,53.6,4.0
+701719,"Samaniego, Tyler",MLB reliever,False,50.0,48.9,Execution fix,54.8,49.8
+702021,"Dion, Will",MLB reliever,True,82.7,74.0,Keep,77.2,62.2
+702193,"Morris, Andrew",MLB reliever,True,82.1,71.9,Keep,76.5,61.1
+702273,"Schultz, Noah",MLB reliever,False,28.4,98.3,Stuff fix,41.4,88.4
+702275,"Ritchie, JR",MLB reliever,True,10.3,6.9,Replace candidate,24.8,22.2
+702474,"Paredes, Mike",MLB reliever,False,6.3,19.3,Replace candidate,20.2,33.2
+702752,"Pintaro, Jonathan",MLB reliever,True,93.0,10.0,Execution fix,84.5,24.7
+703725,"Gastelum, Luis",MLB reliever,True,47.0,64.6,Stuff fix,52.6,58.1
+800311,"Fuentes, Didier",MLB reliever,True,81.0,89.3,Keep,75.5,72.3
+801403,"Dollander, Chase",MLB reliever,True,90.4,64.1,Keep,82.9,58.0
+802408,"Mautz, Brycen",MLB reliever,False,38.7,11.9,Replace candidate,46.4,26.6
+805123,"Blubaugh, AJ",MLB reliever,True,65.6,35.9,Execution fix,66.0,43.8
+805299,"Garcia, Brandyn",MLB reliever,True,53.6,82.7,Keep,57.7,67.0
+805326,"Schweitzer, Tyler",MLB reliever,True,21.6,60.7,Stuff fix,35.7,55.4
+805345,"Harris, Trent",MLB reliever,True,62.1,76.1,Keep,63.2,64.2
+805427,"Sommers, Drew",MLB reliever,True,93.3,98.4,Keep,84.9,88.6
+806188,"Gibson, Cade",MLB reliever,True,32.4,45.3,Replace candidate,43.2,48.6
+814305,"Tur, Yunior",MLB reliever,False,22.7,0.9,Replace candidate,36.9,10.5
+815081,"Manfredi, Mark",MLB reliever,False,8.6,13.7,Replace candidate,22.5,28.4
+815083,"Farris, Mitch",MLB reliever,True,17.7,15.6,Replace candidate,32.5,30.0
+820862,"Fermin, José",MLB reliever,True,69.7,50.7,Keep,67.8,50.4
+837227,"Imai, Tatsuya",MLB reliever,True,1.0,72.7,Stuff fix,8.3,61.3
