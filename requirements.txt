@@ -5,6 +5,7 @@ pyarrow
 openpyxl
 pybaseball
 requests
+imageio-ffmpeg
 matplotlib
 seaborn
 scipy
