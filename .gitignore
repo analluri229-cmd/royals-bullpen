@@ -7,3 +7,7 @@ __pycache__/
 data/
 .DS_Store
 outputs/headshots/
+
+# MLB video clips and the overlays made from them stay local (MLB footage)
+outputs/clips/
+outputs/overlays/
