@@ -49,6 +49,7 @@ python -m src.execution                                            # Step 5 -> o
 python -m src.leak_map                                             # Step 6 -> outputs/tables/leak_map.csv
 python -m src.targets                                              # Step 7 -> outputs/tables/targets.csv (needs data/manual/fa_relievers_2026.csv)
 python -m src.prospects                                            # Step 7 -> outputs/tables/prospects_pitchers.csv (needs data/manual/royals_prospects.csv)
+python -m src.figures                                              # Step 8 -> outputs/figures/*.png (300 dpi)
 python -m pytest
 ```
 
