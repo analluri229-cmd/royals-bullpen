@@ -21,6 +21,7 @@ Clips are MLB's. Fine for a private portfolio video; check MLB's terms before po
 Usage:
   python -m src.fetch_clips                                   # all qualified KC relievers
   python -m src.fetch_clips --pitchers "Erceg, Lucas" "Strahm, Matt"
+  python -m src.fetch_clips --file "C:/Users/themi/Downloads/clip.mp4" --pitcher "Erceg, Lucas" --pitch-type SL
   python -m src.fetch_clips --dry-run                         # pick pitches, don't download
 """
 from __future__ import annotations
@@ -29,6 +30,8 @@ import argparse
 import json
 import re
 import sys
+import shutil
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -43,6 +46,7 @@ MANIFEST = CLIPS_DIR / "clips_manifest.csv"
 FEED_URL = "https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live"
 SAVANT_VIDEO_URL = "https://baseballsavant.mlb.com/sporty-videos?playId={play_id}"
 UA = {"User-Agent": "Mozilla/5.0"}
+OPEN_IN_BROWSER = CLIPS_DIR / "open_in_browser.txt"
 SHAPE_COLS = ["release_speed", "pfx_x", "pfx_z", "release_pos_x", "release_pos_z"]
 MANIFEST_COLS = ["pitcher", "name", "pitch_type", "is_primary_fb", "game_pk", "game_date", "at_bat_number",
                  "pitch_number", "stand", "release_speed", "pfx_x_in", "pfx_z_in", "play_id", "source_url",
@@ -119,10 +123,19 @@ def select_clips(df: pd.DataFrame, pitcher_ids: dict[int, str]) -> pd.DataFrame:
                                                                             "release_sec")])
 
 
+class Blocked(Exception):
+    """The server refused a scripted download (403). Save that clip from a browser instead (--file)."""
+
+
 def get(url: str) -> bytes:
     req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read()
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return resp.read()
+    except urllib.error.HTTPError as exc:
+        if exc.code in (401, 403, 429):
+            raise Blocked(f"{exc.code} from {url}") from exc
+        raise
 
 
 def find_play_id(feed: dict, at_bat_number: int, pitch_number: int) -> str | None:
@@ -183,6 +196,7 @@ def fetch_selected(sel: pd.DataFrame) -> pd.DataFrame:
         sel[c] = None
     sel["release_sec"] = np.nan
     feeds: dict[int, dict] = {}
+    blocked: list[tuple] = []
     for i, r in sel.iterrows():
         path = CLIPS_DIR / slug(r["name"]) / f"{r.pitch_type}_{r.game_pk}_{r.at_bat_number}_{r.pitch_number}.mp4"
         sel.at[i, "path"] = str(path.relative_to(ROOT)).replace("\\", "/")
@@ -197,15 +211,51 @@ def fetch_selected(sel: pd.DataFrame) -> pd.DataFrame:
             sel.at[i, "play_id"], sel.at[i, "source_url"] = play_id, url
             if download(url, path):
                 print("saved", path.relative_to(ROOT))
+        except Blocked as exc:
+            blocked.append((r["name"], r.pitch_type, sel.at[i, "source_url"], r.game_date, r.at_bat_number,
+                            r.pitch_number))
+            print("blocked", r["name"], r.pitch_type, exc)
         except Exception as exc:  # keep going; report the misses
             print("failed", r["name"], r.pitch_type, exc)
+    if blocked:
+        write_browser_list(blocked)
     return sel
+
+
+def write_browser_list(blocked: list[tuple]) -> None:
+    """For clips MLB refused to a script: which pitch to find in a browser and the command to add it."""
+    lines = ["MLB refused these downloads (403 Forbidden). Get each clip in your browser instead:",
+             "open the link (or find the pitch in Film Room), save the video, then run the --file command.", ""]
+    for name, pt, url, date, ab, pn in blocked:
+        lines += [f"{name}  {pt}  {date}  at-bat {ab}, pitch {pn}",
+                  f"  open: {url or 'Savant link not found (feed blocked): search this pitch on Film Room'}",
+                  f'  then: python -m src.fetch_clips --file "PATH_TO_SAVED.mp4" --pitcher "{name}" --pitch-type {pt}',
+                  ""]
+    OPEN_IN_BROWSER.write_text("\n".join(lines), encoding="utf-8")
+    print(f"\n{len(blocked)} clip(s) blocked. What to open and the commands: {OPEN_IN_BROWSER.relative_to(ROOT)}")
+
+
+def add_file(src: Path, name: str, pitch_type: str, pitcher_id: int | None) -> pd.DataFrame:
+    """A clip you saved from a browser: copy it into outputs/clips and add it to the manifest."""
+    if not src.exists():
+        raise SystemExit(f"file not found: {src}")
+    path = CLIPS_DIR / slug(name) / f"{pitch_type}_{slug(src.stem)[:60]}{src.suffix.lower() or '.mp4'}"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, path)
+    print("added", path.relative_to(ROOT))
+    return pd.DataFrame([dict(pitcher=pitcher_id, name=name, pitch_type=pitch_type,
+                              is_primary_fb=PITCH_GROUPS.get(pitch_type) == "FB", source_url=str(src),
+                              path=str(path.relative_to(ROOT)).replace("\\", "/"), release_sec=np.nan)])
 
 
 def add_manual(url: str, name: str, pitch_type: str, pitcher_id: int | None) -> pd.DataFrame:
     tail = slug(url.rstrip("/").split("/")[-1].split("?")[0])[:60] or "clip"
     path = CLIPS_DIR / slug(name) / f"{pitch_type}_{tail}.mp4"
-    ok = download(url, path)
+    try:
+        ok = download(url, path)
+    except Blocked as exc:
+        print("blocked:", exc, "- save it from your browser and use --file")
+        ok = False
     print("saved" if ok else "failed", path.relative_to(ROOT))
     return pd.DataFrame([dict(pitcher=pitcher_id, name=name, pitch_type=pitch_type,
                               is_primary_fb=PITCH_GROUPS.get(pitch_type) == "FB", source_url=url,
@@ -223,12 +273,18 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--pitchers", nargs="*", help='names as "Last, First" (default: qualified KC relievers)')
     ap.add_argument("--dry-run", action="store_true", help="pick pitches and print them, no downloads")
     ap.add_argument("--url", help="add one clip by hand from a Film Room / mlb.com / Savant / .mp4 link")
+    ap.add_argument("--file", type=Path, help="add a clip you saved from a browser (use when downloads get 403)")
     ap.add_argument("--pitcher", help='with --url: pitcher name, "Last, First"')
     ap.add_argument("--pitcher-id", type=int, help="with --url: MLBAM id (optional)")
     ap.add_argument("--pitch-type", help="with --url: Statcast pitch type, e.g. FF or SL")
     a = ap.parse_args(argv)
     CLIPS_DIR.mkdir(parents=True, exist_ok=True)
 
+    if a.file:
+        if not (a.pitcher and a.pitch_type):
+            ap.error("--file needs --pitcher and --pitch-type")
+        merge_manifest(add_file(a.file, a.pitcher, a.pitch_type.upper(), a.pitcher_id)).to_csv(MANIFEST, index=False)
+        return 0
     if a.url:
         if not (a.pitcher and a.pitch_type):
             ap.error("--url needs --pitcher and --pitch-type")

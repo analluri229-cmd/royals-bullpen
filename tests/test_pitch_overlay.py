@@ -103,3 +103,18 @@ def test_select_clips_one_game_typical_pitch():
     assert list(sel["pitch_type"]) == ["FF", "SL"]
     assert set(sel["game_pk"]) == {2}
     assert sel.loc[sel["pitch_type"] == "FF", "release_speed"].iloc[0] == 96.0  # closest to mean
+
+
+def test_add_file_and_blocked_list(tmp_path, monkeypatch):
+    monkeypatch.setattr(fetch_clips, "CLIPS_DIR", tmp_path / "clips")
+    monkeypatch.setattr(fetch_clips, "ROOT", tmp_path)
+    monkeypatch.setattr(fetch_clips, "OPEN_IN_BROWSER", tmp_path / "clips" / "open_in_browser.txt")
+    src = tmp_path / "Saved Clip.mp4"
+    src.write_bytes(b"x")
+    row = fetch_clips.add_file(src, "Erceg, Lucas", "SL", None)
+    assert row.loc[0, "path"] == "clips/erceg__lucas/SL_saved_clip.mp4"
+    assert (tmp_path / row.loc[0, "path"]).exists()
+    (tmp_path / "clips").mkdir(exist_ok=True)
+    fetch_clips.write_browser_list([("Erceg, Lucas", "SL", "https://x/y", "2026-06-01", 12, 3)])
+    txt = (tmp_path / "clips" / "open_in_browser.txt").read_text()
+    assert "https://x/y" in txt and '--pitcher "Erceg, Lucas" --pitch-type SL' in txt
