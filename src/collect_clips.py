@@ -53,11 +53,14 @@ def videos_in(dirs: list[Path], since: float = 0.0) -> list[Path]:
 
 
 def pending(man: pd.DataFrame, pitcher: str | None = None) -> pd.DataFrame:
-    """Manifest rows that have a link but no clip file yet."""
+    """Manifest rows that have a link but no clip file yet, skipping a pitcher x pitch type that already
+    has a clip on disk (e.g. one added earlier with --file or --sort)."""
+    exists = man["path"].astype(str).map(lambda p: (fc.ROOT / p).exists())
+    have = set(zip(man.loc[exists, "name"], man.loc[exists, "pitch_type"]))
     m = man if pitcher is None else man[man["name"] == pitcher]
     has_link = m["source_url"].astype(str).str.startswith("http")
-    missing = ~m["path"].astype(str).map(lambda p: (fc.ROOT / p).exists())
-    return m[has_link & missing]
+    already = pd.Series([(n, t) in have for n, t in zip(m["name"], m["pitch_type"])], index=m.index, dtype=bool)
+    return m[has_link & ~exists.loc[m.index] & ~already]
 
 
 def file_clip(src: Path, dest: Path) -> Path:

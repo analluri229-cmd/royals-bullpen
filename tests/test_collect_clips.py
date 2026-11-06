@@ -65,3 +65,13 @@ def test_sort_asks_pitcher_and_type(tmp_path, monkeypatch):
     assert new["name"] == "Erceg, Lucas" and new["pitch_type"] == "SL" and new["pitcher"] == 1
     assert new["path"] == "outputs/clips/erceg__lucas/SL_erceg_slider.mp4"
     assert (tmp_path / new["path"]).exists() and not (dl / "erceg slider.mp4").exists()
+
+
+def test_pending_skips_type_already_on_disk(tmp_path, monkeypatch):
+    setup(tmp_path, monkeypatch)
+    have = tmp_path / "outputs/clips/erceg__lucas/FF_erceg_ff.mp4"
+    have.parent.mkdir(parents=True)
+    have.write_bytes(b"v")
+    man = pd.DataFrame([manifest_row(), manifest_row(pitch_type="SL", path="outputs/clips/erceg__lucas/SL_7_20_1.mp4"),
+                        manifest_row(source_url="data/manual/erceg_ff.mp4", path="outputs/clips/erceg__lucas/FF_erceg_ff.mp4")])
+    assert list(cc.pending(man)["pitch_type"]) == ["SL"]
