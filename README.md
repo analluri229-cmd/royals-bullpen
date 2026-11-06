@@ -58,6 +58,8 @@ python -m src.fetch_headshots                                      # optional, W
 python -m src.fetch_clips --pitchers "Erceg, Lucas"                # Windows only: typical FB + secondaries from one game -> outputs/clips (not committed)
 python -m src.collect_clips                                        # if MLB returns 403: opens each picked clip's link, you save it, it moves + names it
 python -m src.collect_clips --sort                                 # file videos already saved (asks pitcher + pitch type for each)
+python -m src.fetch_clips --pitchers "Erceg, Lucas" --same FF --n 3   # consistency set: 3 fastballs (early / mid / late season, KC home games preferred)
+python -m src.pitch_overlay --pitcher "Erceg, Lucas" --same FF      # same-pitch overlay: is the delivery repeatable across outings?
 python -m src.pitch_overlay --pitcher "Erceg, Lucas" --sheet        # contact sheets for picking each clip's release_sec (optional)
 python -m src.pitch_overlay --pitcher "Erceg, Lucas"                # Jomboy-style overlay video: secondaries at 50% over the FB -> outputs/overlays
 python -m pytest

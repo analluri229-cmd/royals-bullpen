@@ -56,10 +56,13 @@ def pending(man: pd.DataFrame, pitcher: str | None = None) -> pd.DataFrame:
     """Manifest rows that have a link but no clip file yet, skipping a pitcher x pitch type that already
     has a clip on disk (e.g. one added earlier with --file or --sort)."""
     exists = man["path"].astype(str).map(lambda p: (fc.ROOT / p).exists())
+    one_each = man["set"].isna() if "set" in man else pd.Series(True, index=man.index)
     have = set(zip(man.loc[exists, "name"], man.loc[exists, "pitch_type"]))
     m = man if pitcher is None else man[man["name"] == pitcher]
     has_link = m["source_url"].astype(str).str.startswith("http")
+    # a type already on disk counts for the one-of-each picks; consistency sets need every pitch
     already = pd.Series([(n, t) in have for n, t in zip(m["name"], m["pitch_type"])], index=m.index, dtype=bool)
+    already &= one_each.loc[m.index]
     return m[has_link & ~exists.loc[m.index] & ~already]
 
 
@@ -177,7 +180,7 @@ def main(argv: list[str] | None = None) -> int:
     fc.CLIPS_DIR.mkdir(parents=True, exist_ok=True)
     man = pd.read_csv(fc.MANIFEST) if fc.MANIFEST.exists() else pd.DataFrame(columns=fc.MANIFEST_COLS)
     man = man.reindex(columns=fc.MANIFEST_COLS).reset_index(drop=True)
-    man = man.astype({c: object for c in ("name", "pitch_type", "source_url", "path", "is_primary_fb")})
+    man = man.astype({c: object for c in ("name", "pitch_type", "source_url", "path", "is_primary_fb", "set")})
     try:
         man = sort_loose(man, dirs) if a.sort else collect(man, dirs, a.pitcher)
     finally:

@@ -22,6 +22,7 @@ Usage:
   python -m src.fetch_clips                                   # all qualified KC relievers
   python -m src.fetch_clips --pitchers "Erceg, Lucas" "Strahm, Matt"
   python -m src.fetch_clips --file "C:/Users/themi/Downloads/clip.mp4" --pitcher "Erceg, Lucas" --pitch-type SL
+  python -m src.fetch_clips --pitchers "Erceg, Lucas" --same FF --n 3   # 3 fastballs across the season
   python -m src.fetch_clips --dry-run                         # pick pitches, don't download
 """
 from __future__ import annotations
@@ -50,7 +51,7 @@ OPEN_IN_BROWSER = CLIPS_DIR / "open_in_browser.txt"
 SHAPE_COLS = ["release_speed", "pfx_x", "pfx_z", "release_pos_x", "release_pos_z"]
 MANIFEST_COLS = ["pitcher", "name", "pitch_type", "is_primary_fb", "game_pk", "game_date", "at_bat_number",
                  "pitch_number", "stand", "release_speed", "pfx_x_in", "pfx_z_in", "play_id", "source_url",
-                 "path", "release_sec"]
+                 "path", "release_sec", "set"]
 
 
 def slug(text: str) -> str:
@@ -119,6 +120,48 @@ def select_clips(df: pd.DataFrame, pitcher_ids: dict[int, str]) -> pd.DataFrame:
                             at_bat_number=int(r.at_bat_number), pitch_number=int(r.pitch_number), stand=r.stand,
                             release_speed=round(float(r.release_speed), 1), pfx_x_in=round(float(r.pfx_x) * 12, 1),
                             pfx_z_in=round(float(r.pfx_z) * 12, 1)))
+    return pd.DataFrame(out, columns=[c for c in MANIFEST_COLS if c not in ("play_id", "source_url", "path",
+                                                                            "release_sec")])
+
+
+def select_consistency(df: pd.DataFrame, pitcher_ids: dict[int, str], pitch_type: str | None = None,
+                       n: int = 3) -> pd.DataFrame:
+    """n pitches of ONE pitch type spread across the season, for a same-pitch consistency overlay.
+
+    The season is cut into n date windows (early / middle / late); in each window this takes his most
+    typical pitch of that type. KC home games are preferred so the Kauffman camera is the same, and so is
+    the batter side of the first pick. Rows get set = "same_<PT>" so they are kept apart from the
+    one-of-each-pitch picks.
+    """
+    out = []
+    for pid, name in pitcher_ids.items():
+        p = df[(df["pitcher"] == pid) & df["is_relief"]] if "is_relief" in df else df[df["pitcher"] == pid]
+        if p.empty:
+            print("no pitches for", name)
+            continue
+        pt = pitch_type if pitch_type not in (None, "FB") else pitch_types(p)[0]
+        season = p[p["pitch_type"] == pt].dropna(subset=SHAPE_COLS)
+        if len(season) < n:
+            print(f"{name}: only {len(season)} {pt} pitches; skipping")
+            continue
+        sd = season[SHAPE_COLS].std().replace(0, np.nan).fillna(1.0)
+        dist = (((season[SHAPE_COLS] - season[SHAPE_COLS].mean()) / sd) ** 2).sum(axis=1) ** 0.5
+        if "home_team" in season:
+            dist = dist + np.where(season["home_team"] == "KC", 0.0, 1.5)
+        dates = pd.to_datetime(season["game_date"])
+        windows = pd.qcut(dates.rank(method="first"), n, labels=False)
+        stand = None
+        for w in range(n):
+            d = dist[windows == w]
+            if stand is not None:
+                d = d + np.where(season.loc[d.index, "stand"] == stand, 0.0, 1.0)
+            r = season.loc[d.idxmin()]
+            stand = stand or r["stand"]
+            out.append(dict(pitcher=pid, name=name, pitch_type=pt, is_primary_fb=PITCH_GROUPS.get(pt) == "FB",
+                            game_pk=int(r.game_pk), game_date=str(r.game_date)[:10],
+                            at_bat_number=int(r.at_bat_number), pitch_number=int(r.pitch_number), stand=r.stand,
+                            release_speed=round(float(r.release_speed), 1), pfx_x_in=round(float(r.pfx_x) * 12, 1),
+                            pfx_z_in=round(float(r.pfx_z) * 12, 1), set=f"same_{pt}"))
     return pd.DataFrame(out, columns=[c for c in MANIFEST_COLS if c not in ("play_id", "source_url", "path",
                                                                             "release_sec")])
 
@@ -272,6 +315,9 @@ def default_pitchers() -> dict[int, str]:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--pitchers", nargs="*", help='names as "Last, First" (default: qualified KC relievers)')
+    ap.add_argument("--same", nargs="?", const="FB", metavar="PT",
+                    help="consistency set: N pitches of one type across the season (default: his primary FB)")
+    ap.add_argument("--n", type=int, default=3, help="with --same: how many pitches (early / mid / late)")
     ap.add_argument("--dry-run", action="store_true", help="pick pitches and print them, no downloads")
     ap.add_argument("--url", help="add one clip by hand from a Film Room / mlb.com / Savant / .mp4 link")
     ap.add_argument("--file", type=Path, help="add a clip you saved from a browser (use when downloads get 403)")
@@ -301,8 +347,8 @@ def main(argv: list[str] | None = None) -> int:
         if missing:
             print("not found in execution_by_reliever.csv:", ", ".join(sorted(missing)))
     df = pd.read_parquet(PITCHES_PARQUET, columns=["game_pk", "game_date", "at_bat_number", "pitch_number",
-                                                   "pitcher", "pitch_type", "stand", "is_relief", *SHAPE_COLS])
-    sel = select_clips(df, pool)
+                                                   "pitcher", "pitch_type", "stand", "is_relief", "home_team", *SHAPE_COLS])
+    sel = select_consistency(df, pool, a.same.upper(), a.n) if a.same else select_clips(df, pool)
     print(sel.to_string(index=False))
     if a.dry_run:
         return 0
