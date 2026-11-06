@@ -118,3 +118,28 @@ def test_add_file_and_blocked_list(tmp_path, monkeypatch):
     fetch_clips.write_browser_list([("Erceg, Lucas", "SL", "https://x/y", "2026-06-01", 12, 3)])
     txt = (tmp_path / "clips" / "open_in_browser.txt").read_text()
     assert "https://x/y" in txt and '--pitcher "Erceg, Lucas" --pitch-type SL' in txt
+
+
+def test_select_consistency_spreads_season_and_prefers_home():
+    rows = []
+    for m, month in enumerate(["2026-04-15", "2026-06-15", "2026-08-15"]):
+        for k in range(30):
+            rows.append(dict(game_pk=10 + m * 2 + (k % 2), game_date=month, at_bat_number=k + 1, pitch_number=1,
+                             pitcher=9, pitch_type="FF", stand="R", is_relief=True,
+                             home_team="KC" if k % 2 == 0 else "NYY", release_speed=96 + (k % 3) * 0.5,
+                             pfx_x=-0.7, pfx_z=1.3, release_pos_x=-2, release_pos_z=6))
+    sel = fetch_clips.select_consistency(pd.DataFrame(rows), {9: "Test, A"}, None, n=3)
+    assert list(sel["game_date"]) == ["2026-04-15", "2026-06-15", "2026-08-15"]
+    assert set(sel["set"]) == {"same_FF"} and (sel["game_pk"] % 2 == 0).all()  # home (even) games
+
+
+def test_same_pitch_clips_orders_by_date(tmp_path, monkeypatch):
+    monkeypatch.setattr(po, "ROOT", tmp_path)
+    rows = []
+    for d in ["2026-08-01", "2026-04-02"]:
+        f = tmp_path / f"FF_{d}.mp4"
+        f.write_bytes(b"v")
+        rows.append(dict(name="Erceg, Lucas", pitch_type="FF", is_primary_fb=True, game_date=d, release_speed=97.0,
+                         release_sec=None, path=f.name, set="same_FF"))
+    clips = po.same_pitch_clips(pd.DataFrame(rows), "Erceg, Lucas", None)
+    assert [c.note for c in clips] == ["Apr 2  97.0 mph", "Aug 1  97.0 mph"]

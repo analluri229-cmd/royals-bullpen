@@ -21,6 +21,7 @@ Usage:
   python -m src.pitch_overlay --pitcher "Erceg, Lucas" --sheet          # frames to pick release_sec
   python -m src.pitch_overlay --pitcher "Erceg, Lucas"                  # FB + every other pitch
   python -m src.pitch_overlay --pitcher "Erceg, Lucas" --layers SL --opacity 0.5 --speeds 1 0.35
+  python -m src.pitch_overlay --pitcher "Erceg, Lucas" --same FF      # 2-4 fastballs from different dates
   python -m src.pitch_overlay --base a.mp4 1.84 --layer b.mp4 2.10 --labels FF SL --out x.mp4
 """
 from __future__ import annotations
@@ -43,6 +44,8 @@ OUT_DIR = ROOT / "outputs" / "overlays"
 W, H, FPS = 1280, 720, 60
 MOTION_W, MOTION_H, MOTION_FPS = 160, 90, 30
 KC_BLUE = "#004687"
+# for layers of the SAME pitch type (consistency overlays), where Savant colors would all match
+SAME_COLORS = ["#D22D49", "#00D1ED", "#EEE716", "#1DBE3A", "#6236CD", "#FE9D00"]
 SAVANT_COLORS = {"FF": "#D22D49", "SI": "#FE9D00", "FC": "#933F2C", "SL": "#EEE716", "ST": "#DDB33A",
                  "SV": "#93AFD4", "CU": "#00D1ED", "KC": "#6236CD", "CH": "#1DBE3A", "FS": "#3BACAC",
                  "FO": "#55CCAB"}
@@ -166,9 +169,10 @@ def label_png(path: Path, title: str, clips: list[Clip], alphas: list[float], cr
     ax.add_patch(FancyBboxPatch((18, 18), 560, box_h, boxstyle="round,pad=0,rounding_size=10",
                                 facecolor=KC_BLUE, alpha=0.88, edgecolor="none"))
     ax.text(34, 46, title, color="white", fontsize=17, fontweight="bold", va="center")
+    same = len({c.label for c in clips}) < len(clips)
     for i, (c, a) in enumerate(zip(clips, alphas)):
         y = 84 + 30 * i
-        col = SAVANT_COLORS.get(c.label, "#FFFFFF")
+        col = SAME_COLORS[i % len(SAME_COLORS)] if same else SAVANT_COLORS.get(c.label, "#FFFFFF")
         ax.add_patch(FancyBboxPatch((34, y - 10), 20, 20, boxstyle="round,pad=0,rounding_size=3",
                                     facecolor=col, edgecolor="white", lw=1))
         layer = "base layer" if i == 0 else f"{a:.0%} opacity on top"
@@ -315,6 +319,30 @@ def clips_for(man: pd.DataFrame, pitcher: str, base: str | None, layers: list[st
     return clips
 
 
+def same_pitch_clips(man: pd.DataFrame, pitcher: str, pitch_type: str | None, limit: int = 4) -> list[Clip]:
+    """Every downloaded clip of one pitch type for this pitcher, oldest first, labeled by date.
+    Prefers the fetch_clips --same set; falls back to any clips of that type."""
+    m = man[(man["name"] == pitcher)]
+    m = m[m["path"].map(lambda p: (ROOT / str(p)).exists())]
+    if pitch_type is None:
+        fb = m[m["is_primary_fb"].astype(str).str.lower() == "true"]
+        pitch_type = (fb if not fb.empty else m).iloc[0]["pitch_type"]
+    m = m[m["pitch_type"] == pitch_type]
+    if "set" in m and (m["set"] == f"same_{pitch_type}").sum() >= 2:
+        m = m[m["set"] == f"same_{pitch_type}"]
+    m = m.sort_values("game_date", na_position="last").head(limit)
+    clips = []
+    for r in m.itertuples():
+        bits = [pd.to_datetime(r.game_date).strftime("%b %d").replace(" 0", " ") if pd.notna(r.game_date) else "",
+                f"{r.release_speed:.1f} mph" if pd.notna(r.release_speed) else ""]
+        rel = None if pd.isna(r.release_sec) else float(r.release_sec)
+        clips.append(Clip(ROOT / str(r.path), pitch_type, rel, "  ".join(b for b in bits if b)))
+    if len(clips) < 2:
+        raise SystemExit(f"need 2+ downloaded {pitch_type} clips for {pitcher}: "
+                         f"python -m src.fetch_clips --pitchers \"{pitcher}\" --same {pitch_type}")
+    return clips
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--list", action="store_true", help="show the clips in the manifest")
@@ -325,6 +353,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--pre", type=float, default=1.4, help="seconds kept before release")
     ap.add_argument("--post", type=float, default=0.9, help="seconds kept after release")
     ap.add_argument("--speeds", nargs="+", type=float, default=[1.0, 0.35], help="play once at each speed")
+    ap.add_argument("--same", nargs="?", const="", metavar="PT",
+                    help="consistency overlay: several clips of ONE pitch type (default: his primary FB)")
     ap.add_argument("--sheet", action="store_true", help="write contact sheets for picking release_sec")
     ap.add_argument("--clip", nargs=2, action="append", metavar=("PATH", "RELEASE_SEC"),
                     help="manual mode: first --clip is the base, then layers; RELEASE_SEC may be 'auto'")
@@ -343,16 +373,20 @@ def main(argv: list[str] | None = None) -> int:
         if a.list or not a.pitcher:
             print(man[["name", "pitch_type", "game_date", "release_speed", "release_sec", "path"]].to_string(index=False))
             return 0
-        clips = clips_for(man, a.pitcher, a.base, a.layers)
+        clips = (same_pitch_clips(man, a.pitcher, a.same.upper() or None) if a.same is not None
+                 else clips_for(man, a.pitcher, a.base, a.layers))
         if a.sheet:
             for c in clips:
                 p = contact_sheet(c.path, OUT_DIR / "sheets" / f"{c.path.stem}.png")
                 print("sheet:", p.relative_to(ROOT))
             print(f"Put each release time in release_sec in {MANIFEST.relative_to(ROOT)}, then rerun without --sheet.")
             return 0
-        tag = f"{clips[0].label}_vs_{'_'.join(c.label for c in clips[1:])}"
+        tag = (f"{clips[0].label}_consistency" if a.same is not None
+               else f"{clips[0].label}_vs_{'_'.join(c.label for c in clips[1:])}")
         out = OUT_DIR / f"{slug(a.pitcher)}_{tag}.mp4"
-        title = a.title or (f"{short(a.pitcher)}: {PITCH_NAMES.get(clips[0].label, clips[0].label)} vs "
+        title = a.title or (f"{short(a.pitcher)}: {PITCH_NAMES.get(clips[0].label, clips[0].label)} "
+                            f"consistency, {len(clips)} outings" if a.same is not None else
+                            f"{short(a.pitcher)}: {PITCH_NAMES.get(clips[0].label, clips[0].label)} vs "
                             + " + ".join(PITCH_NAMES.get(c.label, c.label) for c in clips[1:]))
     video, still, notes = render(clips, out, title, a.opacity, a.pre, a.post, tuple(a.speeds))
     for n in notes:
