@@ -233,6 +233,7 @@ def write_browser_list(blocked: list[tuple]) -> None:
                   ""]
     OPEN_IN_BROWSER.write_text("\n".join(lines), encoding="utf-8")
     print(f"\n{len(blocked)} clip(s) blocked. What to open and the commands: {OPEN_IN_BROWSER.relative_to(ROOT)}")
+    print("Easiest: python -m src.collect_clips  (opens each link, you save it, it files and names the clip)")
 
 
 def add_file(src: Path, name: str, pitch_type: str, pitcher_id: int | None) -> pd.DataFrame:
