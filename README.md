@@ -56,6 +56,8 @@ python -m src.pitch_mix                                            # pitch usage
 python -m src.plinko                                               # count-tree "plinko" -> outputs/tables/plinko_steps.csv, plinko_reach.csv
 python -m src.fetch_headshots                                      # optional, Windows only: MLB headshots -> outputs/headshots (not committed)
 python -m src.fetch_clips --pitchers "Erceg, Lucas"                # Windows only: typical FB + secondaries from one game -> outputs/clips (not committed)
+python -m src.collect_clips                                        # if MLB returns 403: opens each picked clip's link, you save it, it moves + names it
+python -m src.collect_clips --sort                                 # file videos already saved (asks pitcher + pitch type for each)
 python -m src.pitch_overlay --pitcher "Erceg, Lucas" --sheet        # contact sheets for picking each clip's release_sec (optional)
 python -m src.pitch_overlay --pitcher "Erceg, Lucas"                # Jomboy-style overlay video: secondaries at 50% over the FB -> outputs/overlays
 python -m pytest
