@@ -189,3 +189,12 @@ def test_render_with_focus_and_grid(tmp_path):
 def test_clip_duration(tmp_path):
     a = make_clip(tmp_path / "a.mp4", move_at=1.0, seconds=4.0)
     assert po.clip_duration(a) == pytest.approx(4.0, abs=0.1)
+
+
+@needs_ffmpeg
+def test_motion_box_ignores_motion_outside(tmp_path):
+    # the square moves in the left part of the frame only (x from 20 to 260 of 320)
+    a = make_clip(tmp_path / "a.mp4", move_at=1.0)
+    inside = po.motion_curve(a, (0.0, 0.0, 1.0, 1.0))
+    outside = po.motion_curve(a, (0.0, 0.0, 1.0, 0.3))  # top strip: square is at rows 60-120 of 180
+    assert inside[30:46].max() > 1 and outside[30:46].max() < 0.5
