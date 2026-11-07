@@ -82,10 +82,17 @@ def run(cmd: list[str]) -> None:
 
 # ---------- alignment ----------
 
-def motion_curve(path: Path) -> np.ndarray:
-    """Mean absolute grayscale change between consecutive frames, sampled at MOTION_FPS."""
+def motion_curve(path: Path, box: tuple[float, float, float, float] | None = None) -> np.ndarray:
+    """Mean absolute grayscale change between consecutive frames, sampled at MOTION_FPS.
+
+    With box (left, top, right, bottom fractions, as in --focus) only that region counts, so the
+    pitcher's delivery drives the curve instead of the batter, the crowd or a camera pan."""
+    crop = ""
+    if box is not None:
+        l, t, r, b = box
+        crop = f"crop=iw*{r - l:.4f}:ih*{b - t:.4f}:iw*{l:.4f}:ih*{t:.4f},"
     cmd = [ffmpeg_exe(), "-v", "error", "-i", str(path), "-an", "-vf",
-           f"fps={MOTION_FPS},scale={MOTION_W}:{MOTION_H},format=gray", "-f", "rawvideo", "-"]
+           f"fps={MOTION_FPS},{crop}scale={MOTION_W}:{MOTION_H},format=gray", "-f", "rawvideo", "-"]
     raw = subprocess.run(cmd, capture_output=True, check=True).stdout
     frames = np.frombuffer(raw, np.uint8).reshape(-1, MOTION_H, MOTION_W).astype(np.float32)
     if len(frames) < 2:
@@ -133,19 +140,20 @@ def align_offset(base: np.ndarray, layer: np.ndarray, base_release: float, windo
     return round(best_t, 3)
 
 
-def resolve_releases(clips: list[Clip]) -> list[str]:
-    """Fill in missing release times. Returns notes on what was guessed."""
+def resolve_releases(clips: list[Clip], box: tuple[float, float, float, float] | None = None) -> list[str]:
+    """Fill in missing release times. Returns notes on what was guessed. With box (the --focus
+    region), motion is measured only around the pitcher, which is much more reliable."""
     notes = []
     base = clips[0]
     curves = {}
     if base.release is None:
-        curves[0] = motion_curve(base.path)
+        curves[0] = motion_curve(base.path, box)
         base.release = round(guess_release(curves[0]), 3)
         notes.append(f"{base.label}: release guessed at {base.release:.2f}s from motion; check with --sheet")
     for i, c in enumerate(clips[1:], start=1):
         if c.release is None:
-            curves.setdefault(0, motion_curve(base.path))
-            c.release = align_offset(curves[0], motion_curve(c.path), base.release)
+            curves.setdefault(0, motion_curve(base.path, box))
+            c.release = align_offset(curves[0], motion_curve(c.path, box), base.release)
             notes.append(f"{c.label}: aligned to {base.label} by motion at {c.release:.2f}s")
     return notes
 
@@ -246,7 +254,7 @@ def render(clips: list[Clip], out: Path, title: str, opacity: float | None = Non
            post: float = 0.9, speeds: tuple[float, ...] = (1.0, 0.35),
            credit: str = "Video: MLB / Baseball Savant. Aligned on release.",
            focus: tuple[float, float, float, float] | None = None, blur: int = 18) -> tuple[Path, Path, list[str]]:
-    notes = resolve_releases(clips)
+    notes = resolve_releases(clips, focus)
     lead = min(c.release for c in clips)
     if lead < pre:  # every clip must keep the same lead-in, or the release frames drift apart
         notes.append(f"lead-in cut to {lead:.2f}s (a clip's release is that close to its start)")
@@ -441,7 +449,7 @@ def main(argv: list[str] | None = None) -> int:
                 # long clips (replays, cut-aways) get an overview of the whole clip plus a close-up
                 # around the guessed release, so the release can be found in a 5 s or a 13 s clip
                 dur = clip_duration(c.path)
-                guess = c.release if c.release is not None else guess_release(motion_curve(c.path))
+                guess = c.release if c.release is not None else guess_release(motion_curve(c.path, a.focus and tuple(a.focus)))
                 over = contact_sheet(c.path, OUT_DIR / "sheets" / f"{c.path.stem}_overview.png",
                                      step=max(dur / 48, 1 / 15) if dur else 0.25)
                 p = contact_sheet(c.path, OUT_DIR / "sheets" / f"{c.path.stem}.png", start=max(0.0, guess - 1.6))
