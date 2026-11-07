@@ -48,7 +48,7 @@ Purpose: an actionable spec for building this project with Claude Code in VS Cod
 
 ***What data or evidence proves this problem or opportunity is real?***
 
-*All team rankings use FanGraphs (2026 regular season) so every number comes from one source. Starting points to verify in Part 3, Step 2: offense 12th, fielding 8th, bullpen 28th. The full outcome table (reliever WAR, ERA, FIP, xFIP, SIERA, K-BB%, WHIP) will be pulled and ranked 1–30 by the pipeline.*
+*All team rankings use FanGraphs (2026 regular season) so every number comes from one source. Verified in Part 3, Step 2 (outputs/tables/team_bullpen_ranks_2026.csv): offense 18th in wRC+, defense 7th in Def, bullpen 29th in reliever WAR and 30th in FIP and K-BB%. The full outcome table (reliever WAR, ERA, FIP, xFIP, SIERA, K-BB%, WHIP) will be pulled and ranked 1–30 by the pipeline.*
 
 ## Q6 — Benchmarks
 
@@ -498,7 +498,7 @@ Outcome tiers — compute every tier for every pattern, so a pattern can be judg
 
 - Confirm the LiVAA method with mentor.
 
-- Verify FanGraphs 2026 ranks: offense 12th, fielding 8th, bullpen 28th (Step 2 output replaces these).
+- Verified FanGraphs 2026 ranks from the Step 2 output: offense 18th in wRC+ (earlier note said 12th), defense 7th in Def (earlier note said 8th), bullpen 29th in reliever WAR and 30th in FIP and K-BB% (earlier note said 28th).
 
 - Verify the 2016–2026 combined record and yearly pitching ranks; 2024 was a winning, playoff season.
 
