@@ -1,0 +1,31 @@
+kc_reliever,kc_quadrant,reason,leak,match_on,rank,target,team,throws,age,relief_ip,control_through,status,target_value,target_pctile,target_stuff_score,target_execution_score,target_quadrant,target_primary_fb,target_best_secondary,note
+"Schreiber, John",Execution fix,KC free agent: re-sign or replace,Execution: 3PS% 56.7 vs league 63.4 (10th pct),3PS%,1,"Duarte, Daniel",NYM,R,30,29.7,?,?,73.5,97.6,73.0,97.0,Keep,FC,ST,3PS% 98th pct
+"Schreiber, John",Execution fix,KC free agent: re-sign or replace,Execution: 3PS% 56.7 vs league 63.4 (10th pct),3PS%,2,"Latz, Jacob",TEX,L,30,68.0,?,?,72.0,96.4,94.7,92.9,Keep,FF,CU,3PS% 96th pct
+"Schreiber, John",Execution fix,KC free agent: re-sign or replace,Execution: 3PS% 56.7 vs league 63.4 (10th pct),3PS%,3,"Miles, Spencer",TOR,R,26,73.7,?,?,71.0,95.0,50.4,88.0,Keep,SI,CU,3PS% 95th pct
+"Schreiber, John",Execution fix,KC free agent: re-sign or replace,Execution: 3PS% 56.7 vs league 63.4 (10th pct),3PS%,4,"Burke, Sean",CWS,R,27,30.0,?,?,70.4,94.1,54.6,89.6,Keep,FF,SI,3PS% 94th pct
+"Schreiber, John",Execution fix,KC free agent: re-sign or replace,Execution: 3PS% 56.7 vs league 63.4 (10th pct),3PS%,5,"Varland, Gus",WSH,R,30,33.0,?,?,70.1,93.4,55.7,86.1,Keep,FF,SL,3PS% 93rd pct
+"Strahm, Matt",Keep,KC free agent: re-sign or replace,Smallest gap: Kill% 31.9 vs league 42.7 (10th pct),Kill%,1,"Miller, Mason",SD,R,28,70.0,?,?,66.2,99.9,93.9,72.3,Keep,FF,SL,Kill% 100th pct
+"Strahm, Matt",Keep,KC free agent: re-sign or replace,Smallest gap: Kill% 31.9 vs league 42.7 (10th pct),Kill%,2,"Duran, Jhoan",PHI,R,28,59.3,?,?,61.8,99.6,91.0,69.3,Keep,FF,ST,Kill% 100th pct
+"Strahm, Matt",Keep,KC free agent: re-sign or replace,Smallest gap: Kill% 31.9 vs league 42.7 (10th pct),Kill%,3,"Sommers, Drew",DET,L,26,39.7,?,?,60.8,99.3,93.3,98.4,Keep,SI,FF,Kill% 99th pct
+"Strahm, Matt",Keep,KC free agent: re-sign or replace,Smallest gap: Kill% 31.9 vs league 42.7 (10th pct),Kill%,4,"Garcia, Brandyn",AZ,L,26,51.3,?,?,60.0,98.7,53.6,82.7,Keep,SI,ST,Kill% 99th pct
+"Strahm, Matt",Keep,KC free agent: re-sign or replace,Smallest gap: Kill% 31.9 vs league 42.7 (10th pct),Kill%,5,"Muñoz, Andrés",SEA,R,27,57.0,?,?,59.3,98.4,95.0,63.3,Keep,FF,SL,Kill% 98th pct
+"Mears, Nick",Replace candidate,replace candidate,Execution: F-Strike% 53.7 vs league 61.3 (6th pct),F-Strike%,1,"De los Santos, Yerry",NYY,R,29,21.7,?,?,71.0,98.4,50.1,74.0,Keep,SI,CH,F-Strike% 98th pct
+"Mears, Nick",Replace candidate,replace candidate,Execution: F-Strike% 53.7 vs league 61.3 (6th pct),F-Strike%,2,"Vest, Will",DET,R,31,26.7,?,?,70.7,97.9,74.0,70.1,Keep,FF,SI,F-Strike% 98th pct
+"Mears, Nick",Replace candidate,replace candidate,Execution: F-Strike% 53.7 vs league 61.3 (6th pct),F-Strike%,3,"Gamboa, Alec",BOS,L,29,28.3,?,?,69.6,96.9,75.0,77.6,Keep,FF,SI,F-Strike% 97th pct
+"Mears, Nick",Replace candidate,replace candidate,Execution: F-Strike% 53.7 vs league 61.3 (6th pct),F-Strike%,4,"Criswell, Cooper",SEA,R,30,40.7,?,?,69.6,96.9,74.7,65.9,Keep,SI,ST,F-Strike% 97th pct
+"Mears, Nick",Replace candidate,replace candidate,Execution: F-Strike% 53.7 vs league 61.3 (6th pct),F-Strike%,5,"Varland, Louis",TOR,R,29,78.0,?,?,69.1,95.6,85.0,95.4,Keep,FF,CH,F-Strike% 96th pct
+"Black, Mason",Replace candidate,replace candidate,Execution: Chase% 21.4 vs league 30.1 (1st pct),Chase%,1,"Duarte, Daniel",NYM,R,30,29.7,?,?,39.2,98.7,73.0,97.0,Keep,FC,ST,Chase% 99th pct
+"Black, Mason",Replace candidate,replace candidate,Execution: Chase% 21.4 vs league 30.1 (1st pct),Chase%,2,"Muñoz, Andrés",SEA,R,27,57.0,?,?,37.1,96.0,95.0,63.3,Keep,FF,SL,Chase% 96th pct
+"Black, Mason",Replace candidate,replace candidate,Execution: Chase% 21.4 vs league 30.1 (1st pct),Chase%,3,"Latz, Jacob",TEX,L,30,68.0,?,?,36.9,95.6,94.7,92.9,Keep,FF,CU,Chase% 96th pct
+"Black, Mason",Replace candidate,replace candidate,Execution: Chase% 21.4 vs league 30.1 (1st pct),Chase%,4,"Ribalta, Orlando",WSH,R,28,43.0,?,?,36.7,95.3,58.6,60.4,Keep,FF,SI,Chase% 95th pct
+"Black, Mason",Replace candidate,replace candidate,Execution: Chase% 21.4 vs league 30.1 (1st pct),Chase%,5,"Varland, Louis",TOR,R,29,78.0,?,?,36.6,95.0,85.0,95.4,Keep,FF,CH,Chase% 95th pct
+"Erceg, Lucas",Replace candidate,replace candidate,Execution: Kill% 28.6 vs league 42.7 (5th pct),Kill%,1,"Miller, Mason",SD,R,28,70.0,?,?,66.2,99.9,93.9,72.3,Keep,FF,SL,Kill% 100th pct
+"Erceg, Lucas",Replace candidate,replace candidate,Execution: Kill% 28.6 vs league 42.7 (5th pct),Kill%,2,"Duran, Jhoan",PHI,R,28,59.3,?,?,61.8,99.6,91.0,69.3,Keep,FF,ST,Kill% 100th pct
+"Erceg, Lucas",Replace candidate,replace candidate,Execution: Kill% 28.6 vs league 42.7 (5th pct),Kill%,3,"Sommers, Drew",DET,L,26,39.7,?,?,60.8,99.3,93.3,98.4,Keep,SI,FF,Kill% 99th pct
+"Erceg, Lucas",Replace candidate,replace candidate,Execution: Kill% 28.6 vs league 42.7 (5th pct),Kill%,4,"Garcia, Brandyn",AZ,L,26,51.3,?,?,60.0,98.7,53.6,82.7,Keep,SI,ST,Kill% 99th pct
+"Erceg, Lucas",Replace candidate,replace candidate,Execution: Kill% 28.6 vs league 42.7 (5th pct),Kill%,5,"Muñoz, Andrés",SEA,R,27,57.0,?,?,59.3,98.4,95.0,63.3,Keep,FF,SL,Kill% 98th pct
+"Morgan, Eli",Replace candidate,replace candidate,"Stuff: FF Stuff+ 79 vs league 97 (3rd pct, 37% usage; velo 2nd pct)",Stuff score,1,"Henriquez, Edgardo",LAD,R,24,59.0,?,?,99.9,99.9,99.9,66.3,Keep,FF,SI,Stuff score 100th pct
+"Morgan, Eli",Replace candidate,replace candidate,"Stuff: FF Stuff+ 79 vs league 97 (3rd pct, 37% usage; velo 2nd pct)",Stuff score,2,"Ferrer, José A.",SEA,L,26,64.7,?,?,99.0,99.0,99.0,80.7,Keep,SI,SL,Stuff score 99th pct
+"Morgan, Eli",Replace candidate,replace candidate,"Stuff: FF Stuff+ 79 vs league 97 (3rd pct, 37% usage; velo 2nd pct)",Stuff score,3,"Kelly, Kevin",TB,R,29,73.7,?,?,97.9,97.9,97.9,97.6,Keep,SI,FF,Stuff score 98th pct
+"Morgan, Eli",Replace candidate,replace candidate,"Stuff: FF Stuff+ 79 vs league 97 (3rd pct, 37% usage; velo 2nd pct)",Stuff score,4,"Hicks, Jordan",CWS,R,30,46.3,?,?,95.3,95.3,95.3,63.0,Keep,SI,FF,Stuff score 95th pct
+"Morgan, Eli",Replace candidate,replace candidate,"Stuff: FF Stuff+ 79 vs league 97 (3rd pct, 37% usage; velo 2nd pct)",Stuff score,5,"Muñoz, Andrés",SEA,R,27,57.0,?,?,95.0,95.0,95.0,63.3,Keep,FF,SL,Stuff score 95th pct
