@@ -23,6 +23,7 @@ Usage:
   python -m src.fetch_clips --pitchers "Erceg, Lucas" "Strahm, Matt"
   python -m src.fetch_clips --file "C:/Users/themi/Downloads/clip.mp4" --pitcher "Erceg, Lucas" --pitch-type SL
   python -m src.fetch_clips --pitchers "Erceg, Lucas" --same FF --n 3   # 3 fastballs across the season
+  python -m src.fetch_clips --repick "Fairbanks, Pete" SL                # bad camera angle: pick another
   python -m src.fetch_clips --dry-run                         # pick pitches, don't download
 """
 from __future__ import annotations
@@ -164,6 +165,61 @@ def select_consistency(df: pd.DataFrame, pitcher_ids: dict[int, str], pitch_type
                             pfx_z_in=round(float(r.pfx_z) * 12, 1), set=f"same_{pt}"))
     return pd.DataFrame(out, columns=[c for c in MANIFEST_COLS if c not in ("play_id", "source_url", "path",
                                                                             "release_sec")])
+
+
+def pitch_key(r) -> tuple[int, int, int]:
+    return int(r["game_pk"]), int(r["at_bat_number"]), int(r["pitch_number"])
+
+
+def repick(man: pd.DataFrame, df: pd.DataFrame, name: str, pitch_type: str,
+           pitcher_id: int | None = None) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Swap out a bad clip (wrong camera angle, cut-away, replay) for the next most typical pitch.
+
+    The current clip(s) of that pitcher x pitch type are marked set = "rejected" and their files renamed
+    to *.rejected.mp4, so the overlay stops using them and they are never picked again. The new pick is
+    the closest-to-average pitch of that type that is not rejected, preferring the game of his other
+    clips (same camera) and the same batter side. Returns (updated manifest, new selection row).
+    """
+    man = man.copy()
+    mine = (man["name"] == name) & (man["pitch_type"] == pitch_type)
+    active = mine & ~man["set"].eq("rejected") & ~man["set"].astype(str).str.startswith("same_")
+    for i in man.index[active]:
+        f = ROOT / str(man.at[i, "path"])
+        if f.exists():
+            f.rename(f.with_name(f.stem + ".rejected" + f.suffix))
+        man.at[i, "set"] = "rejected"
+    rejected = {pitch_key(r) for _, r in man[mine].dropna(subset=["game_pk", "at_bat_number", "pitch_number"]).iterrows()}
+    if pitcher_id is None:
+        ids = man.loc[man["name"] == name, "pitcher"].dropna()
+        pitcher_id = int(ids.iloc[0]) if len(ids) else None
+    if pitcher_id is None:
+        raise SystemExit(f"no MLBAM id for {name}; pass --pitcher-id")
+    p = df[(df["pitcher"] == pitcher_id) & (df["pitch_type"] == pitch_type)].dropna(subset=SHAPE_COLS)
+    if "is_relief" in p:
+        p = p[p["is_relief"]]
+    if p.empty:
+        raise SystemExit(f"no {pitch_type} pitches for {name}")
+    sd = p[SHAPE_COLS].std().replace(0, np.nan).fillna(1.0)
+    dist = (((p[SHAPE_COLS] - p[SHAPE_COLS].mean()) / sd) ** 2).sum(axis=1) ** 0.5
+    others = man[(man["name"] == name) & ~mine & ~man["set"].eq("rejected")]
+    games = set(others["game_pk"].dropna().astype(int))
+    stands = set(others["stand"].dropna())
+    dist = dist + np.where(p["game_pk"].isin(games), 0.0, 1.5) + np.where(p["stand"].isin(stands) | (not stands), 0.0, 1.0)
+    keep = [pitch_key(r) not in rejected for _, r in p.iterrows()]
+    p, dist = p[keep], dist[keep]
+    if p.empty:
+        raise SystemExit(f"every {pitch_type} pitch for {name} is rejected")
+    r = p.loc[dist.idxmin()]
+    row = pd.DataFrame([dict(pitcher=pitcher_id, name=name, pitch_type=pitch_type,
+                             is_primary_fb=PITCH_GROUPS.get(pitch_type) == "FB", game_pk=int(r.game_pk),
+                             game_date=str(r.game_date)[:10], at_bat_number=int(r.at_bat_number),
+                             pitch_number=int(r.pitch_number), stand=r.stand,
+                             release_speed=round(float(r.release_speed), 1), pfx_x_in=round(float(r.pfx_x) * 12, 1),
+                             pfx_z_in=round(float(r.pfx_z) * 12, 1))])
+    same_game = "same game as his other clips" if int(r.game_pk) in games else "different game: check the camera"
+    print(f"new {pitch_type} pick for {name}: {row.at[0, 'game_date']}, at-bat {row.at[0, 'at_bat_number']}, "
+          f"pitch {row.at[0, 'pitch_number']} ({same_game})")
+    return man, row
 
 
 class Blocked(Exception):
@@ -318,6 +374,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--same", nargs="?", const="FB", metavar="PT",
                     help="consistency set: N pitches of one type across the season (default: his primary FB)")
     ap.add_argument("--n", type=int, default=3, help="with --same: how many pitches (early / mid / late)")
+    ap.add_argument("--repick", nargs=2, metavar=("PITCHER", "PT"),
+                    help='bad clip (wrong camera, replay)? reject it and pick the next pitch: --repick "Fairbanks, Pete" SL')
     ap.add_argument("--dry-run", action="store_true", help="pick pitches and print them, no downloads")
     ap.add_argument("--url", help="add one clip by hand from a Film Room / mlb.com / Savant / .mp4 link")
     ap.add_argument("--file", type=Path, help="add a clip you saved from a browser (use when downloads get 403)")
@@ -336,6 +394,18 @@ def main(argv: list[str] | None = None) -> int:
         if not (a.pitcher and a.pitch_type):
             ap.error("--url needs --pitcher and --pitch-type")
         merge_manifest(add_manual(a.url, a.pitcher, a.pitch_type.upper(), a.pitcher_id)).to_csv(MANIFEST, index=False)
+        return 0
+
+    if a.repick:
+        name, pt = a.repick[0], a.repick[1].upper()
+        man = pd.read_csv(MANIFEST).reindex(columns=MANIFEST_COLS)
+        man = man.astype({"set": object})
+        df = pd.read_parquet(PITCHES_PARQUET, columns=["game_pk", "game_date", "at_bat_number", "pitch_number",
+                                                       "pitcher", "pitch_type", "stand", "is_relief", *SHAPE_COLS])
+        man, row = repick(man, df, name, pt, a.pitcher_id)
+        man.to_csv(MANIFEST, index=False)
+        merge_manifest(fetch_selected(row)).to_csv(MANIFEST, index=False)
+        print("next: python -m src.collect_clips --pitcher", f'"{name}"')
         return 0
 
     pool = default_pitchers()

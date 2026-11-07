@@ -143,3 +143,25 @@ def test_same_pitch_clips_orders_by_date(tmp_path, monkeypatch):
                          release_sec=None, path=f.name, set="same_FF"))
     clips = po.same_pitch_clips(pd.DataFrame(rows), "Erceg, Lucas", None)
     assert [c.note for c in clips] == ["Apr 2  97.0 mph", "Aug 1  97.0 mph"]
+
+
+def test_repick_rejects_clip_and_takes_next_in_same_game(tmp_path, monkeypatch):
+    monkeypatch.setattr(fetch_clips, "ROOT", tmp_path)
+    bad = tmp_path / "SL_5_2_1.mp4"
+    bad.write_bytes(b"v")
+    base = dict(pitcher=9, name="Fairbanks, Pete", stand="R", source_url="https://x", release_sec=None)
+    man = pd.DataFrame([dict(base, pitch_type="FF", game_pk=5, at_bat_number=1, pitch_number=1, path="FF.mp4", set=None),
+                        dict(base, pitch_type="SL", game_pk=5, at_bat_number=2, pitch_number=1, path=bad.name, set=None)]
+                       ).reindex(columns=fetch_clips.MANIFEST_COLS).astype({"set": object})
+    rows = []
+    for g in (5, 6):
+        for ab in range(1, 6):
+            rows.append(dict(game_pk=g, game_date="2026-07-01", at_bat_number=ab, pitch_number=1, pitcher=9,
+                             pitch_type="SL", stand="R", is_relief=True, release_speed=85.0 + (ab == 2) * 0.0,
+                             pfx_x=0.5, pfx_z=0.1 + 0.01 * ab, release_pos_x=-2, release_pos_z=6))
+    man2, row = fetch_clips.repick(man, pd.DataFrame(rows), "Fairbanks, Pete", "SL")
+    assert man2.loc[1, "set"] == "rejected" and (tmp_path / "SL_5_2_1.rejected.mp4").exists()
+    assert row.at[0, "game_pk"] == 5 and row.at[0, "at_bat_number"] != 2
+    from src import collect_clips
+    monkeypatch.setattr(collect_clips.fc, "ROOT", tmp_path)
+    assert "SL" not in set(collect_clips.pending(man2)["pitch_type"])  # rejected row not asked for again
