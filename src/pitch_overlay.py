@@ -22,6 +22,7 @@ Usage:
   python -m src.pitch_overlay --pitcher "Erceg, Lucas"                  # FB + every other pitch
   python -m src.pitch_overlay --pitcher "Erceg, Lucas" --layers SL --opacity 0.5 --speeds 1 0.35
   python -m src.pitch_overlay --pitcher "Erceg, Lucas" --same FF      # 2-4 fastballs from different dates
+  python -m src.pitch_overlay --pitcher "Erceg, Lucas" --focus 0.05 0.35 0.55 0.95   # blur all but the pitcher
   python -m src.pitch_overlay --base a.mp4 1.84 --layer b.mp4 2.10 --labels FF SL --out x.mp4
 """
 from __future__ import annotations
@@ -194,9 +195,20 @@ def layer_alphas(n_layers: int, opacity: float | None) -> list[float]:
     return [opacity if opacity is not None else 1.0 / (k + 2) for k in range(n_layers)]
 
 
-def build_filter(clips: list[Clip], alphas: list[float], pre: float, post: float, speeds: list[float]) -> str:
+def focus_box(focus: tuple[float, float, float, float]) -> tuple[int, int, int, int]:
+    """(left, top, right, bottom) as fractions of the frame -> even-pixel (x, y, w, h) at W x H."""
+    l, t, r, b = (min(max(v, 0.0), 1.0) for v in focus)
+    if r <= l or b <= t:
+        raise SystemExit("--focus needs LEFT < RIGHT and TOP < BOTTOM (fractions 0-1)")
+    even = lambda v: int(round(v)) // 2 * 2  # noqa: E731
+    return even(l * W), even(t * H), max(2, even((r - l) * W)), max(2, even((b - t) * H))
+
+
+def build_filter(clips: list[Clip], alphas: list[float], pre: float, post: float, speeds: list[float],
+                 focus: tuple[float, float, float, float] | None = None, blur: int = 18) -> str:
     """Filtergraph: trim each clip to [release - pre, release + post], blend layers onto the base,
-    put the label PNG on top, then play the result once per speed in order."""
+    optionally blur everything outside the focus box (crowd, dugout, scoreboard), put the label PNG
+    on top, then play the result once per speed in order."""
     n = len(clips)
     parts = []
     for i, c in enumerate(clips):
@@ -210,6 +222,13 @@ def build_filter(clips: list[Clip], alphas: list[float], pre: float, post: float
     for i in range(1, n):
         parts.append(f"[{cur}][c{i}]overlay=shortest=1:format=auto[m{i}]")
         cur = f"m{i}"
+    if focus is not None:
+        x, y, w, h = focus_box(focus)
+        parts.append(f"[{cur}]split=2[fa][fb]")
+        parts.append(f"[fa]boxblur={blur}:2[fbl]")
+        parts.append(f"[fb]crop={w}:{h}:{x}:{y}[fsh]")
+        parts.append(f"[fbl][fsh]overlay={x}:{y}[foc]")
+        cur = "foc"
     parts.append(f"[{cur}][{n}:v]overlay=format=auto:shortest=1,format=yuv420p[ov]")
     if len(speeds) == 1:
         parts.append(f"[ov]setpts=PTS/{speeds[0]}[out]")
@@ -225,7 +244,8 @@ def build_filter(clips: list[Clip], alphas: list[float], pre: float, post: float
 
 def render(clips: list[Clip], out: Path, title: str, opacity: float | None = None, pre: float = 1.4,
            post: float = 0.9, speeds: tuple[float, ...] = (1.0, 0.35),
-           credit: str = "Video: MLB / Baseball Savant. Aligned on release.") -> tuple[Path, Path, list[str]]:
+           credit: str = "Video: MLB / Baseball Savant. Aligned on release.",
+           focus: tuple[float, float, float, float] | None = None, blur: int = 18) -> tuple[Path, Path, list[str]]:
     notes = resolve_releases(clips)
     lead = min(c.release for c in clips)
     if lead < pre:  # every clip must keep the same lead-in, or the release frames drift apart
@@ -239,7 +259,7 @@ def render(clips: list[Clip], out: Path, title: str, opacity: float | None = Non
         for c in clips:
             cmd += ["-i", str(c.path)]
         cmd += ["-loop", "1", "-i", str(png), "-filter_complex",
-                build_filter(clips, alphas, pre, post, list(speeds)), "-map", "[out]", "-an",
+                build_filter(clips, alphas, pre, post, list(speeds), focus, blur), "-map", "[out]", "-an",
                 "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "18", "-preset", "medium",
                 "-movflags", "+faststart", str(out)]
         run(cmd)
@@ -255,6 +275,44 @@ def stills(video: Path, out: Path, pre: float, after: float = 0.25) -> Path:
     run([ffmpeg_exe(), "-y", "-v", "error", "-i", str(video), "-vf", vf, "-frames:v", "1", "-update", "1",
          str(out)])
     return out
+
+
+def grid_frame(path: Path, out: Path, at: float) -> Path:
+    """One frame (at `at` seconds, scaled to the output size) with a 10% grid, for choosing --focus."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    cmd = [ffmpeg_exe(), "-v", "error", "-ss", f"{max(at, 0):.3f}", "-i", str(path), "-an", "-frames:v", "1", "-vf",
+           f"scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2",
+           "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
+    raw = subprocess.run(cmd, capture_output=True, check=True).stdout
+    img = np.frombuffer(raw, np.uint8)[: W * H * 3].reshape(H, W, 3)
+    fig = plt.figure(figsize=(W / 100, H / 100), dpi=100)
+    ax = fig.add_axes([0, 0, 1, 1])
+    ax.imshow(img, extent=(0, 1, 1, 0))
+    for k in range(1, 10):
+        ax.axvline(k / 10, color="yellow", lw=0.8, alpha=0.8)
+        ax.axhline(k / 10, color="yellow", lw=0.8, alpha=0.8)
+        ax.text(k / 10, 0.015, f"{k / 10:.1f}", color="yellow", ha="center", va="top", fontsize=11, fontweight="bold")
+        ax.text(0.005, k / 10, f"{k / 10:.1f}", color="yellow", ha="left", va="center", fontsize=11, fontweight="bold")
+    ax.set_xlim(0, 1)
+    ax.set_ylim(1, 0)
+    ax.axis("off")
+    ax.text(0.5, 0.97, "--focus LEFT TOP RIGHT BOTTOM: keep the pitcher (and catcher) sharp, blur the rest",
+            color="white", ha="center", fontsize=13, bbox=dict(facecolor="black", alpha=0.6, edgecolor="none"))
+    out.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out, dpi=100)
+    plt.close(fig)
+    return out
+
+
+def clip_duration(path: Path) -> float:
+    """Clip length in seconds, read from ffmpeg's header line (works with the imageio-ffmpeg binary)."""
+    import re
+    res = subprocess.run([ffmpeg_exe(), "-hide_banner", "-i", str(path)], capture_output=True, text=True)
+    m = re.search(r"Duration: (\d+):(\d+):(\d+(?:\.\d+)?)", res.stderr)
+    return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0.0
 
 
 def contact_sheet(path: Path, out: Path, start: float = 0.0, step: float = 1 / 15, cols: int = 6,
@@ -355,6 +413,9 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--speeds", nargs="+", type=float, default=[1.0, 0.35], help="play once at each speed")
     ap.add_argument("--same", nargs="?", const="", metavar="PT",
                     help="consistency overlay: several clips of ONE pitch type (default: his primary FB)")
+    ap.add_argument("--focus", nargs=4, type=float, metavar=("LEFT", "TOP", "RIGHT", "BOTTOM"),
+                    help="keep this box sharp and blur the rest; fractions of the frame (see the --sheet grid)")
+    ap.add_argument("--blur", type=int, default=18, help="with --focus: blur strength (default 18)")
     ap.add_argument("--sheet", action="store_true", help="write contact sheets for picking release_sec")
     ap.add_argument("--clip", nargs=2, action="append", metavar=("PATH", "RELEASE_SEC"),
                     help="manual mode: first --clip is the base, then layers; RELEASE_SEC may be 'auto'")
@@ -377,8 +438,19 @@ def main(argv: list[str] | None = None) -> int:
                  else clips_for(man, a.pitcher, a.base, a.layers))
         if a.sheet:
             for c in clips:
-                p = contact_sheet(c.path, OUT_DIR / "sheets" / f"{c.path.stem}.png")
-                print("sheet:", p.relative_to(ROOT))
+                # long clips (replays, cut-aways) get an overview of the whole clip plus a close-up
+                # around the guessed release, so the release can be found in a 5 s or a 13 s clip
+                dur = clip_duration(c.path)
+                guess = c.release if c.release is not None else guess_release(motion_curve(c.path))
+                over = contact_sheet(c.path, OUT_DIR / "sheets" / f"{c.path.stem}_overview.png",
+                                     step=max(dur / 48, 1 / 15) if dur else 0.25)
+                p = contact_sheet(c.path, OUT_DIR / "sheets" / f"{c.path.stem}.png", start=max(0.0, guess - 1.6))
+                print(f"{c.path.name}: {dur:.1f}s long, release guess {guess:.2f}s")
+                print("  overview:", over.relative_to(ROOT))
+                print("  close-up:", p.relative_to(ROOT))
+            g = grid_frame(clips[0].path, OUT_DIR / "sheets" / f"{clips[0].path.stem}_grid.png",
+                           clips[0].release if clips[0].release is not None else 1.0)
+            print("grid for --focus:", g.relative_to(ROOT))
             print(f"Put each release time in release_sec in {MANIFEST.relative_to(ROOT)}, then rerun without --sheet.")
             return 0
         tag = (f"{clips[0].label}_consistency" if a.same is not None
@@ -388,7 +460,8 @@ def main(argv: list[str] | None = None) -> int:
                             f"consistency, {len(clips)} outings" if a.same is not None else
                             f"{short(a.pitcher)}: {PITCH_NAMES.get(clips[0].label, clips[0].label)} vs "
                             + " + ".join(PITCH_NAMES.get(c.label, c.label) for c in clips[1:]))
-    video, still, notes = render(clips, out, title, a.opacity, a.pre, a.post, tuple(a.speeds))
+    video, still, notes = render(clips, out, title, a.opacity, a.pre, a.post, tuple(a.speeds),
+                                 focus=tuple(a.focus) if a.focus else None, blur=a.blur)
     for n in notes:
         print("note:", n)
     print("releases:", ", ".join(f"{c.label} {c.release:.2f}s" for c in clips))

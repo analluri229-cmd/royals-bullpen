@@ -61,6 +61,7 @@ python -m src.collect_clips --sort                                 # file videos
 python -m src.fetch_clips --pitchers "Erceg, Lucas" --same FF --n 3   # consistency set: 3 fastballs (early / mid / late season, KC home games preferred)
 python -m src.pitch_overlay --pitcher "Erceg, Lucas" --same FF      # same-pitch overlay: is the delivery repeatable across outings?
 python -m src.fetch_clips --repick "Fairbanks, Pete" SL            # bad clip (wrong camera, replay): reject it and pick the next pitch
+python -m src.pitch_overlay --pitcher "Erceg, Lucas" --focus 0.05 0.35 0.55 0.95   # blur everything outside the pitcher box (fractions; see the --sheet grid)
 python -m src.pitch_overlay --pitcher "Erceg, Lucas" --sheet        # contact sheets for picking each clip's release_sec (optional)
 python -m src.pitch_overlay --pitcher "Erceg, Lucas"                # Jomboy-style overlay video: secondaries at 50% over the FB -> outputs/overlays
 python -m pytest

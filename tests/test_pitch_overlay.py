@@ -165,3 +165,27 @@ def test_repick_rejects_clip_and_takes_next_in_same_game(tmp_path, monkeypatch):
     from src import collect_clips
     monkeypatch.setattr(collect_clips.fc, "ROOT", tmp_path)
     assert "SL" not in set(collect_clips.pending(man2)["pitch_type"])  # rejected row not asked for again
+
+
+def test_focus_blurs_outside_box():
+    clips = [po.Clip(None, "FF", 2.0), po.Clip(None, "SL", 3.0)]
+    f = po.build_filter(clips, [0.5], 1.0, 0.5, [1.0], focus=(0.1, 0.2, 0.6, 0.9))
+    assert "boxblur=18:2" in f and "crop=640:504:128:144" in f and "overlay=128:144" in f
+    with pytest.raises(SystemExit):
+        po.focus_box((0.6, 0.2, 0.1, 0.9))
+
+
+@needs_ffmpeg
+def test_render_with_focus_and_grid(tmp_path):
+    a = make_clip(tmp_path / "a.mp4", move_at=1.0)
+    b = make_clip(tmp_path / "b.mp4", move_at=1.6)
+    clips = [po.Clip(a, "FF", 1.2), po.Clip(b, "SL", 1.8)]
+    video, still, _ = po.render(clips, tmp_path / "f.mp4", "t", pre=0.8, post=0.6, focus=(0.1, 0.1, 0.5, 0.9))
+    assert video.exists() and still.exists()
+    assert po.grid_frame(a, tmp_path / "g.png", 1.2).exists()
+
+
+@needs_ffmpeg
+def test_clip_duration(tmp_path):
+    a = make_clip(tmp_path / "a.mp4", move_at=1.0, seconds=4.0)
+    assert po.clip_duration(a) == pytest.approx(4.0, abs=0.1)
