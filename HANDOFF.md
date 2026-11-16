@@ -14,6 +14,7 @@ Read this together with `CLAUDE.md` at the start of a new session.
 
 - 2026-11-01: Step 6 leak map (`python -m src.leak_map`, branch step-6-leak-map). KC: Keep = Cruz, Strahm. Execution fix = Avila, Schreiber, Lynch, Way, Pearson, Cuas, Lange. Replace candidates = Mears, Black, Erceg, Morgan. The bullpen's leak is execution, not stuff: 9 of 13 have above-average Stuff, but 11 of 13 are below average on Execution. Still open: 2024-25 velocity trend and the contracts file.
 - 2026-11-01: Step 7 free-agent targets (`python -m src.targets`). Morejon, Phillips and Fairbanks top most leak matches; Strahm and Schreiber are KC free agents. Prospects are still to come.
+- 2026-11-07: Step 7b trade targets (`python -m src.trade_targets`). Same leak matching as the free-agent list, run on the 273 qualified relievers on other teams who aren't free agents. Top fits: Andres Munoz (SEA), Daniel Duarte (NYM), Mason Miller (SD), Jacob Latz (TEX), Jhoan Duran (PHI), Drew Sommers (DET). Team control isn't in Statcast: fill `data/manual/trade_control_2026_template.csv` (control_through, status, salary_2027_m from Spotrac or RosterResource), save it as `trade_control_2026.csv`, and rerun. Anyone whose control ends in 2026 then drops out.
 
 ## Known limits
 - The Claude cloud workspace can't reach Baseball Savant, FanGraphs or the MLB Stats API. Neither can the Linux shell on the laptop. Data pulls run in VS Code on Windows, or the data comes in as manual exports.

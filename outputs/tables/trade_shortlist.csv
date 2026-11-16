@@ -1,0 +1,21 @@
+target,team,throws,age,relief_ip,control_through,status,stuff_score,execution_score,primary_fb,best_secondary,best_rank,n_leaks,covers,match_on
+"Muñoz, Andrés",SEA,R,27,57.0,?,?,95.0,63.3,FF,SL,2,4,"Strahm, Matt; Black, Mason; Erceg, Lucas; Morgan, Eli",Kill%; Chase%; Stuff score
+"Duarte, Daniel",NYM,R,30,29.7,?,?,73.0,97.0,FC,ST,1,2,"Schreiber, John; Black, Mason",3PS%; Chase%
+"Miller, Mason",SD,R,28,70.0,?,?,93.9,72.3,FF,SL,1,2,"Strahm, Matt; Erceg, Lucas",Kill%
+"Latz, Jacob",TEX,L,30,68.0,?,?,94.7,92.9,FF,CU,2,2,"Schreiber, John; Black, Mason",3PS%; Chase%
+"Duran, Jhoan",PHI,R,28,59.3,?,?,91.0,69.3,FF,ST,2,2,"Strahm, Matt; Erceg, Lucas",Kill%
+"Sommers, Drew",DET,L,26,39.7,?,?,93.3,98.4,SI,FF,3,2,"Strahm, Matt; Erceg, Lucas",Kill%
+"Garcia, Brandyn",AZ,L,26,51.3,?,?,53.6,82.7,SI,ST,4,2,"Strahm, Matt; Erceg, Lucas",Kill%
+"Varland, Louis",TOR,R,29,78.0,?,?,85.0,95.4,FF,CH,5,2,"Mears, Nick; Black, Mason",F-Strike%; Chase%
+"De los Santos, Yerry",NYY,R,29,21.7,?,?,50.1,74.0,SI,CH,1,1,"Mears, Nick",F-Strike%
+"Henriquez, Edgardo",LAD,R,24,59.0,?,?,99.9,66.3,FF,SI,1,1,"Morgan, Eli",Stuff score
+"Ferrer, José A.",SEA,L,26,64.7,?,?,99.0,80.7,SI,SL,2,1,"Morgan, Eli",Stuff score
+"Vest, Will",DET,R,31,26.7,?,?,74.0,70.1,FF,SI,2,1,"Mears, Nick",F-Strike%
+"Kelly, Kevin",TB,R,29,73.7,?,?,97.9,97.6,SI,FF,3,1,"Morgan, Eli",Stuff score
+"Miles, Spencer",TOR,R,26,73.7,?,?,50.4,88.0,SI,CU,3,1,"Schreiber, John",3PS%
+"Gamboa, Alec",BOS,L,29,28.3,?,?,75.0,77.6,FF,SI,3,1,"Mears, Nick",F-Strike%
+"Burke, Sean",CWS,R,27,30.0,?,?,54.6,89.6,FF,SI,4,1,"Schreiber, John",3PS%
+"Criswell, Cooper",SEA,R,30,40.7,?,?,74.7,65.9,SI,ST,4,1,"Mears, Nick",F-Strike%
+"Hicks, Jordan",CWS,R,30,46.3,?,?,95.3,63.0,SI,FF,4,1,"Morgan, Eli",Stuff score
+"Ribalta, Orlando",WSH,R,28,43.0,?,?,58.6,60.4,FF,SI,4,1,"Black, Mason",Chase%
+"Varland, Gus",WSH,R,30,33.0,?,?,55.7,86.1,FF,SL,5,1,"Schreiber, John",3PS%
