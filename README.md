@@ -18,6 +18,7 @@
 2. Outcome layer (Step 2): FanGraphs bullpen ranks 1 to 30 across WAR, ERA, FIP, xFIP, SIERA, K%, BB%, K-BB%, WHIP and HR/9.
 3. Pitch data (Step 3): one regular-season Statcast parquet with the columns listed in `CLAUDE.md`.
 4. Stuff, Execution and sequencing metrics (Steps 4, 5 and 5A), then the leak map, targets, figures and validation (Steps 6 to 9).
+5. R modeling layer (`r-models/`): DuckDB with hand-written SQL, a mixed-effects and Bayesian (brms) model of first-pitch strike rate that fixes the small-sample problem, a called-strike GAM with catcher and pitcher effects, and a Shiny app for coaches. See `r-models/README.md`.
 
 ## Findings
 (2 to 3 charts from `outputs/`, each with one sentence saying what it shows)
