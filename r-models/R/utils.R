@@ -156,7 +156,7 @@ fstrike_takeaway <- function(name, raw_pct, model_pct, prob_below, league_pct) {
 }
 
 # csae = called strikes above expected per 100 taken pitches in that region.
-edge_takeaway <- function(regions, csae, n, min_n = 40) {
+edge_takeaway <- function(regions, csae, n, min_n = 25) {
   ok <- !is.na(csae) & n >= min_n
   if (!any(ok)) return("Not enough taken pitches near the edge to judge.")
   r <- regions[ok]; v <- csae[ok]
