@@ -22,6 +22,11 @@ save_fig <- function(p, path, width = 8, height = 5) {
 
 # Raw vs. model F-Strike% for KC relievers, with the Bayesian 90% interval.
 fig_fstrike_shrinkage <- function(kc, league_avg, path) {
+  # Label the interval by the model that made it: brms (90%) or the lme4 fallback (95%).
+  bayes <- all(kc$interval_source == "brms (90%)")
+  est_label <- if (bayes) "Bayesian (brms) estimate with 90% interval" else "mixed-model (lme4) estimate with 95% interval"
+  cap_model <- if (bayes) "brms binomial, pitcher + catcher random effects" else
+    "lme4 logistic, pitcher + batter + catcher random effects"
   kc <- kc |> arrange(brms_pct) |> mutate(name = factor(name, levels = name))
   p <- ggplot(kc, aes(y = name)) +
     geom_vline(xintercept = league_avg, linetype = "dashed", color = LEAGUE_GRAY) +
@@ -34,9 +39,9 @@ fig_fstrike_shrinkage <- function(kc, league_avg, path) {
     geom_text(aes(x = pmax(brms_hi, f_strike_pct) + 0.6, label = paste0(pa, " PA")),
               hjust = 0, size = 3, color = "gray35") +
     labs(title = "Which Royals first-pitch strike problems are real?",
-         subtitle = "Hollow = raw 2026 F-Strike%. Blue = Bayesian estimate with 90% interval. Dashed = league-average reliever.",
+         subtitle = paste0("Hollow = raw 2026 F-Strike%. Blue = ", est_label, ". Dashed = league-average reliever."),
          x = "First-pitch strike %", y = NULL,
-         caption = "Model: brms binomial, pitcher + catcher random effects, platoon / runners / late-inning context. Source: Statcast 2026 relief PAs.") +
+         caption = paste0("Model: ", cap_model, ", platoon / runners / late-inning context. Source: Statcast 2026 relief PAs.")) +
     theme_bullpen()
   save_fig(p, path, width = 8.5, height = 5.5)
 }
@@ -80,22 +85,23 @@ fig_zone <- function(grid, path) {
 }
 
 # KC relievers x edge region, called strikes above expected per 100 takes.
-fig_kc_edges <- function(reg, path, min_n = 40) {
+fig_kc_edges <- function(reg, path, min_n = 25) {
   reg <- reg |>
-    mutate(label = ifelse(taken >= min_n, sprintf("%+.1f", csae_per100), "n<40"),
+    mutate(label = sprintf("%+.1f\n(n=%d)", csae_per100, taken),
            value = ifelse(taken >= min_n, csae_per100, NA),
            edge_region = factor(edge_region, levels = c("top", "arm side", "glove side", "bottom")))
   p <- ggplot(reg, aes(edge_region, name, fill = value)) +
     geom_tile(color = "white") +
-    geom_text(aes(label = label), size = 3) +
+    geom_text(aes(label = label, color = taken >= min_n), size = 2.8, lineheight = 0.9) +
+    scale_color_manual(values = c(`TRUE` = "black", `FALSE` = "gray55"), guide = "none") +
     scale_fill_gradient2(low = "#B03A2E", mid = "white", high = KC_BLUE, midpoint = 0,
-                         na.value = "gray92", name = "CSAE\nper 100") +
+                         na.value = "gray94", name = "CSAE\nper 100") +
     labs(title = "Where Royals relievers gain and lose borderline calls",
          subtitle = "Called strikes above expected per 100 taken pitches within 3 inches of the zone edge",
          x = NULL, y = NULL,
-         caption = "Expected = league GAM with an average pitcher and catcher. Gray = fewer than 40 takes in that region.") +
+         caption = sprintf("Expected = league GAM with an average pitcher and catcher. Gray text = fewer than %d takes: directional only.", min_n)) +
     theme_bullpen()
-  save_fig(p, path, width = 7.5, height = 5.5)
+  save_fig(p, path, width = 7.5, height = 5.8)
 }
 
 # Execution score before vs. after swapping in the model F-Strike%.

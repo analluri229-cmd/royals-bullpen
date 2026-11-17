@@ -171,8 +171,8 @@ rescore_execution <- function(exe, scores_all, est, qualified_ids, est_col = "lm
   g_raw <- good(e)
   g_new <- g_raw
   g_new[, 2] <- e$f_strike_model_pctile
-  e$exec_composite_raw <- round(rowMeans(g_raw, na.rm = TRUE), 1)
-  e$exec_composite_model <- round(rowMeans(g_new, na.rm = TRUE), 1)
+  e$exec_composite_raw <- np_round1(np_row_mean(g_raw))
+  e$exec_composite_model <- np_round1(np_row_mean(g_new))
   ref <- e$pitcher %in% qualified_ids
   e$execution_score_raw <- midrank_pct(e$exec_composite_raw, e$exec_composite_raw[ref])
   e$execution_score_model <- midrank_pct(e$exec_composite_model, e$exec_composite_model[ref])

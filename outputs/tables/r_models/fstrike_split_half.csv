@@ -1,0 +1,4 @@
+"predictor","weighted_mse","correlation","relievers","rmse_pts"
+"League average (first half)",33.65,NA,296,5.8
+"Raw first-half F-Strike%",52.25,0.19,296,7.23
+"Mixed model (first half)",31.74,0.195,296,5.63

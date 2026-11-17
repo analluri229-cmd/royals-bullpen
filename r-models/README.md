@@ -19,7 +19,19 @@ This folder adds a modeling layer to the Royals bullpen project. The Python pipe
 
 ## Results
 
-Filled in from `outputs/tables/r_models/` after the first full run.
+From the first full run on 2026 Statcast (79,479 relief PAs and 332,923 taken pitches). Every number below is in `outputs/tables/r_models/`. The Stan fit wasn't run yet, because the laptop has no Rtools. The intervals below come from lme4 (95%), and "chance below average" is a normal approximation from the same model.
+
+**1. One season of a reliever's F-Strike% is mostly noise.** The true spread between relievers is small: one standard deviation is about 2.9 points around a 61.1% league rate (`fstrike_variance.csv`). A reliever needs about 279 PAs before his observed rate is half signal. Lange (276 PA) is the only Royals reliever close to that.
+
+**2. The raw first-half rate predicts the second half worse than just guessing league average.** Across 296 relievers with 20+ PA in each half, the raw first-half rate misses by 7.2 points (RMSE). League average misses by 5.8, and the mixed model by 5.6 (`fstrike_split_half.csv`, `fstrike_split_half.png`). The model is the only one of the three that beats league average.
+
+**3. No Royals reliever's first-pitch problem is clearly real.** None has a 90%+ chance of being truly below average. Pearson (86%) and Lynch (85%) are the most likely, and both have 180+ PA. Avila's 55.1% shrinks to 59.9%, with a 68% chance he's below average. So the Step 6 label "F-Strike% is Avila's primary leak" rests on 78 PAs and is weak. Mears (53.7% raw, 82 PA) moves the most, to 59.4%. See `fstrike_shrinkage_kc.png`.
+
+**4. The leak map holds up.** With the model's F-Strike% swapped in, no Royals reliever changes quadrant, and 10 of 335 qualified league relievers do (`execution_rescore.csv`). F-Strike% is one of six execution metrics, so the other five carry each Royals verdict. The R rebuild matches the Python execution score exactly (max difference 0.00 over 437 relievers).
+
+**5. Called strikes: the zone model is strong, and pitcher effects are small.** The GAM explains 80.5% of the deviance in called strikes. On edge pitches (within 3 inches of the border), Morgan (+14.3 per 100 takes, only 46 takes) and Mears (+8.9) got the most extra strikes. Strahm, Pearson, Cruz and Black each lost about 4.7. The part the model gives to the pitcher himself is within ±2 per 100 for every Royals reliever. Catchers range from −3.4 to +3.3 per 100 (`catcher_framing.csv`). Most of a reliever's CSAE is noise or pitch mix, not a skill to coach. Edge-by-region cells rarely reach 40 takes in a relief season (`kc_edge_csae.png`), so treat them as directional.
+
+**What it means for the plan.** Coach first-pitch strikes where the evidence is strongest: Pearson and Lynch. For Avila and Mears, collect more innings before calling F-Strike% the fix. Their execution scores are low for other reasons.
 
 ## Run it
 
