@@ -38,6 +38,8 @@ fig_fstrike_shrinkage <- function(kc, league_avg, path) {
     geom_point(aes(x = brms_pct), color = KC_BLUE, size = 2.8) +
     geom_text(aes(x = pmax(brms_hi, f_strike_pct) + 0.6, label = paste0(pa, " PA")),
               hjust = 0, size = 3, color = "gray35") +
+    # room on the right so the "NNN PA" labels are not clipped
+    scale_x_continuous(expand = expansion(mult = c(0.03, 0.12))) +
     labs(title = "Which Royals first-pitch strike problems are real?",
          subtitle = paste0("Hollow = raw 2026 F-Strike%. Blue = ", est_label, ". Dashed = league-average reliever."),
          x = "First-pitch strike %", y = NULL,
