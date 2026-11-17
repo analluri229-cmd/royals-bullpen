@@ -63,6 +63,24 @@ split_sql <- function(sql) {
 
 # Percentiles ---------------------------------------------------------------
 
+# Round to 1 decimal the way numpy/pandas do (scale by 10, round half to even
+# in plain double arithmetic). R's round(x, 1) can land on the other side of a
+# .x5 tie, which shifted a few re-ranked execution scores by up to 0.5.
+np_round1 <- function(x) round(x * 10) / 10
+
+# Row mean skipping NA, adding columns left to right in plain double precision
+# like pandas DataFrame.mean(axis=1). rowMeans() accumulates in long double, so
+# a mean pandas sees as 60.449999... comes out as exactly 60.45 here.
+np_row_mean <- function(m) {
+  s <- numeric(nrow(m)); k <- numeric(nrow(m))
+  for (j in seq_len(ncol(m))) {
+    ok <- !is.na(m[, j])
+    s[ok] <- s[ok] + m[ok, j]
+    k[ok] <- k[ok] + 1
+  }
+  ifelse(k > 0, s / k, NA_real_)
+}
+
 # Mid-rank percentile (0-100) of each value within a reference pool. Same rule
 # as src/leak_map.py::rerank, so R and Python percentiles line up exactly.
 midrank_pct <- function(values, pool) {
@@ -73,7 +91,7 @@ midrank_pct <- function(values, pool) {
   ok <- !is.na(values)
   lo <- findInterval(values[ok], pool, left.open = TRUE)   # count of pool < v
   hi <- findInterval(values[ok], pool)                      # count of pool <= v
-  out[ok] <- round(100 * (lo + hi) / 2 / n, 1)
+  out[ok] <- np_round1(100 * (lo + hi) / 2 / n)
   out
 }
 
@@ -147,7 +165,7 @@ edge_takeaway <- function(regions, csae, n, min_n = 40) {
     return("He gets about the calls you'd expect on every edge.")
   }
   sprintf(
-    "He gains the most calls on the %s edge (%+.1f strikes per 100 takes) and loses the most on the %s edge (%+.1f). Work the %s edge early in counts; expand off the %s edge only when ahead.",
+    "He gains the most on the %s edge (%+.1f strikes per 100 takes) and loses the most on the %s edge (%+.1f). Work the %s edge early in counts; expand off the %s edge only when ahead.",
     best, max(v), worst, min(v), best, worst
   )
 }

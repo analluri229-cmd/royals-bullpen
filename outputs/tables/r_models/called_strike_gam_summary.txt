@@ -1,0 +1,35 @@
+
+Family: binomial 
+Link function: logit 
+
+Formula:
+called_strike ~ hand + count_grp + te(plate_x, plate_z_norm, 
+    by = hand, k = c(10, 10)) + te(plate_x, plate_z_norm, by = count_grp, 
+    k = c(6, 6)) + s(catcher_f, bs = "re") + s(pitcher_f, bs = "re")
+
+Parametric coefficients:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   -7.863964   0.931128  -8.446  < 2e-16 ***
+handLHP v RHB -0.003799   1.213025  -0.003    0.998    
+handRHP v LHB  0.224324   1.158143   0.194    0.846    
+handRHP v RHB  1.543227   1.107384   1.394    0.163    
+count_grp.L    0.167821   0.117582   1.427    0.154    
+count_grp.Q    0.970353   0.155907   6.224 4.85e-10 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Approximate significance of smooth terms:
+                                            edf Ref.df   Chi.sq  p-value    
+te(plate_x,plate_z_norm):handLHP v LHB    35.79  41.61  3919.69  < 2e-16 ***
+te(plate_x,plate_z_norm):handLHP v RHB    40.54  46.33  7074.53  < 2e-16 ***
+te(plate_x,plate_z_norm):handRHP v LHB    47.77  54.03 12784.74  < 2e-16 ***
+te(plate_x,plate_z_norm):handRHP v RHB    51.24  58.18 10848.32  < 2e-16 ***
+te(plate_x,plate_z_norm):count_grpahead   12.30  14.83    51.83 9.55e-06 ***
+te(plate_x,plate_z_norm):count_grpbehind  14.28  16.90    76.61  < 2e-16 ***
+s(catcher_f)                              69.64 110.00   448.45  < 2e-16 ***
+s(pitcher_f)                             240.21 865.00   493.36  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+R-sq.(adj) =  0.831   Deviance explained = 80.5%
+fREML =  42754  Scale est. = 1         n = 332923

@@ -58,3 +58,11 @@ test_that("edge_takeaway names the best and worst edge", {
   expect_match(edge_takeaway("top", 5, 10), "Not enough")
   expect_match(edge_takeaway(c("top", "bottom"), c(0.4, -0.3), c(60, 60)), "about the calls")
 })
+
+test_that("np_row_mean and np_round1 round .x5 ties the way pandas does", {
+  # pandas: mean of these six percentiles is 60.449999..., which rounds to 60.4
+  m <- matrix(c(70.1, 40.3, 55.0, 80.6, 33.5, 83.2), nrow = 1)
+  expect_equal(np_round1(np_row_mean(m)), 60.4)
+  expect_equal(np_round1(c(0.25, 0.35, 2.5 / 10)), c(0.2, 0.4, 0.2))
+  expect_equal(np_row_mean(matrix(c(1, NA, 3, NA), nrow = 2)), c(2, NA))
+})
